@@ -219,6 +219,11 @@ strong{font-weight:700}
 .car-card{scroll-snap-align:start;display:flex;flex-direction:column;gap:.7rem;text-decoration:none;color:var(--ink);background:none;border:0}
 .car-card .pframe{aspect-ratio:4/3.4}
 .car-card:hover .pframe img{transform:scale(1.045)}
+.car-card__play{position:absolute;left:12px;bottom:11px;z-index:2;display:grid;place-items:center;
+  width:34px;height:34px;border-radius:50%;background:color-mix(in srgb,var(--coral) 92%,#000);color:#fff;
+  box-shadow:0 6px 18px rgba(20,14,10,.4);transition:transform .35s var(--ease)}
+.car-card__play .ic{width:15px;height:15px;margin-left:1px}
+.car-card:hover .car-card__play{transform:scale(1.1)}
 .car-card__body{display:flex;flex-direction:column;gap:.35rem;padding:0}
 .car-card h4{font-family:var(--font-display);font-size:1.24rem;margin:0;color:var(--ink)}
 .car-card .meta{font-family:var(--font-ui);font-size:.8rem;color:var(--muted)}

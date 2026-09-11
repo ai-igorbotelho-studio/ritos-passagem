@@ -320,8 +320,16 @@
     track.innerHTML = pick.map(function (r) {
       var cl = clusterBySlug(r.clusters[0]);
       var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
+      var yid = ytId(r.video);
+      var cf = CFOTO[r.clusters[0]];
+      /* cada card usa a miniatura do vídeo do próprio ritual (assunto específico);
+         cai para a foto do cluster se a miniatura não existir */
+      var thumb = yid ? "https://i.ytimg.com/vi/" + yid + "/maxresdefault.jpg" : cf;
+      var hq = yid ? "https://i.ytimg.com/vi/" + yid + "/hqdefault.jpg" : cf;
       return '<a class="car-card" href="' + hrefCluster(r.clusters[0], r.id) + '">' +
-        '<div class="pframe"><img src="' + CFOTO[r.clusters[0]] + '" alt="" loading="lazy"></div>' +
+        '<div class="pframe pframe--duo"><img class="ytthumb" src="' + thumb + '" data-hq="' + hq + '" data-cf="' + cf + '" alt="" loading="lazy">' +
+        (yid ? '<span class="car-card__play" aria-hidden="true">' + icon("play") + '</span>' : '') +
+        '</div>' +
         '<div class="car-card__body">' +
         '<h4>' + esc(r.nome) + '</h4>' +
         '<div class="meta">' + esc(r.pais) + " · " + esc(cl ? cl.nome : "") + '</div>' +
@@ -330,6 +338,13 @@
         '<span class="pill"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span></span>' + esc(r.participantes_ano.valor.split(";")[0]).slice(0, 26) + '</span>' +
         '</div></div></a>';
     }).join("");
+    /* fallback progressivo das miniaturas: maxres -> hqdefault -> foto do cluster */
+    track.querySelectorAll("img.ytthumb").forEach(function (img) {
+      img.addEventListener("error", function () {
+        if (this.dataset.step === "hq") { this.dataset.step = "cf"; this.src = this.dataset.cf; }
+        else if (!this.dataset.step) { this.dataset.step = "hq"; this.src = this.dataset.hq; }
+      });
+    });
     initCarousels();
   }
 
