@@ -377,21 +377,29 @@
         return true;
       });
       count.textContent = list.length + (list.length === 1 ? " rito" : " ritos");
+      count.classList.remove("bump"); void count.offsetWidth; count.classList.add("bump");
       if (!list.length) { out.innerHTML = '<p class="results__empty">Nenhum rito com esses critérios. Tente afrouxar um filtro.</p>'; return; }
+      var ARW = '<svg class="arw" viewBox="0 0 12 9" aria-hidden="true"><path d="M1 4.5h9M7 1l3.5 3.5L7 8" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
       out.innerHTML = list.map(function (r) {
         var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
         var cl = clusterBySlug(r.clusters[0]);
         return '<article class="rcard">' +
-          '<h4>' + esc(r.nome) + '</h4>' +
-          '<div class="meta">' + esc(r.pais) + (r.regiao ? " · " + esc(r.regiao) : "") + '</div>' +
-          '<div class="tags">' +
-          '<span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span>' +
-          '<span class="pill">' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</span>' +
-          (r.espiritual ? '<span class="pill pill--moss">'+icon("spirit")+'espiritual</span>' : "") +
-          '</div>' +
-          '<div class="meta">' + esc(r.sentimento) + ' · <em>' + esc(r.muda) + '</em></div>' +
-          '<div class="meta"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span> · ' + esc(r.participantes_ano.valor) + '</div>' +
-          '<a class="more" href="' + hrefCluster(r.clusters[0], r.id) + '">Ver em ' + esc(cl ? cl.nome : "cluster") + ' →</a>' +
+          '<a class="rcard__hit" href="' + hrefCluster(r.clusters[0], r.id) + '" aria-label="Ver ' + esc(r.nome) + '">' +
+            '<div class="rcard__media ' + STATUS_CLASS[r.status] + '">' +
+              '<img src="' + CFOTO[r.clusters[0]] + '" alt="" loading="lazy">' +
+              '<span class="rcard__status badge-status">' + STATUS_LABEL[r.status] + '</span>' +
+              '<span class="rcard__cluster">' + esc(cl ? cl.nome : "") + '</span>' +
+            '</div>' +
+            '<div class="rcard__body">' +
+              '<div class="rcard__loc">' + esc(r.pais) + (r.regiao ? " · " + esc(r.regiao) : "") + '</div>' +
+              '<h4>' + esc(r.nome) + '</h4>' +
+              '<div class="rcard__feel"><span>' + esc(r.sentimento) + '</span>' + ARW + '<em>' + esc(r.muda) + '</em></div>' +
+              '<div class="rcard__foot">' +
+                '<span class="seal ' + conf.cls + '">' + conf.ic + conf.txt + '</span>' +
+                '<span class="rcard__go">Ver <span aria-hidden="true">→</span></span>' +
+              '</div>' +
+            '</div>' +
+          '</a>' +
           '</article>';
       }).join("");
     }
@@ -431,7 +439,7 @@
           '<h4>' + esc(r.nome) + '</h4>' +
           '<div class="meta"><strong>Arredores:</strong> ' + esc(r.turismo_entorno) + '</div>' +
           '<div class="meta"><strong>Melhor época:</strong> ' + esc(r.epoca) + ' · <strong>Acesso:</strong> ' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</div>' +
-          (r.alerta_etico ? '<div class="alerta">⚠ ' + esc(r.alerta_etico) + '</div>' : '') +
+          (r.alerta_etico ? '<div class="alerta">' + icon("alert") + ' ' + esc(r.alerta_etico) + '</div>' : '') +
           '</div>';
       }).join("");
     }
