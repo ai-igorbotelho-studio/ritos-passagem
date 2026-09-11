@@ -20,7 +20,8 @@ Matriz de viewport testada: **320 / 375 / 390 / 768 / 1024 / 1440 px**.
 
 - **42 ritos** catalogados · **25 países** · **6 continentes** · **6 clusters**.
 - Distribuição de confiança: 10 ✅ confirmado · 24 ⚠️ parcial · 8 ❓ estimativa.
-- Vídeos: **18 com URL** (do briefing) · **24 sem URL**.
+- Vídeos: **40 com URL** (18 do briefing + 22 pesquisadas no YouTube) · **2 sem URL** por
+  decisão ética (Vision Quest/Sun Dance e Kambô/Ayahuasca).
 - Os contadores da HOME são **calculados a partir do JSON** em tempo de carregamento —
   nunca digitados à mão.
 
@@ -32,13 +33,14 @@ Matriz de viewport testada: **320 / 375 / 390 / 768 / 1024 / 1440 px**.
    **medir** os contadores a partir do JSON, em vez de forçar o número 32. Se a intenção
    for exatamente 32, é preciso decidir quais 10 remover.
 
-2. **Vídeos marcados `*buscar vídeo*` (24 itens).** Não foram inventadas URLs. Ficaram como
-   `null` e a coluna "Vídeo" mostra "—". Precisam de busca + confirmação manual:
-   Upanayana, Shinbyu, Ritu Kala/Half-Saree, Quinceañera, Handfasting, Coroação ortodoxa,
-   Noite da Henna, Rod Nam Sang, Doljanchi, Primeiro Riso, Kumbh Mela, Caminho de Santiago,
-   Hajj, Día de Muertos, Thaipusam, Naadam, Águia Dourada, Jallikattu, Pongal/Chhath,
-   Songkran, Yi Peng, Boi-Bumbá. **Vision Quest/Sun Dance** e **Kambô/Ayahuasca** ficam
-   deliberadamente sem vídeo por decisão ética (rito fechado / não indexar comercial).
+2. **Vídeos.** As 22 URLs pendentes foram **pesquisadas no YouTube** (nunca inventadas) e
+   gravadas no JSON, com o campo `video_fonte` indicando a origem. Prioridade a fontes
+   reputáveis: BBC (Hajj), AFP (Día de Muertos, Boi-Bumbá), ITV News (Águia Dourada),
+   HBO (Quinceañera), WION (Kumbh), notícia UNESCO (Songkran). As demais são registros/
+   documentários de canais menores. **Pendência:** confirmar a permanência de cada link
+   (vídeos do YouTube podem ser removidos) antes da publicação definitiva. **Vision
+   Quest/Sun Dance** e **Kambô/Ayahuasca** seguem deliberadamente sem vídeo por decisão
+   ética (rito fechado / não indexar conteúdo comercial).
 
 3. **Coordenadas lat/lon.** Aproximadas pela cidade-âncora de cada rito (não pela aldeia
    exata). Verificadas contra 3 pontos conhecidos na projeção (Golfo da Guiné, Sul do
@@ -63,7 +65,7 @@ Matriz de viewport testada: **320 / 375 / 390 / 768 / 1024 / 1440 px**.
 ## Pendências antes do deploy público
 
 - [ ] Trocar `ritos.exemplo` pelo domínio final (5 ocorrências por página + sitemap/robots).
-- [ ] Buscar e confirmar as 24 URLs de vídeo (ou manter "—").
+- [x] ~~Buscar as 22 URLs de vídeo~~ — feito; falta confirmar a permanência de cada link.
 - [ ] Confirmar URLs restantes da Biblioteca.
-- [ ] Decidir 32 vs 42 ritos.
+- [x] ~~Decidir 32 vs 42 ritos~~ — decidido: **42**.
 - [ ] Publicar no Cloudflare Pages (**aguardando sua confirmação**, conforme o briefing).

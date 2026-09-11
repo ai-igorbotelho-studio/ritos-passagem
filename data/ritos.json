@@ -7,7 +7,10 @@
     "regiao": "Vale do Omo",
     "lat": 4.97,
     "lon": 36.5,
-    "clusters": ["pais-e-filhos", "natureza-animais-e-plantas"],
+    "clusters": [
+      "pais-e-filhos",
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Pai, irmãos e homens da linhagem + o jovem; mulheres da família pedem para ser chicoteadas em prova de lealdade.",
     "descricao": "O jovem corre nu quatro vezes sobre o dorso de 10 a 15 bois enfileirados. Só depois de saltar sem cair está apto a casar.",
     "motivo": "Tornar-se homem e ficar apto a casar.",
@@ -16,11 +19,17 @@
     "turismo_entorno": "Lower Omo (Mursi, Karo, Dassanech), Parque Nacional Mago, Turmi, Lago Turkana. Melhor mês: set–nov. Acesso só com operador local.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "algumas centenas", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "algumas centenas",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Chicoteamento de mulheres; turismo-espetáculo no Omo. Ir só com operador que remunere a comunidade e não encene fora de época.",
     "video": "https://www.youtube.com/watch?v=9rwhehhzN90",
-    "fontes": ["Registros etnográficos sobre os Hamar do Vale do Omo"]
+    "fontes": [
+      "Registros etnográficos sobre os Hamar do Vale do Omo"
+    ]
   },
   {
     "id": "satere-mawe-tucandeira",
@@ -30,7 +39,9 @@
     "regiao": "Amazonas (baixo Amazonas)",
     "lat": -2.63,
     "lon": -56.74,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "Homens da comunidade e o iniciado, conduzidos pelos mais velhos.",
     "descricao": "O jovem veste luvas trançadas cheias de formigas tucandeira, cuja ferroada é a mais dolorosa do mundo, e dança de 10 a 20 minutos sem gritar.",
     "motivo": "Provar resistência e coragem; tornar-se homem — repetido até 20 vezes na vida.",
@@ -39,11 +50,17 @@
     "turismo_entorno": "Manaus, Encontro das Águas, Rio Negro, Parintins (Boi-Bumbá, jun), Barreirinha.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas de iniciados; milhares de turistas assistem versões comerciais perto de Manaus", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas de iniciados; milhares de turistas assistem versões comerciais perto de Manaus",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Existem versões encenadas 'para turista' em aldeias perto de Manaus. Preferir convite comunitário real, sem espetáculo fora de contexto.",
     "video": "https://www.youtube.com/watch?v=wcwToLaYOdY",
-    "fontes": ["SciELO — ritual e saúde na comunidade Sateré-Mawé Y'Apyrehyt, Manaus"]
+    "fontes": [
+      "SciELO — ritual e saúde na comunidade Sateré-Mawé Y'Apyrehyt, Manaus"
+    ]
   },
   {
     "id": "bar-mitzvah",
@@ -53,7 +70,9 @@
     "regiao": "Jerusalém (Muro das Lamentações)",
     "lat": 31.7767,
     "lon": 35.2345,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "O menino de 13 anos, pai e família; comunidade da sinagoga.",
     "descricao": "Aos 13 anos o jovem lê a Torá em público pela primeira vez e passa a responder por seus atos religiosos. No Kotel, dezenas de famílias celebram ao mesmo tempo às segundas e quintas.",
     "motivo": "Assumir a maioridade religiosa e a responsabilidade pelos mandamentos.",
@@ -62,11 +81,17 @@
     "turismo_entorno": "Cidade Velha, Yad Vashem, Mar Morto, Masada.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~100 mil/ano no mundo (≈ coorte anual de meninos judeus); milhares/ano no Kotel", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "~100 mil/ano no mundo (≈ coorte anual de meninos judeus); milhares/ano no Kotel",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "O Kotel é espaço público de oração — observar com discrição e respeito à cerimônia familiar.",
     "video": "https://www.youtube.com/watch?v=irhviXM-uuU",
-    "fontes": ["Fontes gerais sobre a liturgia judaica"]
+    "fontes": [
+      "Fontes gerais sobre a liturgia judaica"
+    ]
   },
   {
     "id": "yoruba-isomoloruko",
@@ -76,7 +101,10 @@
     "regiao": "Sudoeste (Lagos, Ibadan)",
     "lat": 6.52,
     "lon": 3.38,
-    "clusters": ["pais-e-filhos", "avos-e-netos"],
+    "clusters": [
+      "pais-e-filhos",
+      "avos-e-netos"
+    ],
     "quem_participa": "Avós, pais e toda a comunidade; um ancião conduz.",
     "descricao": "Poucos dias após o nascimento, mel, sal, kola e água tocam a boca do bebê — cada elemento é um voto. Cada nome é anunciado e repetido pela comunidade.",
     "motivo": "Dar nome e destino ao recém-nascido e apresentá-lo à comunidade.",
@@ -85,11 +113,17 @@
     "turismo_entorno": "Lagos, Osun-Osogbo (Patrimônio UNESCO; festival em ago), Ibadan.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (praticado pela maioria das famílias iorubás, ~40 mi de pessoas)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhões (praticado pela maioria das famílias iorubás, ~40 mi de pessoas)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": "Cerimônia familiar; participação só por convite.",
     "video": "https://www.youtube.com/watch?v=hTFxJAVwz_E",
-    "fontes": ["Fontes gerais sobre cultura iorubá"]
+    "fontes": [
+      "Fontes gerais sobre cultura iorubá"
+    ]
   },
   {
     "id": "xhosa-ulwaluko",
@@ -99,7 +133,9 @@
     "regiao": "Cabo Oriental",
     "lat": -31.98,
     "lon": 29.15,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "Homens iniciados da comunidade e os jovens; o rito em si é fechado a estranhos.",
     "descricao": "Reclusão de semanas na mata, circuncisão e provações. O ápice é o umgidi — o retorno: mato queimado, roupas novas e o 'novo homem' recebido pela aldeia.",
     "motivo": "Transformar meninos em homens xhosa.",
@@ -108,11 +144,18 @@
     "turismo_entorno": "Wild Coast, Coffee Bay, Hole in the Wall, Qunu (Mandela), Addo Elephant. O rito em si não é acessível a visitantes.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": ">50 mil só no Cabo Oriental na temporada de verão 2025/26; 2 temporadas/ano", "confianca": "confirmado", "fonte": "COGTA via City Press / News24" },
+    "participantes_ano": {
+      "valor": ">50 mil só no Cabo Oriental na temporada de verão 2025/26; 2 temporadas/ano",
+      "confianca": "confirmado",
+      "fonte": "COGTA via City Press / News24"
+    },
     "acesso_visitante": "fechado",
     "alerta_etico": "O rito é sagrado e fechado. Registrar como conhecimento, não indexar operadores nem vídeos do procedimento. Consentimento livre, prévio e informado (FPIC).",
     "video": "https://www.youtube.com/watch?v=h2shfvd2vKs",
-    "fontes": ["COGTA (Cabo Oriental) via City Press/News24", "Africa Geographic — reportagem sobre a circuncisão xhosa"]
+    "fontes": [
+      "COGTA (Cabo Oriental) via City Press/News24",
+      "Africa Geographic — reportagem sobre a circuncisão xhosa"
+    ]
   },
   {
     "id": "maasai-eunoto",
@@ -122,7 +165,9 @@
     "regiao": "Fronteira Quênia/Tanzânia (terras Maasai)",
     "lat": -1.4,
     "lon": 35.2,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "Guerreiros (morans) de uma geração, mães e anciãos.",
     "descricao": "Milhares de guerreiros se reúnem para deixar a condição de moran e virar homens adultos. Dançam o adumu (salto) e as mães raspam o cabelo dos filhos.",
     "motivo": "Encerrar a fase de guerreiro e assumir a idade adulta e o casamento.",
@@ -131,11 +176,17 @@
     "turismo_entorno": "Masai Mara, Serengeti, Ngorongoro, Amboseli.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhares por geração (Lolgorian 2022: ~4 mil morans)", "confianca": "parcial", "fonte": "Relatos de imprensa sobre o Eunoto de Lolgorian (2022)" },
+    "participantes_ano": {
+      "valor": "milhares por geração (Lolgorian 2022: ~4 mil morans)",
+      "confianca": "parcial",
+      "fonte": "Relatos de imprensa sobre o Eunoto de Lolgorian (2022)"
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Fotografar só com consentimento; remunerar a comunidade diretamente.",
     "video": "https://www.youtube.com/watch?v=vwLQy1hv1cw",
-    "fontes": ["UNESCO ICH — Enkipaata, Eunoto e Olng'esherr (2018)"]
+    "fontes": [
+      "UNESCO ICH — Enkipaata, Eunoto e Olng'esherr (2018)"
+    ]
   },
   {
     "id": "sepik-escarificacao-crocodilo",
@@ -145,7 +196,10 @@
     "regiao": "Rio Sepik",
     "lat": -4.2,
     "lon": 143.3,
-    "clusters": ["pais-e-filhos", "natureza-animais-e-plantas"],
+    "clusters": [
+      "pais-e-filhos",
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Homens da casa dos espíritos e os iniciados.",
     "descricao": "Centenas de cortes rasos formam escamas de crocodilo na pele do jovem, ligando-o ao espírito do rio. Tambores de água soam na casa dos espíritos.",
     "motivo": "Ligar o jovem ao crocodilo ancestral e à vida adulta.",
@@ -154,11 +208,17 @@
     "turismo_entorno": "Rio Sepik de barco, Crocodile Festival (Ambunti, ago), Wewak, Goroka Show (set).",
     "status": "exotico",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Procedimento no corpo de menores em algumas versões — indexar apenas fontes editoriais/institucionais.",
     "video": "https://www.youtube.com/watch?v=oJDOh3VSoxQ",
-    "fontes": ["National Geographic — Rites of Manhood: Crocodile Scars (2011)"]
+    "fontes": [
+      "National Geographic — Rites of Manhood: Crocodile Scars (2011)"
+    ]
   },
   {
     "id": "vanuatu-naghol",
@@ -168,7 +228,10 @@
     "regiao": "Ilha de Pentecostes",
     "lat": -15.8,
     "lon": 168.18,
-    "clusters": ["pais-e-filhos", "natureza-animais-e-plantas"],
+    "clusters": [
+      "pais-e-filhos",
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Homens e meninos da aldeia; o pai salta ao lado do filho.",
     "descricao": "Saltadores mergulham de torres de madeira de até 30 m amarrados apenas por cipós, medindo o comprimento para tocar de leve a terra. Liga-se à colheita do inhame.",
     "motivo": "Coragem masculina e fertilidade da terra (boa colheita do inhame).",
@@ -177,11 +240,17 @@
     "turismo_entorno": "Espiritu Santo (Champagne Beach, SS President Coolidge), Tanna (vulcão Yasur), Port Vila. Melhor mês: abr–jun.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "20–40 saltadores por temporada, em 3–5 aldeias", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "20–40 saltadores por temporada, em 3–5 aldeias",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Turismo concentrado pressiona poucas aldeias; ir por operador que reparta a renda.",
     "video": "https://www.youtube.com/watch?v=GzDTOToe2JY",
-    "fontes": ["Fontes gerais sobre o Naghol de Pentecostes"]
+    "fontes": [
+      "Fontes gerais sobre o Naghol de Pentecostes"
+    ]
   },
   {
     "id": "hindu-upanayana",
@@ -191,7 +260,9 @@
     "regiao": "Índia e Nepal",
     "lat": 25.32,
     "lon": 82.97,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "Pai, guru e o menino das castas dvija.",
     "descricao": "O pai sussurra o mantra Gayatri no ouvido do menino, que recebe o cordão sagrado (yajnopavita) e 'renasce' para a vida de estudos.",
     "motivo": "Iniciar o menino no aprendizado védico — o segundo nascimento (dvija).",
@@ -200,11 +271,18 @@
     "turismo_entorno": "Varanasi, Rishikesh, Katmandu.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas de milhares (castas dvija)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas de milhares (castas dvija)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre samskaras hindus"]
+    "video": "https://www.youtube.com/watch?v=p6TgHR3Mvpg",
+    "fontes": [
+      "Fontes gerais sobre samskaras hindus"
+    ],
+    "video_fonte": "registro do samskara"
   },
   {
     "id": "myanmar-shinbyu",
@@ -214,7 +292,9 @@
     "regiao": "Bagan, Mandalay",
     "lat": 21.17,
     "lon": 94.86,
-    "clusters": ["pais-e-filhos"],
+    "clusters": [
+      "pais-e-filhos"
+    ],
     "quem_participa": "Pais, monges e o menino; procissão da comunidade.",
     "descricao": "O menino desfila vestido de príncipe, muitas vezes a cavalo, em memória do Buda antes de renunciar. Depois tem a cabeça raspada e veste a túnica de noviço.",
     "motivo": "Entrar temporariamente na vida monástica — dever budista e honra da família.",
@@ -223,11 +303,18 @@
     "turismo_entorno": "Bagan, Mandalay, Lago Inle.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas de milhares/ano (quase universal para meninos budistas)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas de milhares/ano (quase universal para meninos budistas)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Verificar situação de segurança/viagem no país antes de planejar.",
-    "video": null,
-    "fontes": ["Fontes gerais sobre o budismo birmanês"]
+    "video": "https://www.youtube.com/watch?v=CvRhizLEftI",
+    "fontes": [
+      "Fontes gerais sobre o budismo birmanês"
+    ],
+    "video_fonte": "documentário"
   },
   {
     "id": "apache-sunrise-ceremony",
@@ -237,7 +324,9 @@
     "regiao": "Arizona / Novo México",
     "lat": 33.84,
     "lon": -109.96,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "A menina, a madrinha (que modela seu corpo) e a comunidade.",
     "descricao": "Durante quatro dias a menina dança e encarna a Mulher da Pintura Branca. Diz-se que pode curar quem a toca; a madrinha modela ritualmente seu corpo para a vida adulta.",
     "motivo": "Passagem da menina à mulher, força e cura para a comunidade.",
@@ -246,11 +335,18 @@
     "turismo_entorno": "Grand Canyon, Sedona, Monument Valley, White Mountains.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas a poucas centenas/ano (White Mountain, San Carlos, Mescalero)", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas a poucas centenas/ano (White Mountain, San Carlos, Mescalero)",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": "Cerimônia sagrada; só se assiste com convite e permissão da tribo.",
     "video": "https://www.youtube.com/watch?v=r1Cx_9YDQEc",
-    "fontes": ["NPR (2025) — Apache Sunrise Dance", "DER — The Sunrise Dance (documentário)"]
+    "fontes": [
+      "NPR (2025) — Apache Sunrise Dance",
+      "DER — The Sunrise Dance (documentário)"
+    ]
   },
   {
     "id": "navajo-kinaalda",
@@ -260,7 +356,9 @@
     "regiao": "Nação Navajo (AZ/UT/NM)",
     "lat": 36.0,
     "lon": -109.5,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "A menina, mãe, avós e mulheres da família.",
     "descricao": "Por quatro manhãs a menina corre em direção ao sol nascente, cada vez mais longe. Um bolo de milho de cerca de 1 m é assado a noite toda na terra.",
     "motivo": "Marcar a primeira menstruação e formar a mulher forte e trabalhadora.",
@@ -269,11 +367,17 @@
     "turismo_entorno": "Monument Valley, Canyon de Chelly, Antelope Canyon.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas/ano", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas/ano",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": "Cerimônia familiar; participação só por convite.",
     "video": "https://www.youtube.com/watch?v=H8HPMS-l2bM",
-    "fontes": ["Fontes gerais sobre cultura Diné"]
+    "fontes": [
+      "Fontes gerais sobre cultura Diné"
+    ]
   },
   {
     "id": "ticuna-festa-moca-nova",
@@ -283,7 +387,9 @@
     "regiao": "Alto Solimões",
     "lat": -4.25,
     "lon": -69.94,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "A moça, mães, tias e toda a comunidade mascarada.",
     "descricao": "Após meses de reclusão, a moça enfrenta a festa entre seres mascarados; ao amanhecer, o cabelo é arrancado fio a fio, encerrando a passagem.",
     "motivo": "Proteger e apresentar a menina como mulher, vencendo os seres do mundo.",
@@ -292,11 +398,18 @@
     "turismo_entorno": "Tabatinga/Letícia (tríplice fronteira), Rio Javari, Puerto Nariño.",
     "status": "exotico",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas/ano", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas/ano",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "fechado",
     "alerta_etico": "Rito comunitário; sem convite não se assiste. Registrar como conhecimento.",
     "video": "https://www.youtube.com/watch?v=-IpgSZwYtyQ",
-    "fontes": ["Matarezio (USP/CEstA) — estudo sobre a Festa da Moça Nova", "Agência FAPESP (2020)"]
+    "fontes": [
+      "Matarezio (USP/CEstA) — estudo sobre a Festa da Moça Nova",
+      "Agência FAPESP (2020)"
+    ]
   },
   {
     "id": "krobo-dipo",
@@ -306,7 +419,9 @@
     "regiao": "Região do Volta",
     "lat": 6.1,
     "lon": 0.02,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "As meninas, sacerdotisas e mulheres mais velhas.",
     "descricao": "Cabeça raspada, pano vermelho e contas; a prova culmina em sentar na pedra sagrada, que só a menina pura consegue.",
     "motivo": "Iniciar as meninas na vida adulta e na comunidade Krobo.",
@@ -315,11 +430,17 @@
     "turismo_entorno": "Krobo Odumase, Lago Volta, Accra, Cape Coast. Melhor mês: abr.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas a milhares/ano (abril)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas a milhares/ano (abril)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Há debate local sobre idade e exposição das meninas; observar com respeito.",
     "video": "https://www.youtube.com/watch?v=LSfaU-Vi240",
-    "fontes": ["Fontes gerais sobre o povo Krobo"]
+    "fontes": [
+      "Fontes gerais sobre o povo Krobo"
+    ]
   },
   {
     "id": "ritu-kala-half-saree",
@@ -329,7 +450,9 @@
     "regiao": "Sul da Índia",
     "lat": 9.93,
     "lon": 78.12,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "A menina, mãe, avós e parentes.",
     "descricao": "A mãe veste na filha o meio-sári; a menina é abençoada com cúrcuma e flores, anunciando a maturidade à família.",
     "motivo": "Celebrar a primeira menstruação e a entrada na feminilidade.",
@@ -338,11 +461,18 @@
     "turismo_entorno": "Madurai, Hampi, Kerala backwaters.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (culturalmente difundido)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhões (culturalmente difundido)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": "Cerimônia familiar; só por convite.",
-    "video": null,
-    "fontes": ["Fontes gerais sobre costumes do sul da Índia"]
+    "video": "https://www.youtube.com/watch?v=0LONEIY2t3I",
+    "fontes": [
+      "Fontes gerais sobre costumes do sul da Índia"
+    ],
+    "video_fonte": "registro do half-saree"
   },
   {
     "id": "quinceanera",
@@ -352,7 +482,9 @@
     "regiao": "México e diáspora latina",
     "lat": 19.43,
     "lon": -99.13,
-    "clusters": ["maes-e-filhas"],
+    "clusters": [
+      "maes-e-filhas"
+    ],
     "quem_participa": "A jovem de 15 anos, pais, padrinhos e corte de honra.",
     "descricao": "Aos 15 anos, o pai troca o sapato baixo pelo salto da filha; segue-se a valsa e, em muitas famílias, a missa de ação de graças.",
     "motivo": "Marcar a passagem da menina à mulher aos 15 anos.",
@@ -361,11 +493,18 @@
     "turismo_entorno": "CDMX, Guadalajara, Oaxaca.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~400 mil/ano só nos EUA; milhões na América Latina", "confianca": "parcial", "fonte": "Estimativas de mercado do setor de festas" },
+    "participantes_ano": {
+      "valor": "~400 mil/ano só nos EUA; milhões na América Latina",
+      "confianca": "parcial",
+      "fonte": "Estimativas de mercado do setor de festas"
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre a quinceañera"]
+    "video": "https://www.youtube.com/watch?v=U4qTP5gU_xc",
+    "fontes": [
+      "Fontes gerais sobre a quinceañera"
+    ],
+    "video_fonte": "HBO Documentary"
   },
   {
     "id": "hindu-saptapadi",
@@ -375,7 +514,9 @@
     "regiao": "Índia",
     "lat": 26.92,
     "lon": 75.82,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "Noivos, famílias e sacerdote, ao redor do fogo sagrado.",
     "descricao": "O casal dá sete passos ao redor do fogo sagrado, cada um selando um voto, com as roupas atadas em nó. Casamentos podem durar três dias.",
     "motivo": "Unir o casal e as duas famílias diante do fogo e dos deuses.",
@@ -384,11 +525,17 @@
     "turismo_entorno": "Jaipur, Udaipur, Varanasi, Goa.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~8–10 mi de casamentos/ano na Índia (maioria hindus)", "confianca": "confirmado", "fonte": "CAIT / estimativas setoriais indianas" },
+    "participantes_ano": {
+      "valor": "~8–10 mi de casamentos/ano na Índia (maioria hindus)",
+      "confianca": "confirmado",
+      "fonte": "CAIT / estimativas setoriais indianas"
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
     "video": "https://www.youtube.com/watch?v=NpO1fh866WQ",
-    "fontes": ["CAIT (Confederation of All India Traders) — estimativas de casamentos"]
+    "fontes": [
+      "CAIT (Confederation of All India Traders) — estimativas de casamentos"
+    ]
   },
   {
     "id": "china-cerimonia-do-cha",
@@ -398,7 +545,9 @@
     "regiao": "China; Singapura/Malásia",
     "lat": 23.13,
     "lon": 113.26,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "Os noivos, pais e sogros.",
     "descricao": "Ajoelhados, os noivos servem chá aos mais velhos e os chamam de 'pai' e 'mãe' pela primeira vez, selando a entrada na nova família.",
     "motivo": "Selar a união das famílias e o respeito aos mais velhos.",
@@ -407,11 +556,18 @@
     "turismo_entorno": "Pequim, Xangai, Guangzhou; Singapura/Malásia.",
     "status": "muito_popular",
     "espiritual": false,
-    "participantes_ano": { "valor": "~6,1 mi de casamentos na China (2024)", "confianca": "confirmado", "fonte": "Ministério de Assuntos Civis da China (2024)" },
+    "participantes_ano": {
+      "valor": "~6,1 mi de casamentos na China (2024)",
+      "confianca": "confirmado",
+      "fonte": "Ministério de Assuntos Civis da China (2024)"
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
     "video": "https://www.youtube.com/watch?v=uPIPlcyTWD4",
-    "fontes": ["Ministério de Assuntos Civis da China", "The Woks of Life — guia da cerimônia do chá"]
+    "fontes": [
+      "Ministério de Assuntos Civis da China",
+      "The Woks of Life — guia da cerimônia do chá"
+    ]
   },
   {
     "id": "celta-handfasting",
@@ -421,7 +577,9 @@
     "regiao": "Escócia / Irlanda",
     "lat": 57.12,
     "lon": -4.71,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "O casal e o celebrante; convidados.",
     "descricao": "As mãos dos noivos são atadas por fitas — origem da expressão inglesa 'tying the knot' (atar o nó). Hoje aparece em cerimônias neopagãs e civis.",
     "motivo": "Selar a união com um laço visível entre as mãos.",
@@ -430,11 +588,18 @@
     "turismo_entorno": "Highlands, Skye, Edimburgo, Dingle.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhares/ano (neopagão + civil)", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhares/ano (neopagão + civil)",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre handfasting"]
+    "video": "https://www.youtube.com/watch?v=LMiPXN164fE",
+    "fontes": [
+      "Fontes gerais sobre handfasting"
+    ],
+    "video_fonte": "documentário"
   },
   {
     "id": "ortodoxa-coroacao",
@@ -444,7 +609,9 @@
     "regiao": "Grécia, Rússia, Sérvia",
     "lat": 37.98,
     "lon": 23.73,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "Os noivos, padrinhos (koumbaros) e o sacerdote.",
     "descricao": "Coroas são trocadas três vezes sobre as cabeças dos noivos, que dão a 'dança de Isaías' ao redor do altar.",
     "motivo": "Coroar o casal como rei e rainha de um novo lar cristão.",
@@ -453,11 +620,18 @@
     "turismo_entorno": "Santorini, Meteora, Atenas.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "~40 mil/ano só na Grécia", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "~40 mil/ano só na Grécia",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre a liturgia ortodoxa"]
+    "video": "https://www.youtube.com/watch?v=5AWZziro2eo",
+    "fontes": [
+      "Fontes gerais sobre a liturgia ortodoxa"
+    ],
+    "video_fonte": "Greek Orthodoxy 101"
   },
   {
     "id": "noite-da-henna",
@@ -467,7 +641,9 @@
     "regiao": "Marrocos, Turquia, Oriente Médio",
     "lat": 31.63,
     "lon": -7.99,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "A noiva, a mãe, mulheres da família e amigas.",
     "descricao": "Na véspera do casamento, a mãe da noiva chora ritualmente a despedida e aplica-se henna às mãos e pés da noiva.",
     "motivo": "Despedir a noiva da casa dos pais e desejar-lhe sorte.",
@@ -476,11 +652,18 @@
     "turismo_entorno": "Marrakech, Fez, Istambul, Capadócia.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (praticada em mais de 20 países)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhões (praticada em mais de 20 países)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre a cerimônia da henna"]
+    "video": "https://www.youtube.com/watch?v=6G2BjqVg69w",
+    "fontes": [
+      "Fontes gerais sobre a cerimônia da henna"
+    ],
+    "video_fonte": "Cultural Tidbits"
   },
   {
     "id": "tailandia-rod-nam-sang",
@@ -490,7 +673,9 @@
     "regiao": "Tailândia",
     "lat": 18.79,
     "lon": 98.98,
-    "clusters": ["casais"],
+    "clusters": [
+      "casais"
+    ],
     "quem_participa": "O casal, anciãos e convidados.",
     "descricao": "Os mais velhos derramam água benta de uma concha sobre as mãos unidas dos noivos, transmitindo bênçãos.",
     "motivo": "Abençoar a união com a água e a autoridade dos mais velhos.",
@@ -499,11 +684,18 @@
     "turismo_entorno": "Chiang Mai, Bangkok, Ayutthaya.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "~300 mil casamentos/ano na Tailândia", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "~300 mil casamentos/ano na Tailândia",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre casamentos budistas na Tailândia"]
+    "video": "https://www.youtube.com/watch?v=oq_Plmg4_7M",
+    "fontes": [
+      "Fontes gerais sobre casamentos budistas na Tailândia"
+    ],
+    "video_fonte": "registro do ritual"
   },
   {
     "id": "annaprashan",
@@ -513,7 +705,9 @@
     "regiao": "Índia (Bengala)",
     "lat": 22.57,
     "lon": 88.36,
-    "clusters": ["avos-e-netos"],
+    "clusters": [
+      "avos-e-netos"
+    ],
     "quem_participa": "Avós, pais e o bebê.",
     "descricao": "O bebê come arroz pela primeira vez e depois escolhe entre livro, dinheiro, caneta e terra — objetos que 'preveem' seu destino.",
     "motivo": "Primeira comida sólida e leitura simbólica do futuro.",
@@ -522,11 +716,17 @@
     "turismo_entorno": "Calcutá, Sundarbans, Darjeeling.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (quase universal em famílias hindus)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhões (quase universal em famílias hindus)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
     "video": "https://www.youtube.com/watch?v=N8RtROixHCk",
-    "fontes": ["Fontes gerais sobre samskaras hindus"]
+    "fontes": [
+      "Fontes gerais sobre samskaras hindus"
+    ]
   },
   {
     "id": "japao-shichi-go-san",
@@ -536,7 +736,9 @@
     "regiao": "Japão",
     "lat": 35.676,
     "lon": 139.699,
-    "clusters": ["avos-e-netos"],
+    "clusters": [
+      "avos-e-netos"
+    ],
     "quem_participa": "Crianças de 3, 5 e 7 anos, pais e avós.",
     "descricao": "Crianças de quimono vão ao santuário agradecer pelo crescimento e recebem a bala chitose-ame ('doce dos mil anos'), símbolo de longevidade.",
     "motivo": "Celebrar e pedir proteção pelo crescimento das crianças.",
@@ -545,11 +747,17 @@
     "turismo_entorno": "Tóquio (Meiji Jingu), Kyoto, Kamakura.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~1,5–2 mi de crianças/ano (coortes de 3, 5 e 7 anos)", "confianca": "confirmado", "fonte": "Coortes demográficas do Japão (≈800 mil/ano por idade)" },
+    "participantes_ano": {
+      "valor": "~1,5–2 mi de crianças/ano (coortes de 3, 5 e 7 anos)",
+      "confianca": "confirmado",
+      "fonte": "Coortes demográficas do Japão (≈800 mil/ano por idade)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
     "video": "https://www.youtube.com/watch?v=oNnnAOsgns8",
-    "fontes": ["Fontes gerais sobre o Shichi-Go-San"]
+    "fontes": [
+      "Fontes gerais sobre o Shichi-Go-San"
+    ]
   },
   {
     "id": "coreia-doljanchi",
@@ -559,7 +767,9 @@
     "regiao": "Coreia",
     "lat": 37.57,
     "lon": 126.98,
-    "clusters": ["avos-e-netos"],
+    "clusters": [
+      "avos-e-netos"
+    ],
     "quem_participa": "O bebê de 1 ano, pais e avós.",
     "descricao": "No doljabi, o bebê escolhe um objeto da mesa preparada pelos avós — cada item aponta um destino (dinheiro, caneta, fio da vida longa).",
     "motivo": "Celebrar o primeiro ano de vida e antever o futuro da criança.",
@@ -568,11 +778,18 @@
     "turismo_entorno": "Seul, Jeju, Gyeongju.",
     "status": "muito_popular",
     "espiritual": false,
-    "participantes_ano": { "valor": "~230 mil/ano (nascimentos 2023)", "confianca": "confirmado", "fonte": "Statistics Korea (2023)" },
+    "participantes_ano": {
+      "valor": "~230 mil/ano (nascimentos 2023)",
+      "confianca": "confirmado",
+      "fonte": "Statistics Korea (2023)"
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Statistics Korea"]
+    "video": "https://www.youtube.com/watch?v=3gAh12BaQwU",
+    "fontes": [
+      "Statistics Korea"
+    ],
+    "video_fonte": "documentário"
   },
   {
     "id": "navajo-primeiro-riso",
@@ -582,7 +799,9 @@
     "regiao": "Nação Navajo",
     "lat": 35.68,
     "lon": -109.05,
-    "clusters": ["avos-e-netos"],
+    "clusters": [
+      "avos-e-netos"
+    ],
     "quem_participa": "A pessoa que fez o bebê rir, a família e o bebê.",
     "descricao": "Quem provoca a primeira gargalhada do bebê organiza a festa e distribui sal em nome dele — a criança aprende, desde cedo, a dar.",
     "motivo": "Celebrar a entrada do bebê na vida social e ensinar a generosidade.",
@@ -591,11 +810,18 @@
     "turismo_entorno": "Monument Valley, Window Rock.",
     "status": "exotico",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas/ano", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas/ano",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "restrito",
     "alerta_etico": "Cerimônia familiar; só por convite.",
-    "video": null,
-    "fontes": ["Fontes gerais sobre cultura Diné"]
+    "video": "https://www.youtube.com/watch?v=2ffN4uh7rsY",
+    "fontes": [
+      "Fontes gerais sobre cultura Diné"
+    ],
+    "video_fonte": "registro educativo"
   },
   {
     "id": "madagascar-famadihana",
@@ -605,7 +831,9 @@
     "regiao": "Planalto central",
     "lat": -18.88,
     "lon": 47.51,
-    "clusters": ["avos-e-netos"],
+    "clusters": [
+      "avos-e-netos"
+    ],
     "quem_participa": "Famílias inteiras, várias gerações, e os ancestrais.",
     "descricao": "A família retira os ancestrais do túmulo, os envolve em seda nova e dança com eles antes de recolocá-los — reforçando os laços entre vivos e mortos.",
     "motivo": "Honrar os ancestrais e renovar o vínculo familiar entre gerações.",
@@ -614,11 +842,18 @@
     "turismo_entorno": "Antananarivo, Andasibe (lêmures), Ambositra.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhares de famílias (a cada 5–7 anos por túmulo) — em declínio", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "milhares de famílias (a cada 5–7 anos por túmulo) — em declínio",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Prática em declínio e sensível; só com convite da família e intermediação local.",
     "video": "https://www.youtube.com/watch?v=wtEnzI7aIF0",
-    "fontes": ["CNN Inside Africa — Turning of the bones (2016)", "France 24 (2023)"]
+    "fontes": [
+      "CNN Inside Africa — Turning of the bones (2016)",
+      "France 24 (2023)"
+    ]
   },
   {
     "id": "japao-seijin-no-hi",
@@ -628,7 +863,9 @@
     "regiao": "Japão",
     "lat": 35.6,
     "lon": 139.62,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Todos os que completam a maioridade naquele ano.",
     "descricao": "Cidades inteiras se enchem de jovens de furisode e hakama celebrando a maioridade em cerimônias municipais.",
     "motivo": "Reconhecer coletivamente a entrada na vida adulta.",
@@ -637,11 +874,17 @@
     "turismo_entorno": "Tóquio, Yokohama, Kyoto.",
     "status": "muito_popular",
     "espiritual": false,
-    "participantes_ano": { "valor": "1,09 mi de novos adultos (jan/2025)", "confianca": "confirmado", "fonte": "Ministério de Assuntos Internos do Japão (jan/2025)" },
+    "participantes_ano": {
+      "valor": "1,09 mi de novos adultos (jan/2025)",
+      "confianca": "confirmado",
+      "fonte": "Ministério de Assuntos Internos do Japão (jan/2025)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
     "video": "https://www.youtube.com/watch?v=imkJji77Do0",
-    "fontes": ["Ministério de Assuntos Internos e Comunicações do Japão"]
+    "fontes": [
+      "Ministério de Assuntos Internos e Comunicações do Japão"
+    ]
   },
   {
     "id": "india-kumbh-mela",
@@ -651,7 +894,9 @@
     "regiao": "Prayagraj / Haridwar / Nashik / Ujjain",
     "lat": 25.43,
     "lon": 81.85,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Peregrinos, sadhus e a maior multidão humana do planeta.",
     "descricao": "Milhões se banham na confluência sagrada dos rios (Sangam). Sadhus naga lideram os banhos rituais no maior encontro humano do mundo.",
     "motivo": "Purificação e libertação (moksha) pelo banho sagrado.",
@@ -660,11 +905,19 @@
     "turismo_entorno": "Varanasi, Lucknow, Rishikesh. Overtourism: buscar dias fora dos banhos principais.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "660 mi de banhos em 45 dias (Maha Kumbh 2025; contagem oficial inclui repetições); 150 mil estrangeiros", "confianca": "confirmado", "fonte": "Governo de Uttar Pradesh (2025)" },
+    "participantes_ano": {
+      "valor": "660 mi de banhos em 45 dias (Maha Kumbh 2025; contagem oficial inclui repetições); 150 mil estrangeiros",
+      "confianca": "confirmado",
+      "fonte": "Governo de Uttar Pradesh (2025)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Overtourism e risco de multidão; preferir dias fora dos banhos principais e seguir orientação das autoridades.",
-    "video": null,
-    "fontes": ["Governo de Uttar Pradesh", "Harvard — Kumbh Mela (Rahul Mehrotra, 2015)"]
+    "video": "https://www.youtube.com/watch?v=BEAmCAlSKWc",
+    "fontes": [
+      "Governo de Uttar Pradesh",
+      "Harvard — Kumbh Mela (Rahul Mehrotra, 2015)"
+    ],
+    "video_fonte": "WION Wideangle"
   },
   {
     "id": "caminho-de-santiago",
@@ -674,7 +927,9 @@
     "regiao": "Espanha / Portugal / França",
     "lat": 42.88,
     "lon": -8.54,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Peregrinos de todo o mundo, sozinhos ou em grupo.",
     "descricao": "Depois de semanas a pé, o peregrino chega à Praça do Obradoiro, diante da catedral de Santiago de Compostela.",
     "motivo": "Peregrinação religiosa ou pessoal, marcada pela chegada a pé.",
@@ -683,11 +938,18 @@
     "turismo_entorno": "Galícia, Porto, León, Burgos. Overtourism no verão: considerar primavera/outono.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "530.987 Compostelas emitidas em 2025", "confianca": "confirmado", "fonte": "Oficina del Peregrino (2025)" },
+    "participantes_ano": {
+      "valor": "530.987 Compostelas emitidas em 2025",
+      "confianca": "confirmado",
+      "fonte": "Oficina del Peregrino (2025)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Overtourism em trechos e meses de pico; distribuir a pressão em rotas e estações menos concorridas.",
-    "video": null,
-    "fontes": ["Oficina de Acogida al Peregrino de Santiago"]
+    "video": "https://www.youtube.com/watch?v=Y7PXzI68Xqw",
+    "fontes": [
+      "Oficina de Acogida al Peregrino de Santiago"
+    ],
+    "video_fonte": "documentário"
   },
   {
     "id": "hajj",
@@ -697,7 +959,9 @@
     "regiao": "Meca",
     "lat": 21.42,
     "lon": 39.83,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Muçulmanos do mundo inteiro (obrigatório uma vez na vida, quem puder).",
     "descricao": "Milhões de peregrinos giram ao redor da Kaaba (tawaf) e se reúnem na planície de Arafat, no maior ato de fé simultâneo do Islã.",
     "motivo": "Cumprir o quinto pilar do Islã.",
@@ -706,11 +970,18 @@
     "turismo_entorno": "Medina, Jeddah, AlUla. Meca é restrita a muçulmanos.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~1,8 mi (2024)", "confianca": "confirmado", "fonte": "GASTAT — Arábia Saudita (2024)" },
+    "participantes_ano": {
+      "valor": "~1,8 mi (2024)",
+      "confianca": "confirmado",
+      "fonte": "GASTAT — Arábia Saudita (2024)"
+    },
     "acesso_visitante": "fechado",
     "alerta_etico": "Meca é acessível apenas a muçulmanos. Registrar como conhecimento; não indexar 'passeios'.",
-    "video": null,
-    "fontes": ["GASTAT (General Authority for Statistics), Arábia Saudita"]
+    "video": "https://www.youtube.com/watch?v=blgbYX30H24",
+    "fontes": [
+      "GASTAT (General Authority for Statistics), Arábia Saudita"
+    ],
+    "video_fonte": "BBC"
   },
   {
     "id": "mexico-dia-de-muertos",
@@ -720,7 +991,9 @@
     "regiao": "Oaxaca, Michoacán, CDMX",
     "lat": 17.06,
     "lon": -96.72,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Famílias e comunidades, vivos e mortos.",
     "descricao": "Nas noites de 1 e 2 de novembro, famílias fazem vigília nos cemitérios e montam altares com flor de cempasúchil para receber os mortos.",
     "motivo": "Reencontrar e honrar os que já partiram.",
@@ -729,11 +1002,18 @@
     "turismo_entorno": "Oaxaca, Michoacán, CDMX (desfile).",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (Patrimônio UNESCO 2008)", "confianca": "parcial", "fonte": "UNESCO ICH (2008)" },
+    "participantes_ano": {
+      "valor": "milhões (Patrimônio UNESCO 2008)",
+      "confianca": "parcial",
+      "fonte": "UNESCO ICH (2008)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Os cemitérios são espaço de luto; observar com discrição, sem transformar a vigília em cenário.",
-    "video": null,
-    "fontes": ["UNESCO ICH — Día de Muertos (2008)"]
+    "video": "https://www.youtube.com/watch?v=BnoUvTcTHIU",
+    "fontes": [
+      "UNESCO ICH — Día de Muertos (2008)"
+    ],
+    "video_fonte": "AFP"
   },
   {
     "id": "thaipusam",
@@ -743,7 +1023,9 @@
     "regiao": "Batu Caves; Singapura; Tamil Nadu",
     "lat": 3.24,
     "lon": 101.68,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Devotos de Murugan e multidões de peregrinos.",
     "descricao": "Devotos carregam o kavadi — estruturas presas ao corpo por ganchos e lanças — subindo os 272 degraus de Batu Caves em penitência.",
     "motivo": "Cumprir votos e agradecer ao deus Murugan.",
@@ -752,11 +1034,18 @@
     "turismo_entorno": "Kuala Lumpur, Penang.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "~1 mi em Batu Caves (estimativa dos organizadores)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "~1 mi em Batu Caves (estimativa dos organizadores)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Ato de devoção intenso; observar com respeito, sem obstruir os penitentes.",
-    "video": null,
-    "fontes": ["Relatos de imprensa e dos organizadores em Batu Caves"]
+    "video": "https://www.youtube.com/watch?v=aBbb7gP1OR4",
+    "fontes": [
+      "Relatos de imprensa e dos organizadores em Batu Caves"
+    ],
+    "video_fonte": "registro em Batu Caves"
   },
   {
     "id": "lakota-vision-quest-sun-dance",
@@ -766,7 +1055,9 @@
     "regiao": "Great Plains (Black Hills)",
     "lat": 43.8,
     "lon": -102.55,
-    "clusters": ["coletivos-e-peregrinacoes"],
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
     "quem_participa": "Membros da nação; conduzido por líderes espirituais.",
     "descricao": "Jejum e isolamento por quatro dias em busca de visão; no Sun Dance, dançarinos se perfuram em oferenda. Fechado a visitantes na maioria das nações.",
     "motivo": "Buscar visão, sacrifício e renovação para o povo.",
@@ -775,11 +1066,17 @@
     "turismo_entorno": "Black Hills, Badlands, Pine Ridge. O rito é fechado a visitantes.",
     "status": "exotico",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas", "confianca": "estimativa", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas",
+      "confianca": "estimativa",
+      "fonte": null
+    },
     "acesso_visitante": "fechado",
     "alerta_etico": "Rito sagrado e fechado. Não indexar vídeos nem operadores. Registrar apenas como conhecimento, respeitando o FPIC.",
     "video": null,
-    "fontes": ["Fontes gerais sobre as nações das Planícies (registro respeitoso)"]
+    "fontes": [
+      "Fontes gerais sobre as nações das Planícies (registro respeitoso)"
+    ]
   },
   {
     "id": "mongolia-naadam",
@@ -789,7 +1086,9 @@
     "regiao": "Mongólia",
     "lat": 47.92,
     "lon": 106.92,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Cavaleiros (crianças de 6–12 anos), lutadores, arqueiros e a nação.",
     "descricao": "Os 'três jogos viris': corrida de cavalos com jóqueis-crianças em longas distâncias, luta e tiro com arco. Feriado nacional.",
     "motivo": "Celebrar as artes nômades e a identidade nacional.",
@@ -798,11 +1097,18 @@
     "turismo_entorno": "Ulaanbaatar, Gobi, Khövsgöl.",
     "status": "muito_popular",
     "espiritual": false,
-    "participantes_ano": { "valor": "feriado nacional; ~30–40 mil no estádio principal (Patrimônio UNESCO 2010)", "confianca": "parcial", "fonte": "UNESCO ICH — Naadam (2010)" },
+    "participantes_ano": {
+      "valor": "feriado nacional; ~30–40 mil no estádio principal (Patrimônio UNESCO 2010)",
+      "confianca": "parcial",
+      "fonte": "UNESCO ICH — Naadam (2010)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Bem-estar animal e uso de jóqueis-crianças na corrida de cavalos são temas de debate; registrar a controvérsia com fonte, sem tomar partido.",
-    "video": null,
-    "fontes": ["UNESCO ICH — Naadam (2010)"]
+    "video": "https://www.youtube.com/watch?v=JAxs5Zqb9cM",
+    "fontes": [
+      "UNESCO ICH — Naadam (2010)"
+    ],
+    "video_fonte": "documentário"
   },
   {
     "id": "mongolia-festival-aguia-dourada",
@@ -812,7 +1118,9 @@
     "regiao": "Bayan-Ölgii",
     "lat": 48.97,
     "lon": 89.96,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Jovens caçadores (meninos e meninas) com suas águias adestradas.",
     "descricao": "Caçadores cazaques competem exibindo a ligação com suas águias douradas, que descem do céu ao chamado.",
     "motivo": "Preservar e celebrar a caça com águias no Altai.",
@@ -821,11 +1129,18 @@
     "turismo_entorno": "Altai, Ölgii. Melhor mês: out.",
     "status": "conhecido",
     "espiritual": false,
-    "participantes_ano": { "valor": "~100 caçadores + ~3 mil visitantes (outubro)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "~100 caçadores + ~3 mil visitantes (outubro)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Turismo cresce rápido; preferir operadores que remunerem as famílias caçadoras.",
-    "video": null,
-    "fontes": ["Reportagens BBC/Guardian sobre o Golden Eagle Festival"]
+    "video": "https://www.youtube.com/watch?v=xnxO0nL7t0Q",
+    "fontes": [
+      "Reportagens BBC/Guardian sobre o Golden Eagle Festival"
+    ],
+    "video_fonte": "ITV News"
   },
   {
     "id": "jallikattu",
@@ -835,7 +1150,9 @@
     "regiao": "Tamil Nadu",
     "lat": 10.0,
     "lon": 78.08,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Homens que enfrentam o touro e a multidão do Pongal.",
     "descricao": "Durante o Pongal, homens tentam agarrar a corcova de touros soltos e resistir por alguns metros. É celebrado e, ao mesmo tempo, contestado.",
     "motivo": "Prova de coragem ligada à colheita (Pongal).",
@@ -844,11 +1161,18 @@
     "turismo_entorno": "Madurai, Alanganallur, Chettinad. Melhor mês: jan.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas de eventos, milhares de participantes (jan)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas de eventos, milhares de participantes (jan)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Controvérsia de bem-estar animal e segurança já levou a proibições e regulação judicial; registrar a controvérsia com fonte, sem tomar partido.",
-    "video": null,
-    "fontes": ["Cobertura jurídica e de imprensa sobre a regulação do Jallikattu"]
+    "video": "https://www.youtube.com/watch?v=w8gcY06v5SY",
+    "fontes": [
+      "Cobertura jurídica e de imprensa sobre a regulação do Jallikattu"
+    ],
+    "video_fonte": "Inside South Asia"
   },
   {
     "id": "amazonia-kambo-ayahuasca",
@@ -858,7 +1182,9 @@
     "regiao": "Acre (BR) e Ucayali (Peru)",
     "lat": -9.97,
     "lon": -67.81,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Lideranças e cantores (ícaros/saiti) e participantes na vigília.",
     "descricao": "Vigília noturna com cantos e purga, mediada por planta (ayahuasca) ou pela secreção da rã kambô. Tradição de cura e visão.",
     "motivo": "Cura, limpeza e visão dentro da cosmologia dos povos da floresta.",
@@ -867,11 +1193,17 @@
     "turismo_entorno": "Rio Branco, Cruzeiro do Sul, Iquitos, Pucallpa.",
     "status": "conhecido",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas de milhares de turistas/ano na Amazônia peruana", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas de milhares de turistas/ano na Amazônia peruana",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Alerta de saúde (contraindicações sérias) e de neo-extrativismo espiritual/comercialização. Não indexar retiro comercial; preferir documentário e contexto indígena. Buscar guias reconhecidos pela própria comunidade.",
     "video": null,
-    "fontes": ["ICEERS — relatórios de saúde e política sobre ayahuasca"]
+    "fontes": [
+      "ICEERS — relatórios de saúde e política sobre ayahuasca"
+    ]
   },
   {
     "id": "pongal-chhath-puja",
@@ -881,7 +1213,9 @@
     "regiao": "Tamil Nadu / Bihar",
     "lat": 13.08,
     "lon": 80.27,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Famílias e comunidades voltadas ao sol e à colheita.",
     "descricao": "Festas de colheita e do sol: no Pongal ferve-se o arroz novo; no Chhath, oferendas na água ao pôr e ao nascer do sol.",
     "motivo": "Agradecer ao sol e à terra pela colheita.",
@@ -890,11 +1224,18 @@
     "turismo_entorno": "Chennai, Patna, Varanasi.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "dezenas de milhões", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "dezenas de milhões",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Fontes gerais sobre Pongal e Chhath Puja"]
+    "video": "https://www.youtube.com/watch?v=wXBfbqG4LJs",
+    "fontes": [
+      "Fontes gerais sobre Pongal e Chhath Puja"
+    ],
+    "video_fonte": "Sun Worship of Bihar"
   },
   {
     "id": "tailandia-songkran",
@@ -904,7 +1245,9 @@
     "regiao": "Tailândia",
     "lat": 13.76,
     "lon": 100.5,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Toda a população; famílias e mais velhos.",
     "descricao": "O Ano-Novo tailandês da água: guerras de água nas ruas e o gesto íntimo de lavar as mãos dos avós, pedindo bênção.",
     "motivo": "Renovação, limpeza e respeito aos mais velhos no ano-novo.",
@@ -913,11 +1256,18 @@
     "turismo_entorno": "Chiang Mai, Bangkok.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "milhões (Patrimônio UNESCO 2023)", "confianca": "parcial", "fonte": "UNESCO ICH — Songkran (2023)" },
+    "participantes_ano": {
+      "valor": "milhões (Patrimônio UNESCO 2023)",
+      "confianca": "parcial",
+      "fonte": "UNESCO ICH — Songkran (2023)"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["UNESCO ICH — Songkran (2023)"]
+    "video": "https://www.youtube.com/watch?v=1KxibQJ6gfw",
+    "fontes": [
+      "UNESCO ICH — Songkran (2023)"
+    ],
+    "video_fonte": "notícia UNESCO"
   },
   {
     "id": "tailandia-yi-peng-loy-krathong",
@@ -927,7 +1277,9 @@
     "regiao": "Chiang Mai",
     "lat": 18.8,
     "lon": 99.0,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "Comunidades e visitantes que soltam lanternas e krathongs.",
     "descricao": "Milhares de lanternas de papel sobem ao céu ao mesmo tempo (Yi Peng), enquanto krathongs flutuam nos rios (Loy Krathong), levando o azar embora.",
     "motivo": "Deixar ir o que pesa e pedir sorte com luz sobre a água e o céu.",
@@ -936,11 +1288,18 @@
     "turismo_entorno": "Chiang Mai, Sukhothai. Melhor mês: nov.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "centenas de milhares (nov)", "confianca": "parcial", "fonte": null },
+    "participantes_ano": {
+      "valor": "centenas de milhares (nov)",
+      "confianca": "parcial",
+      "fonte": null
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": "Lanternas geram resíduos e risco de incêndio/aviação; preferir eventos regulados e materiais biodegradáveis.",
-    "video": null,
-    "fontes": ["Fontes gerais sobre Yi Peng e Loy Krathong"]
+    "video": "https://www.youtube.com/watch?v=ngTJVbKKbsA",
+    "fontes": [
+      "Fontes gerais sobre Yi Peng e Loy Krathong"
+    ],
+    "video_fonte": "registro em Chiang Mai"
   },
   {
     "id": "parintins-boi-bumba",
@@ -950,7 +1309,9 @@
     "regiao": "Parintins, Amazonas",
     "lat": -2.62,
     "lon": -56.73,
-    "clusters": ["natureza-animais-e-plantas"],
+    "clusters": [
+      "natureza-animais-e-plantas"
+    ],
     "quem_participa": "A cidade dividida entre Garantido (vermelho) e Caprichoso (azul).",
     "descricao": "Por três noites, a arena (bumbódromo) se divide em vermelho e azul e conta, com toadas e alegorias, a lenda do boi que morre e ressuscita.",
     "motivo": "Reencenar a lenda do boi e celebrar a identidade amazônica.",
@@ -959,10 +1320,17 @@
     "turismo_entorno": "Manaus, Rio Amazonas.",
     "status": "muito_popular",
     "espiritual": true,
-    "participantes_ano": { "valor": "~120 mil visitantes (última semana de jun)", "confianca": "confirmado", "fonte": "Governo do Amazonas" },
+    "participantes_ano": {
+      "valor": "~120 mil visitantes (última semana de jun)",
+      "confianca": "confirmado",
+      "fonte": "Governo do Amazonas"
+    },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
-    "fontes": ["Governo do Amazonas — Festival de Parintins"]
+    "video": "https://www.youtube.com/watch?v=K8CLy301_tc",
+    "fontes": [
+      "Governo do Amazonas — Festival de Parintins"
+    ],
+    "video_fonte": "AFP"
   }
 ]
