@@ -37,7 +37,7 @@
 
   /* ---- metadados de clusters (ordem = navegação) ---- */
   var CLUSTERS = [
-    { slug: "pais-e-filhos", nome: "Pais e filhos", cor: "#3f6b4a",
+    { slug: "pais-e-filhos", nome: "Pais e filhos", cor: "#b5502f",
       frase: "Pai, avô e filho; iniciação masculina.",
       curiosidades: [
         "A tucandeira é considerada 'mulher' pelos Sateré-Mawé — a formiga que ensina o homem a suportar.",
@@ -50,7 +50,7 @@
       memoravel: "O que se prova aqui é feito com o corpo e diante dos homens da linhagem. O salto sobre o gado, a luva de formigas, a reclusão na mata ou a leitura pública da Torá são todos irreversíveis no tempo: acontecem uma vez, num corpo que não pode ensaiar, sob o olhar de quem já passou pela prova. É a dor, o risco e a presença da comunidade que tornam a passagem impossível de reproduzir — não há atalho, não há repetição idêntica, e o novo estatuto (homem, adulto, responsável) só existe porque foi testemunhado.",
       quote: { t: "“A vida individual… é uma sucessão de etapas cujos finais e recomeços são semelhantes: nascimento, puberdade social, casamento, morte.”", a: "Arnold van Gennep, Os Ritos de Passagem (1909)" } },
 
-    { slug: "maes-e-filhas", nome: "Mães e filhas", cor: "#c8683c",
+    { slug: "maes-e-filhas", nome: "Mães e filhas", cor: "#c47a3d",
       frase: "Mãe, madrinha e tias; menarca e feminilidade.",
       curiosidades: [
         "No Kinaaldá navajo, o bolo de milho de quase 1 metro é assado a noite inteira na terra — e comê-lo é comungar com a menina.",
@@ -63,7 +63,7 @@
       memoravel: "Estas passagens giram em torno de um evento do corpo — a primeira menstruação — que só acontece uma vez e não escolhe data. Por isso o rito é convocado quando o corpo decide, não quando o calendário permite. Mãe, madrinha e tias transmitem, com as mãos, um saber que não cabe em texto: como correr para o sol, como sentar na pedra, como vestir o sári. O irreproduzível está nesse encontro entre um instante biológico único e uma linhagem de mulheres que se coloca ao redor para dizer, em coro: agora você é uma de nós.",
       quote: { t: "“Os atributos da liminaridade… são necessariamente ambíguos: a pessoa passa por um domínio que tem poucos dos atributos do estado passado ou futuro.”", a: "Victor Turner, O Processo Ritual (1969)" } },
 
-    { slug: "casais", nome: "Casais", cor: "#b8891e",
+    { slug: "casais", nome: "Casais", cor: "#9a6b3f",
       frase: "Casamento e união de duas famílias.",
       curiosidades: [
         "No Saptapadi hindu, cada um dos sete passos ao redor do fogo é um voto — e o casamento só é válido depois do sétimo.",
@@ -76,7 +76,7 @@
       memoravel: "O casamento é o rito de passagem mais universal e, ainda assim, o mais local: muda o sobrenome, a casa, a família e às vezes o próprio nome pelo qual se é chamado. O que não se reproduz é o instante em que duas linhagens, até então separadas, passam a se tratar como uma só — o fogo, a coroa, o nó, o chá servido de joelhos. São gestos pequenos que reorganizam quem pertence a quem. A festa pode durar três dias, mas o limiar é atravessado num segundo: antes, dois estranhos; depois, uma família.",
       quote: { t: "“A passagem de uma situação social a outra é assimilada a uma passagem territorial.”", a: "Arnold van Gennep, Os Ritos de Passagem (1909)" } },
 
-    { slug: "avos-e-netos", nome: "Avós e netos", cor: "#3d7f8c",
+    { slug: "avos-e-netos", nome: "Avós e netos", cor: "#7c6a4a",
       frase: "Nascimento, nomeação e primeira comida.",
       curiosidades: [
         "No Annaprashan bengali, o bebê escolhe entre livro, dinheiro, caneta e terra — e a família lê ali um destino.",
@@ -89,7 +89,7 @@
       memoravel: "Aqui quem conduz a passagem raramente é o protagonista: o bebê não escolhe nascer, ser nomeado ou provar a primeira comida — são os avós que abrem o caminho. O irreproduzível é o gesto fundador: o primeiro nome dito em voz alta, a primeira colher de arroz, a primeira gargalhada. Cada um só acontece uma vez, e é sempre uma geração mais velha que o oferece à mais nova. No Famadihana, o mesmo eixo se inverte com ternura: são os vivos que cuidam dos mortos, fechando o círculo entre quem chega e quem já partiu.",
       quote: { t: "“É a própria sociedade que… faz e refaz os indivíduos, num ritmo de agregações e separações.”", a: "Comentário sobre van Gennep e Turner" } },
 
-    { slug: "coletivos-e-peregrinacoes", nome: "Coletivos e peregrinações", cor: "#7d5a8c",
+    { slug: "coletivos-e-peregrinacoes", nome: "Coletivos e peregrinações", cor: "#a85a48",
       frase: "Multidão, cidade e fé — festivais e caminhos.",
       curiosidades: [
         "O Kumbh Mela é a maior reunião humana do planeta: a contagem oficial de 2025 somou centenas de milhões de banhos.",
@@ -102,7 +102,7 @@
       memoravel: "O que aqui é irreproduzível não é o corpo de um indivíduo, mas a multidão: a communitas de Turner, aquele estado em que hierarquias se dissolvem e milhões de estranhos viram, por alguns dias, um só corpo. Ninguém sozinho faz um Kumbh Mela ou um Hajj; a passagem é coletiva e passa pelo tamanho. Caminhar semanas até Santiago, banhar-se no Sangam, velar no cemitério em Oaxaca — em todos, o peregrino sai de casa uma pessoa e volta outra, tendo atravessado, junto com incontáveis desconhecidos, o mesmo limiar.",
       quote: { t: "“A communitas irrompe onde a estrutura social não está — na liminaridade, na marginalidade, na inferioridade.”", a: "Victor Turner, O Processo Ritual (1969)" } },
 
-    { slug: "natureza-animais-e-plantas", nome: "Natureza, animais e plantas", cor: "#5c8a3a",
+    { slug: "natureza-animais-e-plantas", nome: "Natureza, animais e plantas", cor: "#6f7a45",
       frase: "Rito mediado por bicho, planta, rio ou colheita.",
       curiosidades: [
         "No Naghol de Vanuatu, o salto está amarrado à colheita do inhame: bom salto, boa colheita.",
@@ -257,17 +257,15 @@
     grid.innerHTML = CLUSTERS.map(function (c) {
       var membros = ritos.filter(function (r) { return r.clusters.indexOf(c.slug) !== -1; });
       var ex = membros.slice(0, 3).map(function (r) { return r.nome.split(" (")[0]; }).join(" · ");
-      return '<a class="ccard reveal" data-tint="' + (CTINT[c.slug] || "sage") + '" href="' + hrefCluster(c.slug) + '">' +
-        '<div class="pframe pframe--duo"><img src="' + CFOTO[c.slug] + '" alt="" loading="lazy">' +
-        '<div class="ccard__label"><span class="ccard__k">Rituais pelo mundo</span><h3>' + esc(c.nome) + '</h3></div>' +
-        '</div>' +
+      return '<a class="ccard reveal" href="' + hrefCluster(c.slug) + '">' +
+        '<div class="pframe"><img src="' + CFOTO[c.slug] + '" alt="" loading="lazy"></div>' +
         '<div class="ccard__body">' +
+        '<span class="ccard__k">' + membros.length + ' rituais</span>' +
+        '<h3>' + esc(c.nome) + '</h3>' +
         '<p>' + esc(c.frase) + '</p>' +
         '<span class="ccard__ex">' + esc(ex) + '</span>' +
-        '<div class="ccard__foot">' +
-        '<span class="pill" style="background:' + hexa(c.cor, .12) + ';border-color:' + hexa(c.cor, .32) + ';color:' + c.cor + '">' + membros.length + ' rituais</span>' +
-        '<span class="ccard__more">Ver <span aria-hidden="true">→</span></span>' +
-        '</div></div></a>';
+        '<div class="ccard__foot"><span class="ccard__more">Ver o cluster <span aria-hidden="true">→</span></span></div>' +
+        '</div></a>';
     }).join("");
   }
 
@@ -293,7 +291,7 @@
       var cl = clusterBySlug(r.clusters[0]);
       var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
       return '<a class="car-card" href="' + hrefCluster(r.clusters[0], r.id) + '">' +
-        '<div class="pframe pframe--duo"><img src="' + CFOTO[r.clusters[0]] + '" alt="" loading="lazy"></div>' +
+        '<div class="pframe"><img src="' + CFOTO[r.clusters[0]] + '" alt="" loading="lazy"></div>' +
         '<div class="car-card__body">' +
         '<h4>' + esc(r.nome) + '</h4>' +
         '<div class="meta">' + esc(r.pais) + " · " + esc(cl ? cl.nome : "") + '</div>' +
@@ -388,8 +386,8 @@
     /* minimapa */
     loadMap(document.getElementById("cluster-map"), membros, slug);
 
-    /* tabela */
-    renderTable(membros);
+    /* lista interativa de rituais */
+    renderRitoList(membros);
 
     /* curiosidades */
     var cur = document.getElementById("curiosidades");
@@ -422,70 +420,105 @@
       '<a href="' + hrefCluster(prev.slug) + '">← ' + esc(prev.nome) + '</a>' +
       '<a href="' + hrefCluster(next.slug) + '">' + esc(next.nome) + ' →</a>';
 
-    /* âncora #id: rolar e destacar linha */
+    /* âncora #id: rolar, abrir o card e destacar */
     if (location.hash) {
-      var row = document.getElementById(location.hash.slice(1));
-      if (row) { row.scrollIntoView({ block: "center" }); row.classList.add("flash"); }
+      var el = document.getElementById(location.hash.slice(1));
+      if (el) {
+        el.scrollIntoView({ block: "center" });
+        el.classList.add("flash");
+        var head = el.querySelector && el.querySelector(".rito__head");
+        if (head && !el.classList.contains("open")) head.click();
+      }
     }
   }
 
-  var sortState = { key: null, dir: 1 };
-  var currentRows = [];
+  /* lista interativa de rituais (cards expansíveis) — substitui a tabela */
+  function renderRitoList(membros) {
+    var host = document.getElementById("ritos-list");
+    if (!host) return;
+    var barStatus = document.getElementById("rt-status");
+    var barAcesso = document.getElementById("rt-acesso");
+    var countEl = document.getElementById("rt-count");
+    var fStatus = "", fAcesso = "";
 
-  function renderTable(membros) {
-    currentRows = membros.slice();
-    var tbody = document.getElementById("ritos-body");
-    var thead = document.getElementById("ritos-head");
-    if (!tbody) return;
+    function chip(val, label) {
+      var b = document.createElement("button");
+      b.className = "chip"; b.type = "button"; b.textContent = label;
+      b.setAttribute("aria-pressed", "false"); b.dataset.val = val;
+      return b;
+    }
+    if (barStatus && !barStatus.childElementCount) {
+      barStatus.appendChild(chip("", "Todos os status"));
+      ["muito_popular", "conhecido", "exotico"].forEach(function (s) { if (membros.some(function (r) { return r.status === s; })) barStatus.appendChild(chip(s, STATUS_LABEL[s])); });
+    }
+    if (barAcesso && !barAcesso.childElementCount) {
+      barAcesso.appendChild(chip("", "Todo acesso"));
+      ["aberto", "aberto_com_guia", "restrito", "fechado"].forEach(function (a) { if (membros.some(function (r) { return r.acesso_visitante === a; })) barAcesso.appendChild(chip(a, ACESSO_LABEL[a])); });
+    }
 
-    if (thead) {
-      thead.querySelectorAll("button[data-key]").forEach(function (b) {
-        b.addEventListener("click", function () {
-          var k = b.getAttribute("data-key");
-          sortState.dir = (sortState.key === k) ? -sortState.dir : 1;
-          sortState.key = k;
-          thead.querySelectorAll("th").forEach(function (th) { th.removeAttribute("aria-sort"); });
-          b.closest("th").setAttribute("aria-sort", sortState.dir === 1 ? "ascending" : "descending");
-          draw();
+    function card(r) {
+      var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
+      var vid = r.video ? '<a class="vlink" href="' + esc(r.video) + '" target="_blank" rel="noopener">' + icon("play") + ' ver vídeo<span class="sr-only"> (abre no YouTube)</span></a>' : '';
+      return '<article class="rito reveal" id="' + esc(r.id) + '">' +
+        '<button class="rito__head" aria-expanded="false"><span>' +
+        '<span class="rito__k">' + esc(r.pais) + (r.regiao ? ' · ' + esc(r.regiao) : '') + '</span>' +
+        '<h3>' + esc(r.nome) + '</h3>' +
+        '<span class="rito__povo">' + esc(r.povo_ou_tradicao) + '</span></span>' +
+        '<span class="rito__toggle" aria-hidden="true">+</span></button>' +
+        '<div class="rito__meta">' +
+        '<span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span>' +
+        '<span class="pill">' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</span>' +
+        (r.espiritual ? '<span class="pill pill--velvet">' + icon("spirit") + ' espiritual</span>' : '') +
+        '<span class="seal ' + conf.cls + '">' + conf.ic + ' ' + conf.txt + '</span>' +
+        '<span class="rito__part">' + esc(r.participantes_ano.valor) + '</span>' +
+        '</div>' +
+        '<p class="rito__mem">' + esc(r.memoravel) + '</p>' +
+        (vid ? '<div class="rito__actions">' + vid + '</div>' : '') +
+        (r.alerta_etico ? '<div class="rito__alerta">' + icon("alert") + ' ' + esc(r.alerta_etico) + '</div>' : '') +
+        '<div class="rito__more"><div class="rito__more-inner">' +
+        '<div><h5>Quem participa</h5><p>' + esc(r.quem_participa) + '</p></div>' +
+        '<div><h5>Época</h5><p>' + esc(r.epoca) + '</p></div>' +
+        '<div style="grid-column:1/-1"><h5>Descrição</h5><p>' + esc(r.descricao) + '</p></div>' +
+        '<div style="grid-column:1/-1"><h5>Por que acontece · sentimento</h5><p>' + esc(r.motivo) + ' — trata <strong>' + esc(r.sentimento) + '</strong>; quem passa <strong>' + esc(r.muda).toLowerCase() + '</strong>.</p></div>' +
+        '</div></div>' +
+        '</article>';
+    }
+
+    function wire() {
+      host.querySelectorAll(".rito").forEach(function (el) {
+        var head = el.querySelector(".rito__head");
+        var more = el.querySelector(".rito__more");
+        head.addEventListener("click", function () {
+          var open = el.classList.toggle("open");
+          head.setAttribute("aria-expanded", open ? "true" : "false");
+          more.style.maxHeight = open ? more.scrollHeight + "px" : "0";
         });
       });
     }
 
-    function keyval(r, k) {
-      switch (k) {
-        case "nome": return r.nome.toLowerCase();
-        case "local": return (r.pais + r.regiao).toLowerCase();
-        case "epoca": return r.epoca.toLowerCase();
-        case "status": return { muito_popular: 0, conhecido: 1, exotico: 2 }[r.status];
-        case "espiritual": return r.espiritual ? 0 : 1;
-        case "acesso": return { aberto: 0, aberto_com_guia: 1, restrito: 2, fechado: 3 }[r.acesso_visitante];
-        default: return "";
-      }
-    }
-
-    function draw() {
-      var rows = currentRows.slice();
-      if (sortState.key) rows.sort(function (a, b) {
-        var va = keyval(a, sortState.key), vb = keyval(b, sortState.key);
-        return (va < vb ? -1 : va > vb ? 1 : 0) * sortState.dir;
+    function paint() {
+      var list = membros.filter(function (r) {
+        if (fStatus && r.status !== fStatus) return false;
+        if (fAcesso && r.acesso_visitante !== fAcesso) return false;
+        return true;
       });
-      tbody.innerHTML = rows.map(function (r) {
-        var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
-        var vid = r.video ? '<a class="vlink" href="' + esc(r.video) + '" target="_blank" rel="noopener">'+icon("play")+' vídeo<span class="sr-only"> (abre no YouTube)</span></a>' : '<span class="no-video">—</span>';
-        return '<tr id="' + esc(r.id) + '">' +
-          '<td><span class="rito-nome">' + esc(r.nome) + '</span><br><span class="rito-povo">' + esc(r.povo_ou_tradicao) + '</span>' +
-          (r.alerta_etico ? '<span class="alerta-inline">⚠ ' + esc(r.alerta_etico) + '</span>' : '') + '</td>' +
-          '<td>' + esc(r.pais) + (r.regiao ? '<br><span class="rito-povo">' + esc(r.regiao) + '</span>' : '') + '</td>' +
-          '<td>' + esc(r.epoca) + '</td>' +
-          '<td><span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span></td>' +
-          '<td class="center">' + (r.espiritual ? '<span class="pill pill--moss">'+icon("spirit")+'sim</span>' : '<span class="no-video">não</span>') + '</td>' +
-          '<td><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span><br><span class="rito-povo">' + esc(r.participantes_ano.valor) + '</span></td>' +
-          '<td>' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</td>' +
-          '<td class="center">' + vid + '</td>' +
-          '</tr>';
-      }).join("");
+      if (countEl) countEl.textContent = list.length + (list.length === 1 ? " ritual" : " rituais");
+      host.innerHTML = list.length ? list.map(card).join("") : '<p class="results__empty">Nenhum ritual com esses filtros.</p>';
+      wire();
+      revealStaggerScoped(host);
     }
-    draw();
+    function bindBar(bar, setter) {
+      if (!bar) return;
+      bar.addEventListener("click", function (e) {
+        var b = e.target.closest(".chip"); if (!b) return;
+        bar.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+        b.setAttribute("aria-pressed", "true"); setter(b.dataset.val); paint();
+      });
+      bar.firstChild.setAttribute("aria-pressed", "true");
+    }
+    bindBar(barStatus, function (v) { fStatus = v; });
+    bindBar(barAcesso, function (v) { fAcesso = v; });
+    paint();
   }
 
   /* ==========================================================
