@@ -9,7 +9,8 @@
     "lon": 36.5,
     "clusters": [
       "pais-e-filhos",
-      "natureza-animais-e-plantas"
+      "natureza-animais-e-plantas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Pai, irmãos e homens da linhagem + o jovem; mulheres da família pedem para ser chicoteadas em prova de lealdade.",
     "descricao": "O jovem corre nu quatro vezes sobre o dorso de 10 a 15 bois enfileirados. Só depois de saltar sem cair está apto a casar.",
@@ -31,7 +32,8 @@
       "Registros etnográficos sobre os Hamar do Vale do Omo"
     ],
     "sentimento": "Coragem & medo",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "satere-mawe-tucandeira",
@@ -42,7 +44,8 @@
     "lat": -2.63,
     "lon": -56.74,
     "clusters": [
-      "pais-e-filhos"
+      "pais-e-filhos",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Homens da comunidade e o iniciado, conduzidos pelos mais velhos.",
     "descricao": "O jovem veste luvas trançadas cheias de formigas tucandeira, cuja ferroada é a mais dolorosa do mundo, e dança de 10 a 20 minutos sem gritar.",
@@ -64,7 +67,8 @@
       "SciELO — ritual e saúde na comunidade Sateré-Mawé Y'Apyrehyt, Manaus"
     ],
     "sentimento": "Coragem & medo",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "bar-mitzvah",
@@ -142,7 +146,8 @@
     "lat": -31.98,
     "lon": 29.15,
     "clusters": [
-      "pais-e-filhos"
+      "pais-e-filhos",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Homens iniciados da comunidade e os jovens; o rito em si é fechado a estranhos.",
     "descricao": "Reclusão de semanas na mata, circuncisão e provações. O ápice é o umgidi — o retorno: mato queimado, roupas novas e o 'novo homem' recebido pela aldeia.",
@@ -165,7 +170,8 @@
       "Africa Geographic — reportagem sobre a circuncisão xhosa"
     ],
     "sentimento": "Coragem & medo",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "maasai-eunoto",
@@ -176,7 +182,8 @@
     "lat": -1.4,
     "lon": 35.2,
     "clusters": [
-      "pais-e-filhos"
+      "pais-e-filhos",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Guerreiros (morans) de uma geração, mães e anciãos.",
     "descricao": "Milhares de guerreiros se reúnem para deixar a condição de moran e virar homens adultos. Dançam o adumu (salto) e as mães raspam o cabelo dos filhos.",
@@ -198,7 +205,8 @@
       "UNESCO ICH — Enkipaata, Eunoto e Olng'esherr (2018)"
     ],
     "sentimento": "Pertencimento & comunidade",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "sepik-escarificacao-crocodilo",
@@ -210,7 +218,8 @@
     "lon": 143.3,
     "clusters": [
       "pais-e-filhos",
-      "natureza-animais-e-plantas"
+      "natureza-animais-e-plantas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Homens da casa dos espíritos e os iniciados.",
     "descricao": "Centenas de cortes rasos formam escamas de crocodilo na pele do jovem, ligando-o ao espírito do rio. Tambores de água soam na casa dos espíritos.",
@@ -232,7 +241,8 @@
       "National Geographic — Rites of Manhood: Crocodile Scars (2011)"
     ],
     "sentimento": "Coragem & medo",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "vanuatu-naghol",
@@ -244,7 +254,8 @@
     "lon": 168.18,
     "clusters": [
       "pais-e-filhos",
-      "natureza-animais-e-plantas"
+      "natureza-animais-e-plantas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "Homens e meninos da aldeia; o pai salta ao lado do filho.",
     "descricao": "Saltadores mergulham de torres de madeira de até 30 m amarrados apenas por cipós, medindo o comprimento para tocar de leve a terra. Liga-se à colheita do inhame.",
@@ -266,7 +277,8 @@
       "Fontes gerais sobre o Naghol de Pentecostes"
     ],
     "sentimento": "Coragem & medo",
-    "muda": "Torna-se homem"
+    "muda": "Torna-se homem",
+    "genero": "masculino"
   },
   {
     "id": "hindu-upanayana",
@@ -345,7 +357,8 @@
     "lat": 33.84,
     "lon": -109.96,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "A menina, a madrinha (que modela seu corpo) e a comunidade.",
     "descricao": "Durante quatro dias a menina dança e encarna a Mulher da Pintura Branca. Diz-se que pode curar quem a toca; a madrinha modela ritualmente seu corpo para a vida adulta.",
@@ -368,7 +381,8 @@
       "DER — The Sunrise Dance (documentário)"
     ],
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "navajo-kinaalda",
@@ -379,7 +393,8 @@
     "lat": 36.0,
     "lon": -109.5,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "A menina, mãe, avós e mulheres da família.",
     "descricao": "Por quatro manhãs a menina corre em direção ao sol nascente, cada vez mais longe. Um bolo de milho de cerca de 1 m é assado a noite toda na terra.",
@@ -401,7 +416,8 @@
       "Fontes gerais sobre cultura Diné"
     ],
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "ticuna-festa-moca-nova",
@@ -412,7 +428,8 @@
     "lat": -4.25,
     "lon": -69.94,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "A moça, mães, tias e toda a comunidade mascarada.",
     "descricao": "Após meses de reclusão, a moça enfrenta a festa entre seres mascarados; ao amanhecer, o cabelo é arrancado fio a fio, encerrando a passagem.",
@@ -435,7 +452,8 @@
       "Agência FAPESP (2020)"
     ],
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "krobo-dipo",
@@ -446,7 +464,8 @@
     "lat": 6.1,
     "lon": 0.02,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "As meninas, sacerdotisas e mulheres mais velhas.",
     "descricao": "Cabeça raspada, pano vermelho e contas; a prova culmina em sentar na pedra sagrada, que só a menina pura consegue.",
@@ -468,7 +487,8 @@
       "Fontes gerais sobre o povo Krobo"
     ],
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "ritu-kala-half-saree",
@@ -479,7 +499,8 @@
     "lat": 9.93,
     "lon": 78.12,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "A menina, mãe, avós e parentes.",
     "descricao": "A mãe veste na filha o meio-sári; a menina é abençoada com cúrcuma e flores, anunciando a maturidade à família.",
@@ -502,7 +523,8 @@
     ],
     "video_fonte": "registro do half-saree",
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "quinceanera",
@@ -513,7 +535,8 @@
     "lat": 19.43,
     "lon": -99.13,
     "clusters": [
-      "maes-e-filhas"
+      "maes-e-filhas",
+      "reconexao-com-genero"
     ],
     "quem_participa": "A jovem de 15 anos, pais, padrinhos e corte de honra.",
     "descricao": "Aos 15 anos, o pai troca o sapato baixo pelo salto da filha; segue-se a valsa e, em muitas famílias, a missa de ação de graças.",
@@ -536,7 +559,8 @@
     ],
     "video_fonte": "HBO Documentary",
     "sentimento": "Maturidade & identidade",
-    "muda": "Torna-se mulher"
+    "muda": "Torna-se mulher",
+    "genero": "feminino"
   },
   {
     "id": "hindu-saptapadi",
@@ -2026,5 +2050,77 @@
     ],
     "sentimento": "Consagração & fé",
     "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "circulo-de-homens",
+    "nome": "Círculo de homens (Masculino Sagrado)",
+    "povo_ou_tradicao": "Movimento contemporâneo",
+    "pais": "Brasil",
+    "regiao": "Movimento contemporâneo (global)",
+    "lat": -23.55,
+    "lon": -46.63,
+    "clusters": [
+      "reconexao-com-genero"
+    ],
+    "genero": "masculino",
+    "quem_participa": "Homens adultos, em roda, muitas vezes com um facilitador.",
+    "descricao": "Homens se reúnem em roda para falar com honestidade, ser testemunhados e trabalhar raiva, medo, luto e paternidade — buscando uma masculinidade que não seja nem tóxica nem ausente. Não é uma tradição antiga: nasce do movimento mito-poético dos anos 1980–90 (o 'Iron John' de Robert Bly, o ManKind Project) e hoje circula também no Brasil como 'masculino sagrado'.",
+    "motivo": "Reencontrar uma masculinidade inteira, em comunidade e sem armadura.",
+    "epoca": "Ao longo do ano (encontros e retiros)",
+    "memoravel": "Uma roda onde homens, muitas vezes pela primeira vez, choram e são ouvidos sem julgamento — e saem menos sozinhos.",
+    "turismo_entorno": "Encontros e retiros; sem destino fixo.",
+    "status": "conhecido",
+    "espiritual": false,
+    "participantes_ano": {
+      "valor": "Sem contagem confiável; redes como o ManKind Project somam dezenas de milhares de participantes",
+      "confianca": "estimativa",
+      "fonte": "ManKind Project e literatura do movimento mito-poético"
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Robert Bly, 'Iron John' (1990)",
+      "ManKind Project — men's work contemporâneo",
+      "Movimento mito-poético dos homens"
+    ],
+    "sentimento": "Reconexão & identidade",
+    "muda": "Reconecta-se ao masculino"
+  },
+  {
+    "id": "circulo-de-mulheres",
+    "nome": "Círculo de mulheres · Tenda Vermelha (Feminino Sagrado)",
+    "povo_ou_tradicao": "Movimento contemporâneo",
+    "pais": "Brasil",
+    "regiao": "Movimento contemporâneo (global)",
+    "lat": -22.91,
+    "lon": -43.17,
+    "clusters": [
+      "reconexao-com-genero"
+    ],
+    "genero": "feminino",
+    "quem_participa": "Mulheres em roda, às vezes na 'tenda vermelha', muitas vezes com uma facilitadora.",
+    "descricao": "Mulheres se reúnem em roda — ou na 'tenda vermelha' — para descansar, partilhar e honrar os ciclos do corpo e da lua. A forma contemporânea é uma reconstrução moderna, inspirada no romance 'A Tenda Vermelha' de Anita Diamant (1997) e no resgate das 'moon lodges'; ecoa tradições antigas de reclusão menstrual, sem ser a mesma coisa. No Brasil, circula como 'feminino sagrado' e 'círculo de mulheres'.",
+    "motivo": "Reencontrar o feminino em comunidade, no ritmo do corpo e não da produtividade.",
+    "epoca": "Ao longo do ano (muitas vezes na lua nova ou cheia)",
+    "memoravel": "Um espaço só de mulheres onde o cansaço e o sangue não são vergonha, mas motivo de encontro.",
+    "turismo_entorno": "Encontros e retiros; sem destino fixo.",
+    "status": "conhecido",
+    "espiritual": false,
+    "participantes_ano": {
+      "valor": "Sem contagem confiável; redes de tenda vermelha existem em dezenas de países",
+      "confianca": "estimativa",
+      "fonte": "Movimento da Tenda Vermelha e literatura do feminino sagrado"
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Anita Diamant, 'A Tenda Vermelha' (1997)",
+      "Red Tent movement / moon lodge — resgate contemporâneo",
+      "Literatura do 'feminino sagrado'"
+    ],
+    "sentimento": "Reconexão & identidade",
+    "muda": "Reconecta-se ao feminino"
   }
 ]

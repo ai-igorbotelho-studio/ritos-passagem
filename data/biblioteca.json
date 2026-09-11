@@ -8,6 +8,7 @@
   "natureza-animais-e-plantas": "Natureza, animais e plantas",
   "expansao-de-consciencia": "Expansão de consciência",
   "iniciacao-espiritual": "Iniciação espiritual",
+  "reconexao-com-genero": "Reconexão com Gênero",
   "transversal": "Transversal"
  },
  "itens": [
@@ -373,6 +374,50 @@
    "cluster": "coletivos-e-peregrinacoes",
    "porque": "Registro audiovisual do rito — Hinduísmo tâmil.",
    "link": "https://www.youtube.com/watch?v=aBbb7gP1OR4"
+  },
+  {
+   "id": "vid-kailash-kora",
+   "tipo": "Documentário",
+   "titulo": "Kailash Kora (Parikrama)",
+   "autor": "registro em vídeo",
+   "ano": "",
+   "idioma": "vídeo",
+   "cluster": "coletivos-e-peregrinacoes",
+   "porque": "Registro audiovisual do rito — Hinduísmo, Budismo, Jainismo e Bön.",
+   "link": "https://www.youtube.com/watch?v=988ebdwov6E"
+  },
+  {
+   "id": "vid-arbaeen",
+   "tipo": "Documentário",
+   "titulo": "Arbaeen",
+   "autor": "registro em vídeo",
+   "ano": "",
+   "idioma": "vídeo",
+   "cluster": "coletivos-e-peregrinacoes",
+   "porque": "Registro audiovisual do rito — Islã xiita.",
+   "link": "https://www.youtube.com/watch?v=dcOvA0cjuIU"
+  },
+  {
+   "id": "vid-adams-peak-sri-pada",
+   "tipo": "Documentário",
+   "titulo": "Sri Pada (Pico de Adão)",
+   "autor": "registro em vídeo",
+   "ano": "",
+   "idioma": "vídeo",
+   "cluster": "coletivos-e-peregrinacoes",
+   "porque": "Registro audiovisual do rito — Budismo, Hinduísmo, Islã e Cristianismo.",
+   "link": "https://www.youtube.com/watch?v=bS69cKqFAEE"
+  },
+  {
+   "id": "vid-shikoku-ohenro",
+   "tipo": "Documentário",
+   "titulo": "Ohenro — 88 templos de Shikoku",
+   "autor": "registro em vídeo",
+   "ano": "",
+   "idioma": "vídeo",
+   "cluster": "coletivos-e-peregrinacoes",
+   "porque": "Registro audiovisual do rito — Budismo Shingon.",
+   "link": "https://www.youtube.com/watch?v=xawDGMtI5PQ"
   },
   {
    "id": "vid-mongolia-naadam",

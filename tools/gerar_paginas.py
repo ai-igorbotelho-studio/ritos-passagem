@@ -16,6 +16,7 @@ CLUSTERS = [
     ("natureza-animais-e-plantas", "Natureza, animais e plantas", "Rituais mediados por bicho, planta, rio ou colheita — quando o mundo não humano conduz a passagem."),
     ("expansao-de-consciencia", "Expansão de consciência", "Jornadas com plantas de poder e enteógenos — cura, visão e o sagrado, com os cuidados éticos mais rigorosos desta base."),
     ("iniciacao-espiritual", "Iniciação espiritual", "Entrar numa tradição sagrada — batismos, votos e consagrações, de mestre para discípulo."),
+    ("reconexao-com-genero", "Reconexão com Gênero", "Masculino e feminino sagrado — iniciações que fazem homem ou mulher e as rodas contemporâneas que reencontram o gênero."),
 ]
 
 # ---- ícones SVG (currentColor, sem emoji) ----
@@ -277,6 +278,13 @@ def home_body():
             <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Como escolho uma experiência para viver?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Use o <a href="#instrumento">Instrumento de decisão</a>: filtre por quem participa, pelo sentimento que o rito trata, pelo que muda para quem passa, pela época, popularidade e acesso. Cada resultado traz o selo de confiança e, quando houver, o alerta ético.</p></div></div></div>
             <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Isto é uma agência de viagens?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Não. É um projeto independente de pesquisa e curadoria. Quando o assunto é ir até lá, defendemos turismo com cuidado: operador comunitário, remuneração direta, sem encenação fora de época — e alertamos sobre turismo-espetáculo, bem-estar animal e overtourism, com fonte e sem tomar partido.</p></div></div></div>
           </div>
+        </section>
+
+        <section class="section wrap" aria-labelledby="indice-h">
+          <p class="eyebrow">Índice do acervo</p>
+          <h2 id="indice-h" class="h-sec">Tudo o que há nesta base, num lugar só</h2>
+          <p class="lede" style="margin-bottom:1.5rem">Cada cluster e cada página, com quantos itens reúne. Os números vêm da base — atualizam sozinhos.</p>
+          <div class="home-index" id="home-index"></div>
         </section>''', "")  # base "" para a home
 
 

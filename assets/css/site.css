@@ -300,6 +300,30 @@ strong{font-weight:700}
 .rcard:hover .rcard__go span{transform:translateX(4px)}
 .results__empty{grid-column:1/-1;color:var(--muted);font-family:var(--font-ui);padding:1.4rem 0}
 
+/* subtítulo de grupo por gênero (cluster Reconexão com Gênero) */
+.rito-group{font-family:var(--font-display);font-size:clamp(1.3rem,2.4vw,1.9rem);color:var(--coral);
+  margin:1.9rem 0 .4rem;display:flex;align-items:baseline;gap:.6rem;border-top:1px solid var(--line-2);padding-top:1.4rem}
+.rito-group:first-child{border-top:0;padding-top:.2rem;margin-top:.2rem}
+.rito-group span{font-family:var(--font-ui);font-weight:600;font-size:.78rem;color:var(--faint)}
+
+/* índice do acervo na home */
+.home-index{display:grid;grid-template-columns:1.35fr .9fr;gap:clamp(22px,4vw,56px);align-items:start}
+.hidx-grp+.hidx-grp{}
+.hidx-lbl{font-family:var(--font-ui);font-weight:600;font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--faint);margin:0 0 .5rem}
+.hidx-list{display:flex;flex-direction:column}
+.hidx{display:flex;align-items:center;gap:.7rem;padding:.78rem .2rem;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);transition:padding-left .25s var(--ease),color .2s}
+.hidx:hover{padding-left:.5rem;color:var(--coral)}
+.hidx__dot{width:10px;height:10px;border-radius:50%;flex:none}
+.hidx__nome{font-family:var(--font-ui);font-weight:600;font-size:.98rem;flex:1}
+.hidx__n{font-family:var(--font-ui);font-weight:700;font-size:.88rem;color:var(--muted)}
+.hidx:hover .hidx__n{color:var(--coral)}
+.hidx__arw{color:var(--faint);transition:transform .25s var(--ease)}
+.hidx:hover .hidx__arw{transform:translateX(3px);color:var(--coral)}
+.hidx--pg .hidx__nome{font-family:var(--font-display);font-weight:400;font-size:1.06rem}
+.hidx-tot{margin-top:1.2rem;font-family:var(--font-ui);font-size:.92rem;color:var(--muted);line-height:1.7}
+.hidx-tot b{color:var(--coral);font-weight:700}
+@media(max-width:760px){ .home-index{grid-template-columns:1fr;gap:26px} }
+
 /* ---------- Acordeão ---------- */
 .accordion{display:flex;flex-direction:column;border-top:1px solid var(--line)}
 .acc-item{border-bottom:1px solid var(--line)}

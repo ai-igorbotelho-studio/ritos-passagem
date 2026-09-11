@@ -140,6 +140,16 @@
       ],
       memoravel: "Aqui o limiar não é a idade nem o casamento: é passar a pertencer a uma tradição. Quase sempre há três marcas juntas — um voto assumido diante de uma comunidade, uma transmissão de mestre para discípulo (um mantra, um sopro, uma imposição de mãos) e um renascimento simbólico que muitas vezes vem com um nome novo. O irreproduzível está nessa transmissão testemunhada: ela liga a pessoa a uma linhagem que a antecede e a sucederá. Vários desses ritos são fechados e cheios de segredo — Candomblé, Vodou, certas iniciações — e por isso pedem o mesmo cuidado do resto desta base: registrar como conhecimento, sem expor o que é reservado, sem exotizar religiões historicamente perseguidas.",
       quote: { t: "“O neófito da liminaridade… deve ser uma tábula rasa na qual se inscreve o conhecimento e a sabedoria do grupo.”", a: "Victor Turner, O Processo Ritual (1969)" } },
+    { slug: "reconexao-com-genero", nome: "Reconexão com Gênero", cor: "#8a5a5f",
+      frase: "Masculino e feminino sagrado — tornar-se homem, tornar-se mulher e reencontrar o gênero.",
+      curiosidades: [
+        "Em quase toda cultura, a passagem para a vida adulta foi marcada de forma diferente para meninos e meninas — e quase sempre em separado.",
+        "As iniciações masculinas tendem a girar em torno de coragem, dor e prova pública; as femininas, em torno do corpo, da menarca e da transmissão entre mulheres.",
+        "As formas contemporâneas — círculo de homens, círculo de mulheres, tenda vermelha — não são tradições antigas: são reconstruções modernas que buscam reencontrar um masculino e um feminino inteiros.",
+        "Falar de 'sagrado' aqui não é falar de uma religião, mas de dar peso ritual a algo que a vida moderna costuma tratar como banal."
+      ],
+      memoravel: "Este cluster reúne dois movimentos: as iniciações tradicionais que fazem de alguém homem ou mulher aos olhos da comunidade — o salto do gado, a Kinaaldá, a escarificação, a Festa da Moça Nova — e as práticas contemporâneas de 'masculino sagrado' e 'feminino sagrado', em que adultos voltam a se reunir em roda para reencontrar, sem armadura, um gênero que ninguém lhes ensinou a habitar por inteiro. Num extremo, a prova irreversível diante dos mais velhos; no outro, a roda onde se pode, enfim, ser testemunhado. O irreproduzível está em ambos: o instante em que alguém é reconhecido — pela linhagem ou pelo círculo — como quem agora pertence.",
+      quote: { t: "“Os ritos de iniciação… fazem passar o indivíduo de um estado a outro, marcando o corpo e a alma com o selo da comunidade.”", a: "Leitura contemporânea de van Gennep e Turner" } },
   ];
 
   /* fotos por cluster (Unsplash CDN — trocáveis) + tom pastel do card */
@@ -152,11 +162,12 @@
     "coletivos-e-peregrinacoes": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" + UP,
     "natureza-animais-e-plantas": "https://images.unsplash.com/photo-1426604966848-d7adac402bff" + UP,
     "expansao-de-consciencia": "https://images.unsplash.com/photo-1502082553048-f009c37129b9" + UP,
-    "iniciacao-espiritual": "https://images.unsplash.com/photo-1519681393784-d120267933ba" + UP
+    "iniciacao-espiritual": "https://images.unsplash.com/photo-1519681393784-d120267933ba" + UP,
+    "reconexao-com-genero": "https://images.unsplash.com/photo-1518623489648-a173ef7824f3" + UP
   };
   var CTINT = { "pais-e-filhos": "sage", "maes-e-filhas": "rose", "casais": "sand",
     "avos-e-netos": "sage", "coletivos-e-peregrinacoes": "rose", "natureza-animais-e-plantas": "sand",
-    "expansao-de-consciencia": "rose", "iniciacao-espiritual": "sage" };
+    "expansao-de-consciencia": "rose", "iniciacao-espiritual": "sage", "reconexao-com-genero": "rose" };
 
   var STATUS_LABEL = { muito_popular: "Muito popular", conhecido: "Conhecido", exotico: "Exótico" };
   var STATUS_CLASS = { muito_popular: "status-mp", conhecido: "status-c", exotico: "status-e" };
@@ -262,7 +273,7 @@
       "Etiópia": "África", "Nigéria": "África", "África do Sul": "África", "Quênia": "África", "Gana": "África", "Marrocos": "África", "Madagascar": "África", "Gabão": "África",
       "Brasil": "América do Sul", "Peru": "América do Sul",
       "Estados Unidos": "América do Norte", "México": "América do Norte",
-      "Israel": "Ásia", "Índia": "Ásia", "Mianmar": "Ásia", "China": "Ásia", "Tailândia": "Ásia", "Japão": "Ásia", "Coreia do Sul": "Ásia", "Arábia Saudita": "Ásia", "Malásia": "Ásia", "Mongólia": "Ásia", "Turquia": "Ásia",
+      "Israel": "Ásia", "Índia": "Ásia", "Mianmar": "Ásia", "China": "Ásia", "China (Tibete)": "Ásia", "Tailândia": "Ásia", "Japão": "Ásia", "Coreia do Sul": "Ásia", "Arábia Saudita": "Ásia", "Malásia": "Ásia", "Mongólia": "Ásia", "Turquia": "Ásia", "Iraque": "Ásia", "Sri Lanka": "Ásia",
       "Reino Unido": "Europa", "Grécia": "Europa", "Espanha": "Europa",
       "Papua-Nova Guiné": "Oceania", "Vanuatu": "Oceania",
       "Haiti": "América do Norte"
@@ -277,7 +288,29 @@
     renderFeatured(ritos);
     loadMap(document.getElementById("map-banner"), ritos, null);
     initFilter(ritos);
+    initHomeIndex(ritos, { paises: Object.keys(paises).length, continentes: Object.keys(continentes).length });
     revealStagger();
+  }
+
+  /* Índice do acervo na home: cada cluster e cada página, com contagens da base */
+  function initHomeIndex(ritos, tot) {
+    var host = document.getElementById("home-index");
+    if (!host) return;
+    function count(slug) { return ritos.filter(function (r) { return r.clusters.indexOf(slug) !== -1; }).length; }
+    var clusters = CLUSTERS.map(function (c) {
+      return '<a class="hidx" href="' + hrefCluster(c.slug) + '">' +
+        '<span class="hidx__dot" style="background:' + c.cor + '"></span>' +
+        '<span class="hidx__nome">' + esc(c.nome) + '</span>' +
+        '<span class="hidx__n">' + count(c.slug) + '</span>' +
+        '<span class="hidx__arw" aria-hidden="true">→</span></a>';
+    }).join("");
+    var paginas =
+      '<a class="hidx hidx--pg" href="' + hrefBiblioteca() + '"><span class="hidx__nome">Biblioteca de conhecimento</span><span class="hidx__n">100+</span><span class="hidx__arw" aria-hidden="true">→</span></a>' +
+      '<a class="hidx hidx--pg" href="' + hrefSobre() + '"><span class="hidx__nome">Sobre &amp; Método</span><span class="hidx__arw" aria-hidden="true">→</span></a>';
+    host.innerHTML =
+      '<div class="hidx-grp"><p class="hidx-lbl">Rituais pelo mundo · ' + CLUSTERS.length + ' clusters</p><div class="hidx-list">' + clusters + '</div></div>' +
+      '<div class="hidx-grp"><p class="hidx-lbl">Outras páginas</p><div class="hidx-list">' + paginas + '</div>' +
+      '<div class="hidx-tot"><b>' + ritos.length + '</b> rituais · <b>' + tot.paises + '</b> países · <b>' + tot.continentes + '</b> continentes</div></div>';
   }
 
   /* grade de clusters (com foto) — usada na home e no hub "Rituais pelo mundo" */
@@ -446,7 +479,7 @@
     loadMap(document.getElementById("cluster-map"), membros, slug);
 
     /* lista interativa de rituais */
-    renderRitoList(membros);
+    renderRitoList(membros, slug);
 
     /* curiosidades */
     var cur = document.getElementById("curiosidades");
@@ -492,9 +525,11 @@
   }
 
   /* lista interativa de rituais (cards expansíveis) — substitui a tabela */
-  function renderRitoList(membros) {
+  function renderRitoList(membros, slug) {
     var host = document.getElementById("ritos-list");
     if (!host) return;
+    var groupByGenero = slug === "reconexao-com-genero";
+    var GEN_LABEL = { masculino: "Masculino sagrado", feminino: "Feminino sagrado" };
     var barStatus = document.getElementById("rt-status");
     var barAcesso = document.getElementById("rt-acesso");
     var countEl = document.getElementById("rt-count");
@@ -562,7 +597,21 @@
         return true;
       });
       if (countEl) countEl.textContent = list.length + (list.length === 1 ? " ritual" : " rituais");
-      host.innerHTML = list.length ? list.map(card).join("") : '<p class="results__empty">Nenhum ritual com esses filtros.</p>';
+      var html;
+      if (!list.length) {
+        html = '<p class="results__empty">Nenhum ritual com esses filtros.</p>';
+      } else if (groupByGenero) {
+        html = "";
+        ["masculino", "feminino"].forEach(function (g) {
+          var sub = list.filter(function (r) { return r.genero === g; });
+          if (sub.length) html += '<h3 class="rito-group">' + GEN_LABEL[g] + '<span>' + sub.length + '</span></h3>' + sub.map(card).join("");
+        });
+        var rest = list.filter(function (r) { return r.genero !== "masculino" && r.genero !== "feminino"; });
+        if (rest.length) html += rest.map(card).join("");
+      } else {
+        html = list.map(card).join("");
+      }
+      host.innerHTML = html;
       wire();
       revealStaggerScoped(host);
     }

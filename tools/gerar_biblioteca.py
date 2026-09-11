@@ -23,6 +23,7 @@ CLUSTER_NOME = {
     "natureza-animais-e-plantas": "Natureza, animais e plantas",
     "expansao-de-consciencia": "Expansão de consciência",
     "iniciacao-espiritual": "Iniciação espiritual",
+    "reconexao-com-genero": "Reconexão com Gênero",
     "transversal": "Transversal",
 }
 
