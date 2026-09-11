@@ -22,6 +22,7 @@ CLUSTER_NOME = {
     "coletivos-e-peregrinacoes": "Coletivos e peregrinações",
     "natureza-animais-e-plantas": "Natureza, animais e plantas",
     "expansao-de-consciencia": "Expansão de consciência",
+    "iniciacao-espiritual": "Iniciação espiritual",
     "transversal": "Transversal",
 }
 
@@ -190,6 +191,20 @@ CURADOS = [
      "Base do alerta de saúde da iboga/ibogaína (Bwiti).", "https://pubmed.ncbi.nlm.nih.gov/16698188/"),
     ("Artigo acadêmico", "Relatórios de saúde e política sobre ayahuasca", "ICEERS", "atual", "EN/ES", "expansao-de-consciencia",
      "Saúde, contraindicações e política de enteógenos.", "https://www.iceers.org/"),
+
+    # ---------- Iniciação espiritual ----------
+    ("Enciclopédia", "Amrit Sanchar (iniciação no Khalsa)", "Wikipedia / fontes sikhs", "atual", "EN", "iniciacao-espiritual",
+     "A cerimônia do amrit e a fundação do Khalsa (1699).", None),
+    ("Livro", "O Candomblé e a feitura de santo", "etnografia afro-brasileira", "vários", "PT", "iniciacao-espiritual",
+     "A iniciação (iaô), a reclusão e o assentamento do orixá.", None),
+    ("Livro", "Divine Horsemen: The Living Gods of Haiti", "Maya Deren", "1953", "EN", "iniciacao-espiritual",
+     "Clássico sobre o Vodou haitiano e suas iniciações.", None),
+    ("Artigo acadêmico", "Upasampada: a ordenação theravada", "estudos budistas", "vários", "EN", "iniciacao-espiritual",
+     "Os votos e a entrada plena na sangha.", None),
+    ("Livro", "As tariqas sufis e a bay'ah", "estudos de sufismo", "vários", "EN/AR", "iniciacao-espiritual",
+     "A cadeia de transmissão (silsila) e o juramento ao mestre.", None),
+    ("Artigo acadêmico", "Baptism (verbete)", "Encyclopædia Britannica", "atual", "EN", "iniciacao-espiritual",
+     "História e teologia do batismo cristão.", None),
 ]
 
 

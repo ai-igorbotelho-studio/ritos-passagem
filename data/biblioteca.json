@@ -7,6 +7,7 @@
   "coletivos-e-peregrinacoes": "Coletivos e peregrinações",
   "natureza-animais-e-plantas": "Natureza, animais e plantas",
   "expansao-de-consciencia": "Expansão de consciência",
+  "iniciacao-espiritual": "Iniciação espiritual",
   "transversal": "Transversal"
  },
  "itens": [
@@ -1230,6 +1231,72 @@
    "cluster": "expansao-de-consciencia",
    "porque": "Saúde, contraindicações e política de enteógenos.",
    "link": "https://www.iceers.org/"
+  },
+  {
+   "id": "cur-amrit-sanchar-inicia-o-no-khalsa-iniciacao-espiritual",
+   "tipo": "Enciclopédia",
+   "titulo": "Amrit Sanchar (iniciação no Khalsa)",
+   "autor": "Wikipedia / fontes sikhs",
+   "ano": "atual",
+   "idioma": "EN",
+   "cluster": "iniciacao-espiritual",
+   "porque": "A cerimônia do amrit e a fundação do Khalsa (1699).",
+   "link": null
+  },
+  {
+   "id": "cur-o-candombl-e-a-feitura-de-santo-iniciacao-espiritual",
+   "tipo": "Livro",
+   "titulo": "O Candomblé e a feitura de santo",
+   "autor": "etnografia afro-brasileira",
+   "ano": "vários",
+   "idioma": "PT",
+   "cluster": "iniciacao-espiritual",
+   "porque": "A iniciação (iaô), a reclusão e o assentamento do orixá.",
+   "link": null
+  },
+  {
+   "id": "cur-divine-horsemen-the-living-gods-of-haiti-iniciacao-espiritua",
+   "tipo": "Livro",
+   "titulo": "Divine Horsemen: The Living Gods of Haiti",
+   "autor": "Maya Deren",
+   "ano": "1953",
+   "idioma": "EN",
+   "cluster": "iniciacao-espiritual",
+   "porque": "Clássico sobre o Vodou haitiano e suas iniciações.",
+   "link": null
+  },
+  {
+   "id": "cur-upasampada-a-ordena-o-theravada-iniciacao-espiritual",
+   "tipo": "Artigo acadêmico",
+   "titulo": "Upasampada: a ordenação theravada",
+   "autor": "estudos budistas",
+   "ano": "vários",
+   "idioma": "EN",
+   "cluster": "iniciacao-espiritual",
+   "porque": "Os votos e a entrada plena na sangha.",
+   "link": null
+  },
+  {
+   "id": "cur-as-tariqas-sufis-e-a-bay-ah-iniciacao-espiritual",
+   "tipo": "Livro",
+   "titulo": "As tariqas sufis e a bay'ah",
+   "autor": "estudos de sufismo",
+   "ano": "vários",
+   "idioma": "EN/AR",
+   "cluster": "iniciacao-espiritual",
+   "porque": "A cadeia de transmissão (silsila) e o juramento ao mestre.",
+   "link": null
+  },
+  {
+   "id": "cur-baptism-verbete-iniciacao-espiritual",
+   "tipo": "Artigo acadêmico",
+   "titulo": "Baptism (verbete)",
+   "autor": "Encyclopædia Britannica",
+   "ano": "atual",
+   "idioma": "EN",
+   "cluster": "iniciacao-espiritual",
+   "porque": "História e teologia do batismo cristão.",
+   "link": null
   }
  ]
 }

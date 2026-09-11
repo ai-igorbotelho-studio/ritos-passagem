@@ -127,6 +127,19 @@
       ],
       memoravel: "Aqui o limiar é atravessado por dentro: uma planta ou fungo — peyote, ayahuasca, iboga, cogumelo, San Pedro — abre, por uma noite, uma percepção que não se repete igual. O irreproduzível está no encontro entre a substância, o corpo de quem toma, os cantos de quem conduz e o tempo da vigília: a mesma dose, noutro contexto, é outra coisa. São tradições de cura e visão de povos originários, não recreação — e por isso carregam os cuidados mais sérios desta base: soberania indígena e consentimento (FPIC), contraindicações e riscos de saúde, conservação de plantas ameaçadas e o alerta contra o neo-extrativismo espiritual, que transforma o sagrado de um povo em produto de turismo.",
       quote: { t: "“A liminaridade… é um tempo e um lugar de retirada dos modos habituais de ação social — pode ser vista como um período de exame dos valores centrais da comunidade.”", a: "Victor Turner, O Processo Ritual (1969)" } },
+
+    { slug: "iniciacao-espiritual", nome: "Iniciação espiritual", cor: "#4a6274",
+      frase: "Entrar numa tradição sagrada — batismos, votos e consagrações.",
+      curiosidades: [
+        "No batismo cristão, a água encena morrer e renascer — 'sepultado com Cristo, ressuscitado com ele' — e muitas vezes traz um novo nome.",
+        "O Amrit Sanchar sikh foi instituído em 1699 por Guru Gobind Singh, que criou o Khalsa e os 'cinco K'.",
+        "Na diksha hindu, o guru sussurra um mantra pessoal ao discípulo, que passa a ter um novo nome espiritual.",
+        "Na feitura de santo do Candomblé, o iaô fica recluso por meses e 'renasce' com o orixá assentado, recebendo novo nome.",
+        "No Kanzo do Vodou haitiano, passar pelo fogo marca a entrada no sacerdócio.",
+        "Na iniciação sufi (bay'ah), o discípulo aperta a mão do mestre e entra numa cadeia (silsila) que se diz remontar ao Profeta."
+      ],
+      memoravel: "Aqui o limiar não é a idade nem o casamento: é passar a pertencer a uma tradição. Quase sempre há três marcas juntas — um voto assumido diante de uma comunidade, uma transmissão de mestre para discípulo (um mantra, um sopro, uma imposição de mãos) e um renascimento simbólico que muitas vezes vem com um nome novo. O irreproduzível está nessa transmissão testemunhada: ela liga a pessoa a uma linhagem que a antecede e a sucederá. Vários desses ritos são fechados e cheios de segredo — Candomblé, Vodou, certas iniciações — e por isso pedem o mesmo cuidado do resto desta base: registrar como conhecimento, sem expor o que é reservado, sem exotizar religiões historicamente perseguidas.",
+      quote: { t: "“O neófito da liminaridade… deve ser uma tábula rasa na qual se inscreve o conhecimento e a sabedoria do grupo.”", a: "Victor Turner, O Processo Ritual (1969)" } },
   ];
 
   /* fotos por cluster (Unsplash CDN — trocáveis) + tom pastel do card */
@@ -138,11 +151,12 @@
     "avos-e-netos": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e" + UP,
     "coletivos-e-peregrinacoes": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" + UP,
     "natureza-animais-e-plantas": "https://images.unsplash.com/photo-1426604966848-d7adac402bff" + UP,
-    "expansao-de-consciencia": "https://images.unsplash.com/photo-1502082553048-f009c37129b9" + UP
+    "expansao-de-consciencia": "https://images.unsplash.com/photo-1502082553048-f009c37129b9" + UP,
+    "iniciacao-espiritual": "https://images.unsplash.com/photo-1519681393784-d120267933ba" + UP
   };
   var CTINT = { "pais-e-filhos": "sage", "maes-e-filhas": "rose", "casais": "sand",
     "avos-e-netos": "sage", "coletivos-e-peregrinacoes": "rose", "natureza-animais-e-plantas": "sand",
-    "expansao-de-consciencia": "rose" };
+    "expansao-de-consciencia": "rose", "iniciacao-espiritual": "sage" };
 
   var STATUS_LABEL = { muito_popular: "Muito popular", conhecido: "Conhecido", exotico: "Exótico" };
   var STATUS_CLASS = { muito_popular: "status-mp", conhecido: "status-c", exotico: "status-e" };
@@ -248,9 +262,10 @@
       "Etiópia": "África", "Nigéria": "África", "África do Sul": "África", "Quênia": "África", "Gana": "África", "Marrocos": "África", "Madagascar": "África", "Gabão": "África",
       "Brasil": "América do Sul", "Peru": "América do Sul",
       "Estados Unidos": "América do Norte", "México": "América do Norte",
-      "Israel": "Ásia", "Índia": "Ásia", "Mianmar": "Ásia", "China": "Ásia", "Tailândia": "Ásia", "Japão": "Ásia", "Coreia do Sul": "Ásia", "Arábia Saudita": "Ásia", "Malásia": "Ásia", "Mongólia": "Ásia",
+      "Israel": "Ásia", "Índia": "Ásia", "Mianmar": "Ásia", "China": "Ásia", "Tailândia": "Ásia", "Japão": "Ásia", "Coreia do Sul": "Ásia", "Arábia Saudita": "Ásia", "Malásia": "Ásia", "Mongólia": "Ásia", "Turquia": "Ásia",
       "Reino Unido": "Europa", "Grécia": "Europa", "Espanha": "Europa",
-      "Papua-Nova Guiné": "Oceania", "Vanuatu": "Oceania"
+      "Papua-Nova Guiné": "Oceania", "Vanuatu": "Oceania",
+      "Haiti": "América do Norte"
     };
     ritos.forEach(function (r) { paises[r.pais] = 1; if (CONT[r.pais]) continentes[CONT[r.pais]] = 1; });
     setCount("stat-ritos", ritos.length);

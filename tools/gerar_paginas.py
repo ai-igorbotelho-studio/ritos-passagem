@@ -15,6 +15,7 @@ CLUSTERS = [
     ("coletivos-e-peregrinacoes", "Coletivos e peregrinações", "Multidão, cidade e fé — do Kumbh Mela ao Caminho de Santiago."),
     ("natureza-animais-e-plantas", "Natureza, animais e plantas", "Rituais mediados por bicho, planta, rio ou colheita — quando o mundo não humano conduz a passagem."),
     ("expansao-de-consciencia", "Expansão de consciência", "Jornadas com plantas de poder e enteógenos — cura, visão e o sagrado, com os cuidados éticos mais rigorosos desta base."),
+    ("iniciacao-espiritual", "Iniciação espiritual", "Entrar numa tradição sagrada — batismos, votos e consagrações, de mestre para discípulo."),
 ]
 
 # ---- ícones SVG (currentColor, sem emoji) ----
@@ -424,13 +425,14 @@ def build_sobre():
 
         <section class="section wrap prose" id="etica">
           <p class="eyebrow">Ética e sustentabilidade</p>
-          <h2 class="h-sec">Cinco regras editoriais</h2>
+          <h2 class="h-sec">Seis regras editoriais</h2>
           <div class="entorno" style="margin-top:1rem">
-            <div class="item"><h4>1. Rituais fechados (FPIC)</h4><p class="meta">Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite e o Hajj em Meca são listados como conhecimento, marcados como acesso fechado. Não indexamos vídeos comerciais nem operadores.</p></div>
+            <div class="item"><h4>1. Rituais fechados (FPIC)</h4><p class="meta">Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite, o Hajj em Meca e iniciações secretas (Candomblé, Vodou) são listados como conhecimento, marcados como acesso fechado. Não indexamos vídeos comerciais nem operadores, nem expomos o que é reservado (fundamento).</p></div>
             <div class="item"><h4>2. Turismo-espetáculo</h4><p class="meta">No Omo, na tucandeira “para turista” e na ayahuasca comercial, mostramos o alerta e sugerimos operador comunitário, remuneração direta e nada de encenação fora de época.</p></div>
             <div class="item"><h4>3. Bem-estar animal</h4><p class="meta">Jallikattu e a corrida de cavalos com jóqueis-crianças do Naadam entram com a controvérsia registrada e com fonte — sem tomar partido.</p></div>
             <div class="item"><h4>4. Overtourism</h4><p class="meta">Para Kumbh Mela, Caminho de Santiago e Yi Peng indicamos os meses e trechos de menor pressão.</p></div>
             <div class="item"><h4>5. Imagens e menores</h4><p class="meta">Nunca reproduzimos imagens de menores em rituais de nudez. Links apenas para fontes editoriais e institucionais.</p></div>
+            <div class="item"><h4>6. Enteógenos e redução de danos</h4><p class="meta">Nos rituais com plantas de poder (peyote, ayahuasca, iboga, cogumelos, San Pedro), o cuidado é máximo: soberania indígena e FPIC, alerta de saúde e contraindicações (a iboga tem cardiotoxicidade e mortes documentadas), conservação de plantas ameaçadas e recusa ao neo-extrativismo espiritual. Não indexamos retiro comercial nem incentivamos uso recreativo; legalidade e segurança variam por país e exigem avaliação médica. Isto é conhecimento, não recomendação de consumo.</p></div>
           </div>
         </section>
 

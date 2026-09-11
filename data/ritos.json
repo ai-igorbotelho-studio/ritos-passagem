@@ -1625,5 +1625,237 @@
     ],
     "sentimento": "Cura & visão",
     "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
+    "id": "batismo-cristao",
+    "nome": "Batismo cristão",
+    "povo_ou_tradicao": "Cristianismo",
+    "pais": "Israel",
+    "regiao": "Rio Jordão (Qasr el-Yahud) — global",
+    "lat": 31.84,
+    "lon": 35.53,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "A pessoa batizada, padrinhos e a comunidade de fé.",
+    "descricao": "Pela água (imersão ou aspersão), a pessoa 'morre e renasce' e entra na comunidade cristã.",
+    "motivo": "Entrar na fé e na Igreja; renascer 'da água e do Espírito'.",
+    "epoca": "Ao longo do ano (muitos na Vigília Pascal)",
+    "memoravel": "A água que encena morte e ressurreição; muitas vezes um novo nome de batismo.",
+    "turismo_entorno": "Rio Jordão (Qasr el-Yahud); batistérios históricos. É rito litúrgico, não passeio.",
+    "status": "muito_popular",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "dezenas de milhões de batismos/ano no mundo",
+      "confianca": "parcial",
+      "fonte": "Estatísticas eclesiásticas (ordem de grandeza)"
+    },
+    "acesso_visitante": "aberto",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Fontes gerais sobre a liturgia batismal cristã"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "sikh-amrit-sanchar",
+    "nome": "Amrit Sanchar (iniciação no Khalsa)",
+    "povo_ou_tradicao": "Sikhismo",
+    "pais": "Índia",
+    "regiao": "Punjab (Anandpur Sahib)",
+    "lat": 31.24,
+    "lon": 76.5,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O iniciado e cinco sikhs iniciados (Panj Pyare).",
+    "descricao": "O iniciado bebe e recebe o amrit (água adoçada mexida com espada) e assume os 'cinco K' e o código do Khalsa.",
+    "motivo": "Entrar no Khalsa, a comunidade de iniciados fundada em 1699.",
+    "epoca": "Datas do calendário sikh (pico em Vaisakhi, abr)",
+    "memoravel": "O amrit preparado com a khanda; o compromisso com os cinco K.",
+    "turismo_entorno": "Anandpur Sahib, Amritsar (Templo Dourado).",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; parte dos ~25–30 mi de sikhs",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "História do Khalsa (Guru Gobind Singh, 1699)",
+      "Fontes gerais sobre o sikhismo"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "hindu-diksha",
+    "nome": "Diksha (iniciação do guru)",
+    "povo_ou_tradicao": "Hinduísmo",
+    "pais": "Índia",
+    "regiao": "Índia",
+    "lat": 25.3,
+    "lon": 83.0,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O guru e o discípulo.",
+    "descricao": "O guru transmite ao discípulo um mantra pessoal e, muitas vezes, um novo nome espiritual — o início do caminho.",
+    "motivo": "Ser aceito por um mestre e entrar numa linhagem espiritual.",
+    "epoca": "Datas auspiciosas",
+    "memoravel": "O mantra sussurrado; o novo nome espiritual.",
+    "turismo_entorno": "Varanasi, Rishikesh.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; muito difundida no hinduísmo",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Fontes gerais sobre diksha e a relação guru-discípulo"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "budista-upasampada",
+    "nome": "Upasampada (ordenação budista)",
+    "povo_ou_tradicao": "Budismo theravada",
+    "pais": "Tailândia",
+    "regiao": "Sudeste Asiático",
+    "lat": 14.0,
+    "lon": 100.6,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O ordenando, o preceptor e a comunidade de monges (sangha).",
+    "descricao": "A ordenação plena de monge (bhikkhu): a cabeça raspada, a túnica, os votos e a entrada na sangha diante do capítulo de monges.",
+    "motivo": "Entrar plenamente na vida monástica budista.",
+    "epoca": "Ao longo do ano (muitas antes das chuvas, vassa)",
+    "memoravel": "Os votos recitados em páli; a passagem de leigo a monge.",
+    "turismo_entorno": "Bangkok, Chiang Mai, Ayutthaya.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "centenas de milhares de monges no Sudeste Asiático (ordem de grandeza)",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "aberto_com_guia",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Fontes gerais sobre a ordenação theravada (upasampada)"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "candomble-feitura-de-santo",
+    "nome": "Feitura de santo (iniciação no Candomblé)",
+    "povo_ou_tradicao": "Candomblé",
+    "pais": "Brasil",
+    "regiao": "Bahia e diáspora afro-brasileira",
+    "lat": -12.97,
+    "lon": -38.51,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O iniciado (iaô), a mãe/pai de santo e a comunidade do terreiro.",
+    "descricao": "Após meses de reclusão (roncó), o iaô 'renasce' com o orixá assentado, recebe novo nome e passa a pertencer ao terreiro.",
+    "motivo": "Consagrar-se ao orixá e entrar na comunidade-de-santo.",
+    "epoca": "Ciclos definidos pelo terreiro",
+    "memoravel": "A reclusão de meses; o novo nome; a saída pública do iaô.",
+    "turismo_entorno": "Salvador, Cachoeira (Bahia). Rito iniciático — não é espetáculo.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; milhares de terreiros no Brasil",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "fechado",
+    "alerta_etico": "Rito iniciático fechado e cheio de segredo (fundamento): não se assiste nem se fotografa sem pertencer à comunidade. Religião historicamente perseguida — registrar como conhecimento, com respeito e sem exotização.",
+    "video": null,
+    "fontes": [
+      "Fontes gerais e etnográficas sobre o Candomblé"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "vodou-kanzo",
+    "nome": "Kanzo (iniciação no Vodou)",
+    "povo_ou_tradicao": "Vodou haitiano",
+    "pais": "Haiti",
+    "regiao": "Haiti",
+    "lat": 18.97,
+    "lon": -72.29,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O iniciado, o houngan/manbo e a sociedade do peristilo.",
+    "descricao": "Reclusão e provações que culminam no kanzo (a passagem pelo fogo), marcando a entrada no sacerdócio do Vodou.",
+    "motivo": "Consagrar-se aos lwa e assumir responsabilidade sacerdotal.",
+    "epoca": "Ciclos definidos pela sociedade",
+    "memoravel": "A passagem pelo fogo (kanzo); a reclusão iniciática.",
+    "turismo_entorno": "Souvenance, Port-au-Prince. Não é atração turística.",
+    "status": "exotico",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "fechado",
+    "alerta_etico": "Iniciação fechada do Vodou, religião alvo histórico de estigma e caricatura. Registrar com respeito, sem exotização; não é destino turístico.",
+    "video": null,
+    "fontes": [
+      "Fontes etnográficas sobre o Vodou haitiano"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
+  },
+  {
+    "id": "sufi-bayah",
+    "nome": "Bay'ah (iniciação sufi)",
+    "povo_ou_tradicao": "Sufismo (Islã)",
+    "pais": "Turquia",
+    "regiao": "Konya e ordens em dezenas de países",
+    "lat": 37.87,
+    "lon": 32.48,
+    "clusters": [
+      "iniciacao-espiritual"
+    ],
+    "quem_participa": "O discípulo (murid) e o mestre (shaykh).",
+    "descricao": "Pelo aperto de mão e o juramento (bay'ah), o discípulo entra numa ordem (tariqa) e numa cadeia de transmissão (silsila).",
+    "motivo": "Entrar num caminho sufi sob a guia de um mestre.",
+    "epoca": "Ao longo do ano",
+    "memoravel": "O juramento de mão; a entrada numa silsila que se diz remontar ao Profeta.",
+    "turismo_entorno": "Konya (Mevlana/Rumi), Istambul.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; ordens sufis em dezenas de países",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Fontes gerais sobre as tariqas sufis e a bay'ah"
+    ],
+    "sentimento": "Consagração & fé",
+    "muda": "Consagra-se a uma tradição"
   }
 ]
