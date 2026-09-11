@@ -6,12 +6,13 @@
   <title>Avós e netos — Ritos do Mundo Real</title>
   <meta name="description" content="Nascimento, nomeação e primeira comida — o que a geração mais velha oferece à mais nova.">
   <link rel="canonical" href="https://ritos.exemplo/clusters/avos-e-netos/">
-  <meta property="og:type" content="article">
+  <meta property="og:type" content="website">
   <meta property="og:title" content="Avós e netos — Ritos do Mundo Real">
   <meta property="og:description" content="Nascimento, nomeação e primeira comida — o que a geração mais velha oferece à mais nova.">
   <meta property="og:image" content="https://ritos.exemplo/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preload" href="../../assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../../assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../../assets/css/site.css">
@@ -22,30 +23,59 @@
     <div class="sheet">
 
       <header class="site-head">
-        <a class="brand" href="../../"><span class="dot" aria-hidden="true"></span>Ritos do Mundo Real</a>
-        <nav class="nav" aria-label="Principal">
-          <a href="../../">Início</a>
-          <a href="../avos-e-netos/" aria-current="page">Clusters</a>
-          <a href="../../biblioteca/">Biblioteca</a>
-          <a href="../../sobre/">Sobre &amp; Método</a>
-        </nav>
+        <a class="brand" href="../../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+        <div class="head-actions">
+          <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar conversa</a>
+          <button class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
+            <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span> Menu
+          </button>
+        </div>
       </header>
+
+      <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+        <div class="menu-top">
+          <a class="brand" href="../../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+          <button class="menu-close" id="menu-close" aria-label="Fechar menu">✕</button>
+        </div>
+        <div class="menu-body">
+          <nav class="menu-nav" aria-label="Páginas">
+            <a href="../../">Início</a>
+            <a href="../../clusters/pais-e-filhos/">Rituais pelo mundo</a>
+            <a href="../../biblioteca/">Biblioteca</a>
+            <a href="../../sobre/">Sobre &amp; Método</a>
+          </nav>
+          <div class="menu-sub">
+            <h3>Visualizar cada cluster</h3>
+            <div class="rl">
+              <a href="../../clusters/pais-e-filhos/">Pais e filhos</a>
+              <a href="../../clusters/maes-e-filhas/">Mães e filhas</a>
+              <a href="../../clusters/casais/">Casais</a>
+              <a href="../../clusters/avos-e-netos/">Avós e netos</a>
+              <a href="../../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a>
+              <a href="../../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a>
+            </div>
+            <div class="menu-cta">
+              <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main id="conteudo">
         <section class="section wrap">
           <div class="cluster-head">
             <div>
-              <p class="eyebrow">Cluster · quem participa</p>
-              <h1 data-cluster-nome style="font-size:clamp(2rem,4.6vw,3.6rem)">Avós e netos</h1>
+              <p class="eyebrow">Rituais pelo mundo · quem participa</p>
+              <h1 data-cluster-nome style="font-size:clamp(2rem,4.6vw,3.6rem)"></h1>
               <p class="lede" id="cluster-frase"></p>
-              <p class="hero__note" style="color:var(--stone)">A tabela abaixo é gerada a partir da base <code>data/ritos.json</code>. Ordene por qualquer coluna. Cada número traz seu selo de confiança.</p>
+              <p style="color:var(--stone);font-family:var(--font-ui);font-size:.9rem">A tabela abaixo é gerada a partir de <code>data/ritos.json</code>. Ordene por qualquer coluna. Cada número traz seu selo de confiança.</p>
             </div>
-            <div class="minimap"><div id="cluster-map" aria-label="Mini-mapa com os ritos deste cluster"></div></div>
+            <div class="minimap"><div id="cluster-map" aria-label="Mini-mapa com os rituais deste cluster"></div></div>
           </div>
-          <p id="data-error" role="alert" hidden style="color:var(--clay)"></p>
+          <p id="data-error" role="alert" hidden style="color:var(--velvet)"></p>
         </section>
 
-        <section class="section--tight wrap" aria-label="Tabela de ritos do cluster">
+        <section class="section--tight wrap" aria-label="Tabela de rituais do cluster">
           <div class="table-wrap">
             <table class="ritos">
               <thead id="ritos-head">
@@ -55,7 +85,7 @@
                   <th scope="col"><button data-key="epoca" type="button">Época <span class="arrow" aria-hidden="true">↕</span></button></th>
                   <th scope="col"><button data-key="status" type="button">Status <span class="arrow" aria-hidden="true">↕</span></button></th>
                   <th scope="col" class="center"><button data-key="espiritual" type="button">Espiritual <span class="arrow" aria-hidden="true">↕</span></button></th>
-                  <th scope="col">Participantes/ano <span class="arrow" aria-hidden="true">·</span></th>
+                  <th scope="col">Participantes/ano</th>
                   <th scope="col"><button data-key="acesso" type="button">Acesso <span class="arrow" aria-hidden="true">↕</span></button></th>
                   <th scope="col" class="center">Vídeo</th>
                 </tr>
@@ -67,19 +97,19 @@
 
         <section class="section wrap prose" aria-labelledby="curio-h">
           <p class="eyebrow">Curiosidades</p>
-          <h2 id="curio-h">Para guardar</h2>
+          <h2 id="curio-h" class="h-sec">Para guardar</h2>
           <ul class="curio" id="curiosidades"></ul>
         </section>
 
         <section class="section wrap prose" aria-labelledby="entorno-h">
           <p class="eyebrow">Turismo nos arredores</p>
-          <h2 id="entorno-h">O que ver perto — e com que cuidado</h2>
+          <h2 id="entorno-h" class="h-sec">O que ver perto — e com que cuidado</h2>
           <div class="entorno" id="entorno"></div>
         </section>
 
         <section class="section wrap prose" aria-labelledby="mem-h">
           <p class="eyebrow">Por que é memorável</p>
-          <h2 id="mem-h">O irreproduzível</h2>
+          <h2 id="mem-h" class="h-sec">O irreproduzível</h2>
           <div id="memoravel"></div>
         </section>
 
@@ -89,12 +119,38 @@
       </main>
 
       <footer class="site-foot">
-        <div class="col"><b>Ritos do Mundo Real</b><small>Dados com selo de confiança · PT-BR.</small></div>
+        <div class="col"><b>Ritos do Mundo Real</b><small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small></div>
         <div class="cols">
-          <div class="col"><b>Navegar</b><a href="../../">Início</a><a href="../../biblioteca/">Biblioteca</a><a href="../../sobre/">Sobre &amp; Método</a></div>
-          <div class="col"><b>Ética</b><a href="../../sobre/#etica">Ritos fechados &amp; FPIC</a><a href="../../sobre/#selos">Selos de confiança</a></div>
+          <div class="col"><b>Navegar</b><a href="../../">Início</a><a href="../../clusters/pais-e-filhos/">Rituais pelo mundo</a><a href="../../biblioteca/">Biblioteca</a><a href="../../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Ética</b><a href="../../sobre/#etica">Rituais fechados &amp; FPIC</a><a href="../../sobre/#selos">Selos de confiança</a></div>
         </div>
       </footer>
+
+      <section class="author" aria-label="Sobre esta ferramenta">
+        <div class="author__band">
+          <p class="eyebrow">Sobre esta ferramenta</p>
+          <p>Essa ferramenta é independente, um projeto autônomo e parte de uma jornada de <strong style="color:#fff">Transição</strong>. Pesquisa, planejamento, análise, modelagem, criação e publicação — co-criados conectando fontes abertas, usando inteligência artificial e validação rigorosa.</p>
+        </div>
+        <div class="author__card">
+          <div class="author__who">
+            <div class="author__photo" data-mono="IB"><img id="author-photo" src="../../assets/img/igor-botelho.jpg" alt="Igor Botelho" loading="lazy"></div>
+            <div>
+              <h3 class="author__name">Igor Botelho</h3>
+              <p class="author__loc">Waiheke Island, Auckland · Nova Zelândia</p>
+              <div class="author__links">
+                <a href="mailto:igor@ferttil.com">✉ igor@ferttil.com</a>
+                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener">◎ www.igorbotelho.com</a>
+                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener">in linkedin.com/in/bernardesigor</a>
+              </div>
+            </div>
+          </div>
+          <div class="author__cta">
+            <a class="btn btn--forest" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            <a class="btn btn--soft" href="mailto:igor@ferttil.com">Enviar um e-mail</a>
+          </div>
+        </div>
+        <p class="author__note">Agendamento via Calendly · calendly.com/ferttil/meet</p>
+      </section>
 
     </div>
   </div>

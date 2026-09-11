@@ -116,6 +116,19 @@
       quote: { t: "“O rito de passagem não separa o homem da natureza; ao contrário, inscreve-o no ciclo que a governa.”", a: "Leitura contemporânea de van Gennep" } },
   ];
 
+  /* fotos por cluster (Unsplash CDN — trocáveis) + tom pastel do card */
+  var UP = "?auto=format&fit=crop&w=900&q=70";
+  var CFOTO = {
+    "pais-e-filhos": "https://images.unsplash.com/photo-1501785888041-af3ef285b470" + UP,
+    "maes-e-filhas": "https://images.unsplash.com/photo-1490750967868-88aa4486c946" + UP,
+    "casais": "https://images.unsplash.com/photo-1518495973542-4542c06a5843" + UP,
+    "avos-e-netos": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e" + UP,
+    "coletivos-e-peregrinacoes": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" + UP,
+    "natureza-animais-e-plantas": "https://images.unsplash.com/photo-1426604966848-d7adac402bff" + UP
+  };
+  var CTINT = { "pais-e-filhos": "sage", "maes-e-filhas": "rose", "casais": "sand",
+    "avos-e-netos": "sage", "coletivos-e-peregrinacoes": "rose", "natureza-animais-e-plantas": "sand" };
+
   var STATUS_LABEL = { muito_popular: "Muito popular", conhecido: "Conhecido", exotico: "Exótico" };
   var STATUS_CLASS = { muito_popular: "status-mp", conhecido: "status-c", exotico: "status-e" };
   var ACESSO_LABEL = { aberto: "Aberto", aberto_com_guia: "Com guia", restrito: "Restrito (familiar)", fechado: "Fechado" };
@@ -207,39 +220,75 @@
       "Papua-Nova Guiné": "Oceania", "Vanuatu": "Oceania"
     };
     ritos.forEach(function (r) { paises[r.pais] = 1; if (CONT[r.pais]) continentes[CONT[r.pais]] = 1; });
-    setNum("stat-ritos", ritos.length);
-    setNum("stat-clusters", CLUSTERS.length);
-    setNum("stat-paises", Object.keys(paises).length);
-    setNum("stat-continentes", Object.keys(continentes).length);
+    setCount("stat-ritos", ritos.length);
+    setCount("stat-clusters", CLUSTERS.length);
+    setCount("stat-paises", Object.keys(paises).length);
+    setCount("stat-continentes", Object.keys(continentes).length);
 
-    /* grade de clusters */
+    /* grade "Rituais pelo mundo" (com foto) */
     var grid = document.getElementById("cluster-grid");
     if (grid) {
       grid.innerHTML = CLUSTERS.map(function (c) {
         var membros = ritos.filter(function (r) { return r.clusters.indexOf(c.slug) !== -1; });
         var ex = membros.slice(0, 3).map(function (r) { return r.nome.split(" (")[0]; }).join(" · ");
-        return '<a class="ccard reveal" href="' + hrefCluster(c.slug) + '">' +
-          '<span class="ccard__k">Cluster</span>' +
-          '<h3>' + esc(c.nome) + '</h3>' +
+        return '<a class="ccard reveal" data-tint="' + (CTINT[c.slug] || "sage") + '" href="' + hrefCluster(c.slug) + '">' +
+          '<div class="pframe pframe--duo"><img src="' + CFOTO[c.slug] + '" alt="" loading="lazy">' +
+          '<div class="ccard__label"><span class="ccard__k">Rituais pelo mundo</span><h3>' + esc(c.nome) + '</h3></div>' +
+          '</div>' +
+          '<div class="ccard__body">' +
           '<p>' + esc(c.frase) + '</p>' +
           '<span class="ccard__ex">' + esc(ex) + '</span>' +
-          '<span class="pill badge-status ' + '" style="background:' + hexa(c.cor, .12) + ';border-color:' + hexa(c.cor, .3) + ';color:' + c.cor + '">' + membros.length + ' ritos</span>' +
-          '</a>';
+          '<div class="ccard__foot">' +
+          '<span class="pill" style="background:' + hexa(c.cor, .12) + ';border-color:' + hexa(c.cor, .32) + ';color:' + c.cor + '">' + membros.length + ' rituais</span>' +
+          '<span class="ccard__more">Ver <span aria-hidden="true">→</span></span>' +
+          '</div></div></a>';
       }).join("");
     }
 
-    /* mapa hero */
-    loadMap(document.getElementById("hero-map"), ritos, null);
+    /* carrossel de destaques */
+    renderFeatured(ritos);
 
-    /* filtro / instrumento de decisão */
+    /* banner do mapa (Equal Earth) */
+    loadMap(document.getElementById("map-banner"), ritos, null);
+
+    /* instrumento de decisão */
     initFilter(ritos);
 
     /* animação de entrada (stagger) */
     revealStagger();
   }
 
+  function renderFeatured(ritos) {
+    var track = document.getElementById("featured-track");
+    if (!track) return;
+    /* destaques: muito populares com vídeo, um por cluster quando possível, no máx. 10 */
+    var pick = [], seen = {};
+    ritos.filter(function (r) { return r.status === "muito_popular" && r.video; }).forEach(function (r) {
+      var k = r.clusters[0];
+      if (!seen[k]) { seen[k] = 1; pick.push(r); }
+    });
+    ritos.filter(function (r) { return r.status === "muito_popular" && r.video && pick.indexOf(r) === -1; })
+      .forEach(function (r) { if (pick.length < 10) pick.push(r); });
+    track.innerHTML = pick.map(function (r) {
+      var cl = clusterBySlug(r.clusters[0]);
+      var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
+      return '<a class="car-card" href="' + hrefCluster(r.clusters[0], r.id) + '">' +
+        '<div class="pframe pframe--duo"><img src="' + CFOTO[r.clusters[0]] + '" alt="" loading="lazy"></div>' +
+        '<div class="car-card__body">' +
+        '<h4>' + esc(r.nome) + '</h4>' +
+        '<div class="meta">' + esc(r.pais) + " · " + esc(cl ? cl.nome : "") + '</div>' +
+        '<div class="tags">' +
+        '<span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span>' +
+        '<span class="pill"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span></span>' + esc(r.participantes_ano.valor.split(";")[0]).slice(0, 26) + '</span>' +
+        '</div></div></a>';
+    }).join("");
+    initCarousels();
+  }
+
   function initFilter(ritos) {
     var selQuem = document.getElementById("f-quem");
+    var selSent = document.getElementById("f-sentimento");
+    var selMuda = document.getElementById("f-muda");
     var selMes = document.getElementById("f-mes");
     var selStatus = document.getElementById("f-status");
     var selAcesso = document.getElementById("f-acesso");
@@ -250,6 +299,9 @@
 
     /* preencher "quem participa" com clusters */
     CLUSTERS.forEach(function (c) { selQuem.appendChild(opt(c.slug, c.nome)); });
+    /* sentimento e "o que muda": valores únicos vindos da base */
+    uniq(ritos, "sentimento").forEach(function (v) { selSent.appendChild(opt(v, v)); });
+    uniq(ritos, "muda").forEach(function (v) { selMuda.appendChild(opt(v, v)); });
 
     var MESES = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
     MESES.forEach(function (m, i) { selMes.appendChild(opt(String(i + 1), m)); });
@@ -266,9 +318,11 @@
     }
 
     function render() {
-      var q = selQuem.value, m = selMes.value, st = selStatus.value, ac = selAcesso.value;
+      var q = selQuem.value, se = selSent.value, mu = selMuda.value, m = selMes.value, st = selStatus.value, ac = selAcesso.value;
       var list = ritos.filter(function (r) {
         if (q && r.clusters.indexOf(q) === -1) return false;
+        if (se && r.sentimento !== se) return false;
+        if (mu && r.muda !== mu) return false;
         if (st && r.status !== st) return false;
         if (ac && r.acesso_visitante !== ac) return false;
         if (!matchMes(r, m)) return false;
@@ -287,14 +341,16 @@
           '<span class="pill">' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</span>' +
           (r.espiritual ? '<span class="pill pill--moss"><span class="ic">✦</span>espiritual</span>' : "") +
           '</div>' +
+          '<div class="meta">' + esc(r.sentimento) + ' · <em>' + esc(r.muda) + '</em></div>' +
           '<div class="meta"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span> · ' + esc(r.participantes_ano.valor) + '</div>' +
           '<a class="more" href="' + hrefCluster(r.clusters[0], r.id) + '">Ver em ' + esc(cl ? cl.nome : "cluster") + ' →</a>' +
           '</article>';
       }).join("");
     }
 
-    [selQuem, selMes, selStatus, selAcesso].forEach(function (s) { s.addEventListener("change", render); });
-    clear.addEventListener("click", function () { selQuem.value = ""; selMes.value = ""; selStatus.value = ""; selAcesso.value = ""; render(); });
+    var selects = [selQuem, selSent, selMuda, selMes, selStatus, selAcesso];
+    selects.forEach(function (s) { s.addEventListener("change", render); });
+    clear.addEventListener("click", function () { selects.forEach(function (s) { s.value = ""; }); render(); });
     render();
   }
 
@@ -419,33 +475,179 @@
     var host = document.getElementById("lib-root");
     if (!host) return;
     var src = EMBED ? Promise.resolve(window.__BIBLIO__) : fetch(BASE + "data/biblioteca.json", { cache: "no-cache" }).then(function (r) { return r.json(); });
-    src
-      .then(function (groups) {
-        host.innerHTML = groups.map(function (g) {
-          return '<section class="lib-group">' +
-            '<h2>' + esc(g.grupo) + '</h2>' +
-            (g.nota ? '<p class="lede">' + esc(g.nota) + '</p>' : '') +
-            '<div class="lib-items">' + g.itens.map(libItem).join("") + '</div>' +
-            '</section>';
-        }).join("");
-      })
-      .catch(function () { host.innerHTML = '<p class="lede">Não foi possível carregar a biblioteca.</p>'; });
+    src.then(function (data) {
+      var itens = data.itens, cnomes = data.clusters || {};
+      var tipos = uniq(itens, "tipo");
+      var cls = uniq(itens, "cluster");
+      var fTipo = "", fCluster = "";
+      var barTipo = document.getElementById("lib-tipos");
+      var barCluster = document.getElementById("lib-clusters");
+      var grid = document.getElementById("lib-grid");
+      var countEl = document.getElementById("lib-count");
+
+      function chip(val, label, group) {
+        var b = document.createElement("button");
+        b.className = "chip"; b.type = "button"; b.textContent = label;
+        b.setAttribute("aria-pressed", "false");
+        b.dataset.val = val; b.dataset.group = group;
+        return b;
+      }
+      barTipo.appendChild(chip("", "Todos", "tipo"));
+      tipos.forEach(function (t) { barTipo.appendChild(chip(t, t, "tipo")); });
+      barCluster.appendChild(chip("", "Todos", "cluster"));
+      cls.forEach(function (c) { barCluster.appendChild(chip(c, cnomes[c] || c, "cluster")); });
+
+      function paint() {
+        var list = itens.filter(function (it) {
+          if (fTipo && it.tipo !== fTipo) return false;
+          if (fCluster && it.cluster !== fCluster) return false;
+          return true;
+        });
+        countEl.textContent = list.length + " de " + itens.length + " itens";
+        grid.innerHTML = list.length ? list.map(function (it) { return libItem(it, cnomes); }).join("")
+          : '<p class="results__empty">Nada com esses filtros.</p>';
+        revealStaggerScoped(grid);
+      }
+      function wire(bar, setter, groupRef) {
+        bar.addEventListener("click", function (e) {
+          var b = e.target.closest(".chip"); if (!b) return;
+          bar.querySelectorAll(".chip").forEach(function (x) { x.setAttribute("aria-pressed", "false"); });
+          b.setAttribute("aria-pressed", "true");
+          setter(b.dataset.val); paint();
+        });
+      }
+      wire(barTipo, function (v) { fTipo = v; });
+      wire(barCluster, function (v) { fCluster = v; });
+      barTipo.firstChild.setAttribute("aria-pressed", "true");
+      barCluster.firstChild.setAttribute("aria-pressed", "true");
+      paint();
+    }).catch(function () { host.innerHTML = '<p class="lede">Não foi possível carregar a biblioteca.</p>'; });
   }
-  function libItem(it) {
+  function libItem(it, cnomes) {
     var link = it.link
       ? '<a class="src" href="' + esc(it.link) + '" target="_blank" rel="noopener">Abrir fonte →</a>'
       : '<span class="nolink">Referência citada — link em verificação.</span>';
-    return '<article class="lib-item">' +
-      '<span class="pill type">' + esc(it.tipo) + '</span>' +
+    var cl = (cnomes && cnomes[it.cluster]) || it.cluster;
+    return '<article class="lib-item reveal">' +
+      '<div class="toprow"><span class="pill">' + esc(it.tipo) + '</span><span class="lib-cluster">' + esc(cl) + '</span></div>' +
       '<h4>' + esc(it.titulo) + '</h4>' +
       '<div class="by">' + esc(it.autor) + (it.ano ? " · " + esc(it.ano) : "") + (it.idioma ? " · " + esc(it.idioma) : "") + '</div>' +
       (it.porque ? '<div class="why">' + esc(it.porque) + '</div>' : '') +
       link + '</article>';
   }
 
+  /* ==========================================================
+     COMPONENTES DE UI (menu, acordeão, carrossel)
+     ========================================================== */
+  function initMenu() {
+    var toggle = document.getElementById("menu-toggle");
+    var overlay = document.getElementById("menu-overlay");
+    var close = document.getElementById("menu-close");
+    if (!toggle || !overlay) return;
+    function open() { overlay.classList.add("open"); toggle.setAttribute("aria-expanded", "true"); document.body.style.overflow = "hidden"; var f = overlay.querySelector("a,button"); if (f) f.focus(); }
+    function shut() { overlay.classList.remove("open"); toggle.setAttribute("aria-expanded", "false"); document.body.style.overflow = ""; toggle.focus(); }
+    toggle.addEventListener("click", open);
+    if (close) close.addEventListener("click", shut);
+    overlay.addEventListener("click", function (e) { if (e.target === overlay) shut(); });
+    overlay.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", shut); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape" && overlay.classList.contains("open")) shut(); });
+  }
+
+  function initAccordions() {
+    document.querySelectorAll("[data-accordion] .acc-item").forEach(function (item) {
+      var head = item.querySelector(".acc-head");
+      var body = item.querySelector(".acc-body");
+      if (!head || !body) return;
+      head.addEventListener("click", function () {
+        var open = item.classList.toggle("open");
+        head.setAttribute("aria-expanded", open ? "true" : "false");
+        body.style.maxHeight = open ? body.scrollHeight + "px" : "0";
+      });
+    });
+  }
+
+  function initCarousels() {
+    document.querySelectorAll("[data-carousel]").forEach(function (car) {
+      var track = car.querySelector(".carousel__track");
+      var prev = car.querySelector("[data-car-prev]");
+      var next = car.querySelector("[data-car-next]");
+      if (!track || !prev || !next) return;
+      function step() { var c = track.querySelector(":scope > *"); return c ? c.getBoundingClientRect().width + 18 : 300; }
+      function upd() {
+        prev.disabled = track.scrollLeft < 6;
+        next.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 6;
+      }
+      prev.onclick = function () { track.scrollBy({ left: -step(), behavior: "smooth" }); };
+      next.onclick = function () { track.scrollBy({ left: step(), behavior: "smooth" }); };
+      track.addEventListener("scroll", upd, { passive: true });
+      setTimeout(upd, 60);
+    });
+  }
+
+  function initAuthorPhoto() {
+    var img = document.getElementById("author-photo");
+    if (img) img.addEventListener("error", function () { img.remove(); });
+  }
+
+  /* imagens com fallback: se a foto local do usuário não existir, cai para o CDN */
+  function initImgFallback() {
+    document.querySelectorAll("img[data-fallback]").forEach(function (img) {
+      img.addEventListener("error", function once() {
+        img.removeEventListener("error", once);
+        img.src = img.getAttribute("data-fallback");
+      });
+    });
+  }
+
+  function initUI() { initMenu(); initAccordions(); initCarousels(); initAuthorPhoto(); initImgFallback(); initParallax(); }
+
   /* ---- utilitários ---- */
   function setNum(id, n) { var el = document.getElementById(id); if (el) el.textContent = n; }
+  var _countIO;
+  function reduced() { return matchMedia("(prefers-reduced-motion: reduce)").matches; }
+  function setCount(id, n) {
+    var el = document.getElementById(id); if (!el) return;
+    el.dataset.count = n;
+    if (reduced() || !("IntersectionObserver" in window)) { el.textContent = n; return; }
+    el.textContent = "0";
+    if (!_countIO) _countIO = new IntersectionObserver(function (es) {
+      es.forEach(function (e) { if (e.isIntersecting) { animateNum(e.target); _countIO.unobserve(e.target); } });
+    }, { threshold: .4 });
+    _countIO.observe(el);
+  }
+  function animateNum(el) {
+    var n = +el.dataset.count, dur = 1200, t0 = 0;
+    function step(t) { if (!t0) t0 = t; var p = Math.min(1, (t - t0) / dur), e = 1 - Math.pow(1 - p, 3); el.textContent = Math.round(e * n); if (p < 1) requestAnimationFrame(step); }
+    requestAnimationFrame(step);
+  }
+  function initParallax() {
+    if (reduced() || window.innerWidth < 760) return;
+    var layers = [].slice.call(document.querySelectorAll(".parallax-layer"));
+    if (!layers.length) return;
+    var ticking = false;
+    function upd() {
+      var vh = window.innerHeight;
+      layers.forEach(function (el) {
+        var host = el.parentElement, r = host.getBoundingClientRect();
+        if (r.bottom < -120 || r.top > vh + 120) return;
+        var off = ((r.top + r.height / 2) - vh / 2) / vh;
+        el.style.transform = "translate3d(0," + (off * -42).toFixed(1) + "px,0)";
+      });
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () { if (!ticking) { ticking = true; requestAnimationFrame(upd); } }, { passive: true });
+    window.addEventListener("resize", upd);
+    upd();
+  }
   function opt(v, t) { var o = document.createElement("option"); o.value = v; o.textContent = t; return o; }
+  function uniq(list, key) {
+    var seen = {}, out = [];
+    list.forEach(function (x) { var v = x[key]; if (v && !seen[v]) { seen[v] = 1; out.push(v); } });
+    return out;
+  }
+  function revealStaggerScoped(root) {
+    (root || document).querySelectorAll(".reveal").forEach(function (e) { e.classList.add("in"); });
+  }
   function hexa(hex, a) {
     var h = hex.replace("#", ""); var r = parseInt(h.substr(0, 2), 16), g = parseInt(h.substr(2, 2), 16), b = parseInt(h.substr(4, 2), 16);
     return "rgba(" + r + "," + g + "," + b + "," + a + ")";
@@ -481,8 +683,8 @@
 
   if (EMBED) {
     /* modo embutido: o roteador (preview single-file) controla a renderização */
-    window.RMR = { initHome: initHome, initCluster: initCluster, initBiblioteca: initBiblioteca, loadRitos: loadRitos, revealStagger: revealStagger };
+    window.RMR = { initHome: initHome, initCluster: initCluster, initBiblioteca: initBiblioteca, loadRitos: loadRitos, revealStagger: revealStagger, initUI: initUI };
   } else {
-    document.addEventListener("DOMContentLoaded", bootPage);
+    document.addEventListener("DOMContentLoaded", function () { initUI(); bootPage(); });
   }
 })();

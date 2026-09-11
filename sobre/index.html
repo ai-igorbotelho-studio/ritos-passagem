@@ -3,14 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sobre &amp; Método — Ritos do Mundo Real</title>
-  <meta name="description" content="Método, selos de confiança, ética (FPIC, turismo-espetáculo, bem-estar animal, overtourism) e créditos do mapa Equal Earth do projeto Ritos do Mundo Real.">
+  <title>Sobre & Método — Ritos do Mundo Real</title>
+  <meta name="description" content="Método, selos de confiança, ética (FPIC) e créditos do mapa Equal Earth.">
   <link rel="canonical" href="https://ritos.exemplo/sobre/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sobre &amp; Método — Ritos do Mundo Real">
-  <meta property="og:description" content="Método, selos de confiança, ética e créditos do mapa Equal Earth.">
+  <meta property="og:title" content="Sobre & Método — Ritos do Mundo Real">
+  <meta property="og:description" content="Método, selos de confiança, ética (FPIC) e créditos do mapa Equal Earth.">
   <meta property="og:image" content="https://ritos.exemplo/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preload" href="../assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/site.css">
@@ -21,86 +23,126 @@
     <div class="sheet">
 
       <header class="site-head">
-        <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>Ritos do Mundo Real</a>
-        <nav class="nav" aria-label="Principal">
-          <a href="../">Início</a>
-          <a href="../clusters/pais-e-filhos/">Clusters</a>
-          <a href="../biblioteca/">Biblioteca</a>
-          <a href="../sobre/" aria-current="page">Sobre &amp; Método</a>
-        </nav>
+        <a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+        <div class="head-actions">
+          <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar conversa</a>
+          <button class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
+            <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span> Menu
+          </button>
+        </div>
       </header>
+
+      <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+        <div class="menu-top">
+          <a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+          <button class="menu-close" id="menu-close" aria-label="Fechar menu">✕</button>
+        </div>
+        <div class="menu-body">
+          <nav class="menu-nav" aria-label="Páginas">
+            <a href="../">Início</a>
+            <a href="../clusters/pais-e-filhos/">Rituais pelo mundo</a>
+            <a href="../biblioteca/">Biblioteca</a>
+            <a href="../sobre/">Sobre &amp; Método</a>
+          </nav>
+          <div class="menu-sub">
+            <h3>Visualizar cada cluster</h3>
+            <div class="rl">
+              <a href="../clusters/pais-e-filhos/">Pais e filhos</a>
+              <a href="../clusters/maes-e-filhas/">Mães e filhas</a>
+              <a href="../clusters/casais/">Casais</a>
+              <a href="../clusters/avos-e-netos/">Avós e netos</a>
+              <a href="../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a>
+              <a href="../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a>
+            </div>
+            <div class="menu-cta">
+              <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main id="conteudo">
         <section class="section wrap">
           <p class="eyebrow">Sobre &amp; método</p>
-          <h1 style="font-size:clamp(2rem,4.6vw,3.4rem)">Honestidade sobre os dados vem antes de tudo</h1>
-          <p class="lede">Este projeto organiza ritos de passagem e rituais coletivos do mundo numa base consultável, visual e honesta — para ajudar a decidir qual experiência vale viver, quando, e com que cuidado ético. Poucos visitantes, adultos, desktop e celular. Sem login, sem rastreamento pesado.</p>
+          <h1 class="h-sec">Honestidade sobre os dados vem antes de tudo</h1>
+          <p class="lede">Este projeto organiza rituais de passagem e rituais coletivos do mundo numa base consultável, visual e honesta — para ajudar a decidir qual experiência vale viver, quando, e com que cuidado ético.</p>
         </section>
 
         <section class="section--tight wrap" id="selos">
           <p class="eyebrow">Selos de confiança</p>
-          <h2>Nunca apresentamos estimativa como fato</h2>
+          <h2 class="h-sec">Nunca apresentamos estimativa como fato</h2>
           <p class="lede" style="margin-bottom:1.4rem">Todo número de “participantes/ano” carrega um selo. A cor nunca aparece sozinha — vem sempre com texto.</p>
           <div class="about-grid">
-            <div class="about-card">
-              <div class="seal-key">
-                <div class="row"><span class="seal seal--conf"><span class="ic">✅</span>Confirmado</span></div>
-                <p>Fonte oficial ou estatística (ex.: censo, ministério, UNESCO, autoridade local). É o único selo que tratamos como fato.</p>
-              </div>
-            </div>
-            <div class="about-card">
-              <div class="seal-key">
-                <div class="row"><span class="seal seal--parcial"><span class="ic">⚠️</span>Parcial</span></div>
-                <p>Ordem de grandeza plausível, montada a partir de fontes secundárias. Útil para comparar, não para citar como número exato.</p>
-              </div>
-            </div>
-            <div class="about-card">
-              <div class="seal-key">
-                <div class="row"><span class="seal seal--estimativa"><span class="ic">❓</span>Estimativa</span></div>
-                <p>Sem dado público. Mostramos como “sem estatística pública; ordem de grandeza: …”, jamais como certeza.</p>
-              </div>
-            </div>
+            <div class="about-card"><div class="seal-key"><span class="seal seal--conf"><span class="ic">✅</span>Confirmado</span><p>Fonte oficial ou estatística. É o único selo que tratamos como fato.</p></div></div>
+            <div class="about-card"><div class="seal-key"><span class="seal seal--parcial"><span class="ic">⚠️</span>Parcial</span><p>Ordem de grandeza plausível a partir de fontes secundárias.</p></div></div>
+            <div class="about-card"><div class="seal-key"><span class="seal seal--estimativa"><span class="ic">❓</span>Estimativa</span><p>Sem dado público. Mostramos como “ordem de grandeza”, jamais como certeza.</p></div></div>
           </div>
         </section>
 
         <section class="section wrap prose" id="etica">
           <p class="eyebrow">Ética e sustentabilidade</p>
-          <h2>Cinco regras editoriais</h2>
+          <h2 class="h-sec">Cinco regras editoriais</h2>
           <div class="entorno" style="margin-top:1rem">
-            <div class="item"><h4>1. Ritos fechados (FPIC)</h4><p class="meta">Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite e o Hajj em Meca são listados como <strong>conhecimento</strong>, marcados como <em>acesso fechado</em>. Não indexamos vídeos comerciais nem operadores. FPIC = consentimento livre, prévio e informado da comunidade.</p></div>
-            <div class="item"><h4>2. Turismo-espetáculo</h4><p class="meta">No Omo, na tucandeira “para turista” e na ayahuasca comercial, mostramos o alerta e sugerimos critérios: operador comunitário, remuneração direta e nada de encenação fora de época.</p></div>
-            <div class="item"><h4>3. Bem-estar animal</h4><p class="meta">Jallikattu e a corrida de cavalos com jóqueis-crianças do Naadam entram com a controvérsia registrada e com fonte — sem que o site tome partido.</p></div>
+            <div class="item"><h4>1. Rituais fechados (FPIC)</h4><p class="meta">Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite e o Hajj em Meca são listados como conhecimento, marcados como acesso fechado. Não indexamos vídeos comerciais nem operadores.</p></div>
+            <div class="item"><h4>2. Turismo-espetáculo</h4><p class="meta">No Omo, na tucandeira “para turista” e na ayahuasca comercial, mostramos o alerta e sugerimos operador comunitário, remuneração direta e nada de encenação fora de época.</p></div>
+            <div class="item"><h4>3. Bem-estar animal</h4><p class="meta">Jallikattu e a corrida de cavalos com jóqueis-crianças do Naadam entram com a controvérsia registrada e com fonte — sem tomar partido.</p></div>
             <div class="item"><h4>4. Overtourism</h4><p class="meta">Para Kumbh Mela, Caminho de Santiago e Yi Peng indicamos os meses e trechos de menor pressão.</p></div>
-            <div class="item"><h4>5. Imagens e menores</h4><p class="meta">Nunca reproduzimos imagens de menores em ritos de nudez. Links apenas para fontes editoriais e institucionais.</p></div>
+            <div class="item"><h4>5. Imagens e menores</h4><p class="meta">Nunca reproduzimos imagens de menores em rituais de nudez. Links apenas para fontes editoriais e institucionais.</p></div>
           </div>
         </section>
 
         <section class="section wrap prose" id="mapa">
           <p class="eyebrow">Créditos do mapa</p>
-          <h2>Sobre o mapa</h2>
-          <p>A projeção é a <strong>Equal Earth</strong>, publicada em 2018 pelos cartógrafos Bojan Šavrič, Tom Patterson e Bernhard Jenny. É uma projeção de <strong>áreas iguais</strong>: cada país aparece no tamanho que realmente tem, ao contrário de Mercator, que infla o Norte. Foi adotada rapidamente por instituições científicas e é hoje uma das opções usadas em publicações de agências da ONU. O contorno de países usa dados de domínio público (Natural Earth); os pinos são posicionados calculando a projeção Equal Earth a partir da latitude e longitude de cada rito.</p>
+          <h2 class="h-sec">Sobre o mapa</h2>
+          <p>A projeção é a <strong>Equal Earth</strong>, publicada em 2018 pelos cartógrafos Bojan Šavrič, Tom Patterson e Bernhard Jenny. É uma projeção de <strong>áreas iguais</strong>: cada país aparece no tamanho que realmente tem, ao contrário de Mercator, que infla o Norte. O contorno de países usa dados de domínio público (Natural Earth); os pinos são posicionados calculando a projeção Equal Earth a partir da latitude e longitude de cada rito.</p>
           <blockquote class="quote">⚠️ Nota de validação: a afirmação de que a projeção teria sido “lançada pela ONU” <strong>não se confirma</strong> — ela foi criada por três cartógrafos (Esri, US National Park Service e Monash University). O defensável é dizer que é “usada em mapas da ONU”.<cite>Validação de dados do projeto</cite></blockquote>
         </section>
 
         <section class="section--tight wrap prose">
           <p class="eyebrow">Como foi feito</p>
-          <h2>Método e stack</h2>
+          <h2 class="h-sec">Método e stack</h2>
           <ul>
             <li>Site estático em HTML + CSS + JavaScript vanilla, <strong>sem framework e sem build</strong>. Um único <code>data/ritos.json</code> alimenta todas as páginas.</li>
-            <li>Fontes self-hosted (OFL): <strong>Gloock</strong> (títulos), <strong>Instrument Sans</strong> (subtítulos e interface) e <strong>Mulish</strong> (corpo), servidas em WOFF2.</li>
-            <li>Mapa gerado por script Python a partir de contornos de domínio público, projetado em Equal Earth; os pinos usam a mesma fórmula em JavaScript para alinhar.</li>
+            <li>Fontes self-hosted (OFL): <strong>Gloock</strong> (títulos), <strong>Instrument Sans</strong> (interface) e <strong>Mulish</strong> (corpo).</li>
+            <li>Mapa gerado por script Python a partir de contornos de domínio público, projetado em Equal Earth; os pinos usam a mesma fórmula em JavaScript.</li>
             <li>Deploy em Cloudflare Pages a partir do GitHub, sem Node em produção.</li>
           </ul>
-          <p class="meta" style="margin-top:1rem">Fora de escopo, por decisão de projeto: CMS, busca full-text no servidor, embeds do YouTube (usamos link + card), comentários e internacionalização.</p>
         </section>
       </main>
 
       <footer class="site-foot">
         <div class="col"><b>Ritos do Mundo Real</b><small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small></div>
         <div class="cols">
-          <div class="col"><b>Navegar</b><a href="../">Início</a><a href="../clusters/pais-e-filhos/">Clusters</a><a href="../biblioteca/">Biblioteca</a></div>
+          <div class="col"><b>Navegar</b><a href="../">Início</a><a href="../clusters/pais-e-filhos/">Rituais pelo mundo</a><a href="../biblioteca/">Biblioteca</a><a href="../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Ética</b><a href="../sobre/#etica">Rituais fechados &amp; FPIC</a><a href="../sobre/#selos">Selos de confiança</a></div>
         </div>
       </footer>
+
+      <section class="author" aria-label="Sobre esta ferramenta">
+        <div class="author__band">
+          <p class="eyebrow">Sobre esta ferramenta</p>
+          <p>Essa ferramenta é independente, um projeto autônomo e parte de uma jornada de <strong style="color:#fff">Transição</strong>. Pesquisa, planejamento, análise, modelagem, criação e publicação — co-criados conectando fontes abertas, usando inteligência artificial e validação rigorosa.</p>
+        </div>
+        <div class="author__card">
+          <div class="author__who">
+            <div class="author__photo" data-mono="IB"><img id="author-photo" src="../assets/img/igor-botelho.jpg" alt="Igor Botelho" loading="lazy"></div>
+            <div>
+              <h3 class="author__name">Igor Botelho</h3>
+              <p class="author__loc">Waiheke Island, Auckland · Nova Zelândia</p>
+              <div class="author__links">
+                <a href="mailto:igor@ferttil.com">✉ igor@ferttil.com</a>
+                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener">◎ www.igorbotelho.com</a>
+                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener">in linkedin.com/in/bernardesigor</a>
+              </div>
+            </div>
+          </div>
+          <div class="author__cta">
+            <a class="btn btn--forest" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            <a class="btn btn--soft" href="mailto:igor@ferttil.com">Enviar um e-mail</a>
+          </div>
+        </div>
+        <p class="author__note">Agendamento via Calendly · calendly.com/ferttil/meet</p>
+      </section>
 
     </div>
   </div>

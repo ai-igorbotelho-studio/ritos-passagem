@@ -107,6 +107,7 @@ def main():
     else if(r.page==="cluster"){ RMR.loadRitos().then(function(d){ RMR.initCluster(d, r.slug); if(r.id){ setTimeout(function(){ var el=document.getElementById(r.id); if(el){ el.scrollIntoView({block:"center"}); el.classList.add("flash"); } }, 120); } }); }
     else if(r.page==="biblioteca"){ RMR.initBiblioteca(); }
     else { RMR.revealStagger && RMR.revealStagger(); }
+    if(window.RMR && RMR.initUI) RMR.initUI();
   }
   window.addEventListener("hashchange", render);
   document.addEventListener("DOMContentLoaded", render);

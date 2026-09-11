@@ -16,17 +16,19 @@ def ratio(a, b):
     return (hi + 0.05) / (lo + 0.05)
 
 PAIRS = [
-    ("Texto corpo sobre paper", "#0e2f2f", "#f6f4ee", 4.5),
-    ("Texto secundário (stone) sobre paper", "#5c6b66", "#f6f4ee", 4.5),
-    ("Terciário (stone-2) sobre paper", "#7a8580", "#f6f4ee", 3.0),
-    ("Texto claro sobre ink", "#eef1ec", "#0e2f2f", 4.5),
-    ("Claro esmaecido sobre ink", "#a9bdb5", "#0e2f2f", 3.0),
-    ("Clay (destaque) sobre ink", "#c8683c", "#0e2f2f", 3.0),
-    ("Branco sobre moss (badge)", "#ffffff", "#3f6b4a", 4.5),
-    ("Branco sobre clay (botão)", "#ffffff", "#c8683c", 3.0),
-    ("Selo confirmado moss sobre paper", "#3f6b4a", "#f6f4ee", 3.0),
-    ("Selo parcial gold sobre paper", "#8a6714", "#f6f4ee", 4.5),
-    ("Alerta clay-escuro sobre paper", "#9a4a25", "#f6f4ee", 4.5),
+    ("Texto corpo (ink) sobre paper", "#1a2a21", "#fbf7ee", 4.5),
+    ("Texto corpo (ink) sobre cream", "#1a2a21", "#fcf8f0", 4.5),
+    ("Secundário (stone) sobre cream", "#55645b", "#fcf8f0", 4.5),
+    ("Terciário (stone-2) sobre cream", "#79877e", "#fcf8f0", 3.0),
+    ("Botão lime: lime-ink sobre lime", "#14351f", "#c6f24e", 4.5),
+    ("Branco sobre velvet (botão/pill)", "#ffffff", "#7a1e2b", 4.5),
+    ("Claro (on-forest) sobre forest", "#eef3ea", "#123c2c", 4.5),
+    ("Claro esmaecido sobre forest", "#a7c0b2", "#123c2c", 3.0),
+    ("Lima sobre forest (menu/realce)", "#c6f24e", "#123c2c", 3.0),
+    ("Eyebrow velvet sobre paper", "#7a1e2b", "#fbf7ee", 4.5),
+    ("Selo confirmado (moss) sobre cream", "#2f6b45", "#fcf8f0", 3.0),
+    ("Selo parcial (gold) sobre cream", "#8a6714", "#fcf8f0", 4.5),
+    ("Alerta/status velvet sobre cream", "#7a1e2b", "#fcf8f0", 4.5),
 ]
 
 def main():

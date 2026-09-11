@@ -4,13 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Biblioteca de conhecimento — Ritos do Mundo Real</title>
-  <meta name="description" content="Livros, artigos, documentários, reportagens e datasets sobre ritos de passagem, agrupados por cluster — a base de fontes por trás do projeto.">
+  <meta name="description" content="Mais de 100 referências sobre rituais de passagem, com subnavegação por filtros.">
   <link rel="canonical" href="https://ritos.exemplo/biblioteca/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Biblioteca de conhecimento — Ritos do Mundo Real">
-  <meta property="og:description" content="Fontes multimídia sobre ritos de passagem, agrupadas por cluster.">
+  <meta property="og:description" content="Mais de 100 referências sobre rituais de passagem, com subnavegação por filtros.">
   <meta property="og:image" content="https://ritos.exemplo/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
   <link rel="preload" href="../assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="../assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/site.css">
@@ -21,33 +23,93 @@
     <div class="sheet">
 
       <header class="site-head">
-        <a class="brand" href="../"><span class="dot" aria-hidden="true"></span>Ritos do Mundo Real</a>
-        <nav class="nav" aria-label="Principal">
-          <a href="../">Início</a>
-          <a href="../clusters/pais-e-filhos/">Clusters</a>
-          <a href="../biblioteca/" aria-current="page">Biblioteca</a>
-          <a href="../sobre/">Sobre &amp; Método</a>
-        </nav>
+        <a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+        <div class="head-actions">
+          <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar conversa</a>
+          <button class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
+            <span class="bars" aria-hidden="true"><i></i><i></i><i></i></span> Menu
+          </button>
+        </div>
       </header>
+
+      <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+        <div class="menu-top">
+          <a class="brand" href="../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+          <button class="menu-close" id="menu-close" aria-label="Fechar menu">✕</button>
+        </div>
+        <div class="menu-body">
+          <nav class="menu-nav" aria-label="Páginas">
+            <a href="../">Início</a>
+            <a href="../clusters/pais-e-filhos/">Rituais pelo mundo</a>
+            <a href="../biblioteca/">Biblioteca</a>
+            <a href="../sobre/">Sobre &amp; Método</a>
+          </nav>
+          <div class="menu-sub">
+            <h3>Visualizar cada cluster</h3>
+            <div class="rl">
+              <a href="../clusters/pais-e-filhos/">Pais e filhos</a>
+              <a href="../clusters/maes-e-filhas/">Mães e filhas</a>
+              <a href="../clusters/casais/">Casais</a>
+              <a href="../clusters/avos-e-netos/">Avós e netos</a>
+              <a href="../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a>
+              <a href="../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a>
+            </div>
+            <div class="menu-cta">
+              <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <main id="conteudo">
         <section class="section wrap">
           <p class="eyebrow">Biblioteca de conhecimento</p>
-          <h1 style="font-size:clamp(2rem,4.6vw,3.4rem)">As fontes por trás do projeto</h1>
-          <p class="lede">Livros, artigos acadêmicos, documentários, reportagens e datasets — agrupados por cluster. Onde a URL ainda não foi confirmada, indicamos <em>“link em verificação”</em> em vez de publicar um endereço incerto.</p>
+          <h1 class="h-sec">As fontes por trás do projeto</h1>
+          <p class="lede">Mais de 100 referências — livros, artigos, documentários, reportagens e datasets. Filtre pelos cartões abaixo. Onde a URL ainda não foi confirmada, indicamos <em>“link em verificação”</em> em vez de publicar um endereço incerto.</p>
         </section>
         <section class="section--tight wrap">
-          <div id="lib-root"></div>
+          <div class="lib-bar">
+            <div class="grp"><span class="lbl">Tipo</span><div class="lib-filters" id="lib-tipos"></div></div>
+            <div class="grp"><span class="lbl">Cluster</span><div class="lib-filters" id="lib-clusters"></div></div>
+            <span class="lib-count" id="lib-count"></span>
+          </div>
+          <div id="lib-root"><div class="lib-items" id="lib-grid"></div></div>
         </section>
       </main>
 
       <footer class="site-foot">
-        <div class="col"><b>Ritos do Mundo Real</b><small>Dados com selo de confiança · PT-BR.</small></div>
+        <div class="col"><b>Ritos do Mundo Real</b><small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small></div>
         <div class="cols">
-          <div class="col"><b>Navegar</b><a href="../">Início</a><a href="../clusters/pais-e-filhos/">Clusters</a><a href="../sobre/">Sobre &amp; Método</a></div>
-          <div class="col"><b>Ética</b><a href="../sobre/#etica">Ritos fechados &amp; FPIC</a><a href="../sobre/#selos">Selos de confiança</a></div>
+          <div class="col"><b>Navegar</b><a href="../">Início</a><a href="../clusters/pais-e-filhos/">Rituais pelo mundo</a><a href="../biblioteca/">Biblioteca</a><a href="../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Ética</b><a href="../sobre/#etica">Rituais fechados &amp; FPIC</a><a href="../sobre/#selos">Selos de confiança</a></div>
         </div>
       </footer>
+
+      <section class="author" aria-label="Sobre esta ferramenta">
+        <div class="author__band">
+          <p class="eyebrow">Sobre esta ferramenta</p>
+          <p>Essa ferramenta é independente, um projeto autônomo e parte de uma jornada de <strong style="color:#fff">Transição</strong>. Pesquisa, planejamento, análise, modelagem, criação e publicação — co-criados conectando fontes abertas, usando inteligência artificial e validação rigorosa.</p>
+        </div>
+        <div class="author__card">
+          <div class="author__who">
+            <div class="author__photo" data-mono="IB"><img id="author-photo" src="../assets/img/igor-botelho.jpg" alt="Igor Botelho" loading="lazy"></div>
+            <div>
+              <h3 class="author__name">Igor Botelho</h3>
+              <p class="author__loc">Waiheke Island, Auckland · Nova Zelândia</p>
+              <div class="author__links">
+                <a href="mailto:igor@ferttil.com">✉ igor@ferttil.com</a>
+                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener">◎ www.igorbotelho.com</a>
+                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener">in linkedin.com/in/bernardesigor</a>
+              </div>
+            </div>
+          </div>
+          <div class="author__cta">
+            <a class="btn btn--forest" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
+            <a class="btn btn--soft" href="mailto:igor@ferttil.com">Enviar um e-mail</a>
+          </div>
+        </div>
+        <p class="author__note">Agendamento via Calendly · calendly.com/ferttil/meet</p>
+      </section>
 
     </div>
   </div>

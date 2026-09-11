@@ -29,7 +29,9 @@
     "video": "https://www.youtube.com/watch?v=9rwhehhzN90",
     "fontes": [
       "Registros etnográficos sobre os Hamar do Vale do Omo"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Torna-se homem"
   },
   {
     "id": "satere-mawe-tucandeira",
@@ -60,7 +62,9 @@
     "video": "https://www.youtube.com/watch?v=wcwToLaYOdY",
     "fontes": [
       "SciELO — ritual e saúde na comunidade Sateré-Mawé Y'Apyrehyt, Manaus"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Torna-se homem"
   },
   {
     "id": "bar-mitzvah",
@@ -91,7 +95,9 @@
     "video": "https://www.youtube.com/watch?v=irhviXM-uuU",
     "fontes": [
       "Fontes gerais sobre a liturgia judaica"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se adulto(a)"
   },
   {
     "id": "yoruba-isomoloruko",
@@ -123,7 +129,9 @@
     "video": "https://www.youtube.com/watch?v=hTFxJAVwz_E",
     "fontes": [
       "Fontes gerais sobre cultura iorubá"
-    ]
+    ],
+    "sentimento": "Chegada & nomeação",
+    "muda": "Recebe nome e lugar no mundo"
   },
   {
     "id": "xhosa-ulwaluko",
@@ -155,7 +163,9 @@
     "fontes": [
       "COGTA (Cabo Oriental) via City Press/News24",
       "Africa Geographic — reportagem sobre a circuncisão xhosa"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Torna-se homem"
   },
   {
     "id": "maasai-eunoto",
@@ -186,7 +196,9 @@
     "video": "https://www.youtube.com/watch?v=vwLQy1hv1cw",
     "fontes": [
       "UNESCO ICH — Enkipaata, Eunoto e Olng'esherr (2018)"
-    ]
+    ],
+    "sentimento": "Pertencimento & comunidade",
+    "muda": "Torna-se homem"
   },
   {
     "id": "sepik-escarificacao-crocodilo",
@@ -218,7 +230,9 @@
     "video": "https://www.youtube.com/watch?v=oJDOh3VSoxQ",
     "fontes": [
       "National Geographic — Rites of Manhood: Crocodile Scars (2011)"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Torna-se homem"
   },
   {
     "id": "vanuatu-naghol",
@@ -250,7 +264,9 @@
     "video": "https://www.youtube.com/watch?v=GzDTOToe2JY",
     "fontes": [
       "Fontes gerais sobre o Naghol de Pentecostes"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Torna-se homem"
   },
   {
     "id": "hindu-upanayana",
@@ -282,7 +298,9 @@
     "fontes": [
       "Fontes gerais sobre samskaras hindus"
     ],
-    "video_fonte": "registro do samskara"
+    "video_fonte": "registro do samskara",
+    "sentimento": "Maturidade & identidade",
+    "muda": "Recebe nome e lugar no mundo"
   },
   {
     "id": "myanmar-shinbyu",
@@ -314,7 +332,9 @@
     "fontes": [
       "Fontes gerais sobre o budismo birmanês"
     ],
-    "video_fonte": "documentário"
+    "video_fonte": "documentário",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "apache-sunrise-ceremony",
@@ -346,7 +366,9 @@
     "fontes": [
       "NPR (2025) — Apache Sunrise Dance",
       "DER — The Sunrise Dance (documentário)"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "navajo-kinaalda",
@@ -377,7 +399,9 @@
     "video": "https://www.youtube.com/watch?v=H8HPMS-l2bM",
     "fontes": [
       "Fontes gerais sobre cultura Diné"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "ticuna-festa-moca-nova",
@@ -409,7 +433,9 @@
     "fontes": [
       "Matarezio (USP/CEstA) — estudo sobre a Festa da Moça Nova",
       "Agência FAPESP (2020)"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "krobo-dipo",
@@ -440,7 +466,9 @@
     "video": "https://www.youtube.com/watch?v=LSfaU-Vi240",
     "fontes": [
       "Fontes gerais sobre o povo Krobo"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "ritu-kala-half-saree",
@@ -472,7 +500,9 @@
     "fontes": [
       "Fontes gerais sobre costumes do sul da Índia"
     ],
-    "video_fonte": "registro do half-saree"
+    "video_fonte": "registro do half-saree",
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "quinceanera",
@@ -504,7 +534,9 @@
     "fontes": [
       "Fontes gerais sobre a quinceañera"
     ],
-    "video_fonte": "HBO Documentary"
+    "video_fonte": "HBO Documentary",
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se mulher"
   },
   {
     "id": "hindu-saptapadi",
@@ -535,7 +567,9 @@
     "video": "https://www.youtube.com/watch?v=NpO1fh866WQ",
     "fontes": [
       "CAIT (Confederation of All India Traders) — estimativas de casamentos"
-    ]
+    ],
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "china-cerimonia-do-cha",
@@ -567,7 +601,9 @@
     "fontes": [
       "Ministério de Assuntos Civis da China",
       "The Woks of Life — guia da cerimônia do chá"
-    ]
+    ],
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "celta-handfasting",
@@ -599,7 +635,9 @@
     "fontes": [
       "Fontes gerais sobre handfasting"
     ],
-    "video_fonte": "documentário"
+    "video_fonte": "documentário",
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "ortodoxa-coroacao",
@@ -631,7 +669,9 @@
     "fontes": [
       "Fontes gerais sobre a liturgia ortodoxa"
     ],
-    "video_fonte": "Greek Orthodoxy 101"
+    "video_fonte": "Greek Orthodoxy 101",
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "noite-da-henna",
@@ -663,7 +703,9 @@
     "fontes": [
       "Fontes gerais sobre a cerimônia da henna"
     ],
-    "video_fonte": "Cultural Tidbits"
+    "video_fonte": "Cultural Tidbits",
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "tailandia-rod-nam-sang",
@@ -695,7 +737,9 @@
     "fontes": [
       "Fontes gerais sobre casamentos budistas na Tailândia"
     ],
-    "video_fonte": "registro do ritual"
+    "video_fonte": "registro do ritual",
+    "sentimento": "Amor & união",
+    "muda": "Passa a ser casado(a)"
   },
   {
     "id": "annaprashan",
@@ -726,7 +770,9 @@
     "video": "https://www.youtube.com/watch?v=N8RtROixHCk",
     "fontes": [
       "Fontes gerais sobre samskaras hindus"
-    ]
+    ],
+    "sentimento": "Chegada & nomeação",
+    "muda": "Recebe nome e lugar no mundo"
   },
   {
     "id": "japao-shichi-go-san",
@@ -757,7 +803,9 @@
     "video": "https://www.youtube.com/watch?v=oNnnAOsgns8",
     "fontes": [
       "Fontes gerais sobre o Shichi-Go-San"
-    ]
+    ],
+    "sentimento": "Chegada & nomeação",
+    "muda": "É reconhecido(a) pela comunidade"
   },
   {
     "id": "coreia-doljanchi",
@@ -789,7 +837,9 @@
     "fontes": [
       "Statistics Korea"
     ],
-    "video_fonte": "documentário"
+    "video_fonte": "documentário",
+    "sentimento": "Chegada & nomeação",
+    "muda": "Recebe nome e lugar no mundo"
   },
   {
     "id": "navajo-primeiro-riso",
@@ -821,7 +871,9 @@
     "fontes": [
       "Fontes gerais sobre cultura Diné"
     ],
-    "video_fonte": "registro educativo"
+    "video_fonte": "registro educativo",
+    "sentimento": "Chegada & nomeação",
+    "muda": "É reconhecido(a) pela comunidade"
   },
   {
     "id": "madagascar-famadihana",
@@ -853,7 +905,9 @@
     "fontes": [
       "CNN Inside Africa — Turning of the bones (2016)",
       "France 24 (2023)"
-    ]
+    ],
+    "sentimento": "Luto & ancestralidade",
+    "muda": "Religa-se aos ancestrais"
   },
   {
     "id": "japao-seijin-no-hi",
@@ -884,7 +938,9 @@
     "video": "https://www.youtube.com/watch?v=imkJji77Do0",
     "fontes": [
       "Ministério de Assuntos Internos e Comunicações do Japão"
-    ]
+    ],
+    "sentimento": "Maturidade & identidade",
+    "muda": "Torna-se adulto(a)"
   },
   {
     "id": "india-kumbh-mela",
@@ -917,7 +973,9 @@
       "Governo de Uttar Pradesh",
       "Harvard — Kumbh Mela (Rahul Mehrotra, 2015)"
     ],
-    "video_fonte": "WION Wideangle"
+    "video_fonte": "WION Wideangle",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "caminho-de-santiago",
@@ -949,7 +1007,9 @@
     "fontes": [
       "Oficina de Acogida al Peregrino de Santiago"
     ],
-    "video_fonte": "documentário"
+    "video_fonte": "documentário",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "hajj",
@@ -981,7 +1041,9 @@
     "fontes": [
       "GASTAT (General Authority for Statistics), Arábia Saudita"
     ],
-    "video_fonte": "BBC"
+    "video_fonte": "BBC",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "mexico-dia-de-muertos",
@@ -1013,7 +1075,9 @@
     "fontes": [
       "UNESCO ICH — Día de Muertos (2008)"
     ],
-    "video_fonte": "AFP"
+    "video_fonte": "AFP",
+    "sentimento": "Luto & ancestralidade",
+    "muda": "Religa-se aos ancestrais"
   },
   {
     "id": "thaipusam",
@@ -1045,7 +1109,9 @@
     "fontes": [
       "Relatos de imprensa e dos organizadores em Batu Caves"
     ],
-    "video_fonte": "registro em Batu Caves"
+    "video_fonte": "registro em Batu Caves",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "lakota-vision-quest-sun-dance",
@@ -1076,7 +1142,9 @@
     "video": null,
     "fontes": [
       "Fontes gerais sobre as nações das Planícies (registro respeitoso)"
-    ]
+    ],
+    "sentimento": "Coragem & medo",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "mongolia-naadam",
@@ -1108,7 +1176,9 @@
     "fontes": [
       "UNESCO ICH — Naadam (2010)"
     ],
-    "video_fonte": "documentário"
+    "video_fonte": "documentário",
+    "sentimento": "Pertencimento & comunidade",
+    "muda": "É reconhecido(a) pela comunidade"
   },
   {
     "id": "mongolia-festival-aguia-dourada",
@@ -1140,7 +1210,9 @@
     "fontes": [
       "Reportagens BBC/Guardian sobre o Golden Eagle Festival"
     ],
-    "video_fonte": "ITV News"
+    "video_fonte": "ITV News",
+    "sentimento": "Pertencimento & comunidade",
+    "muda": "É reconhecido(a) pela comunidade"
   },
   {
     "id": "jallikattu",
@@ -1172,7 +1244,9 @@
     "fontes": [
       "Cobertura jurídica e de imprensa sobre a regulação do Jallikattu"
     ],
-    "video_fonte": "Inside South Asia"
+    "video_fonte": "Inside South Asia",
+    "sentimento": "Coragem & medo",
+    "muda": "É reconhecido(a) pela comunidade"
   },
   {
     "id": "amazonia-kambo-ayahuasca",
@@ -1203,7 +1277,9 @@
     "video": null,
     "fontes": [
       "ICEERS — relatórios de saúde e política sobre ayahuasca"
-    ]
+    ],
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "pongal-chhath-puja",
@@ -1235,7 +1311,9 @@
     "fontes": [
       "Fontes gerais sobre Pongal e Chhath Puja"
     ],
-    "video_fonte": "Sun Worship of Bihar"
+    "video_fonte": "Sun Worship of Bihar",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "tailandia-songkran",
@@ -1267,7 +1345,9 @@
     "fontes": [
       "UNESCO ICH — Songkran (2023)"
     ],
-    "video_fonte": "notícia UNESCO"
+    "video_fonte": "notícia UNESCO",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "tailandia-yi-peng-loy-krathong",
@@ -1299,7 +1379,9 @@
     "fontes": [
       "Fontes gerais sobre Yi Peng e Loy Krathong"
     ],
-    "video_fonte": "registro em Chiang Mai"
+    "video_fonte": "registro em Chiang Mai",
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
   },
   {
     "id": "parintins-boi-bumba",
@@ -1331,6 +1413,8 @@
     "fontes": [
       "Governo do Amazonas — Festival de Parintins"
     ],
-    "video_fonte": "AFP"
+    "video_fonte": "AFP",
+    "sentimento": "Pertencimento & comunidade",
+    "muda": "É reconhecido(a) pela comunidade"
   }
 ]
