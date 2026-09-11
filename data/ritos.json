@@ -1196,7 +1196,7 @@
     "epoca": "Maio a setembro; pico na Saga Dawa (mai–jun)",
     "memoravel": "Não se sobe a montanha mais sagrada do mundo: dá-se a volta nela, a 5.600 m, no sentido que a sua fé mandar.",
     "turismo_entorno": "Lago Manasarovar, Darchen, planalto de Ngari; combina com Lhasa.",
-    "status": "conhecido",
+    "status": "muito_popular",
     "espiritual": true,
     "participantes_ano": {
       "valor": "Milhares por ano (mais em anos de pico); sem contagem oficial única",
@@ -1205,7 +1205,7 @@
     },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Altitude extrema (passo a ~5.630 m): risco sério de mal de montanha. Estrangeiros dependem de permissões e guias no Tibete; a montanha é sagrada e não se escala.",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=988ebdwov6E",
     "fontes": [
       "Tibet Travel / Great Tibet Tour — guias do Kailash Kora e do passo Dolma La",
       "Relatos de peregrinação (hindu, budista, jainista e Bön)"
@@ -1239,7 +1239,7 @@
     },
     "acesso_visitante": "aberto_com_guia",
     "alerta_etico": "Contexto de segurança sensível no Iraque; verifique orientações oficiais de viagem. É um luto religioso — participe com respeito, não como espetáculo.",
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=dcOvA0cjuIU",
     "fontes": [
       "Al Jazeera, NPR e Religion Media Centre — cobertura do Arbaeen",
       "The Conversation — significado do Arbaeen"
@@ -1264,7 +1264,7 @@
     "epoca": "Dezembro a maio (da lua cheia de Unduvap à de Vesak)",
     "memoravel": "Uma pegada no topo que quatro religiões chamam de sua, alcançada de madrugada por 5.000 degraus de luz.",
     "turismo_entorno": "Nuwara Eliya, plantações de chá de Hatton, Ella.",
-    "status": "conhecido",
+    "status": "muito_popular",
     "espiritual": true,
     "participantes_ano": {
       "valor": "Milhares por noite na temporada; sem contagem oficial única",
@@ -1273,7 +1273,7 @@
     },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=bS69cKqFAEE",
     "fontes": [
       "Sri Lanka Tourism — Sri Pada e a temporada de peregrinação",
       "Guias de peregrinação de Adam's Peak"
@@ -1298,7 +1298,7 @@
     "epoca": "Ao longo do ano (primavera e outono mais amenos)",
     "memoravel": "Seis semanas e 1.200 km a pé por 88 templos, vestido de branco: 'dois viajando juntos' — você e o espírito do mestre.",
     "turismo_entorno": "Tokushima, Kōchi, Ehime, Kagawa; os redemoinhos de Naruto.",
-    "status": "conhecido",
+    "status": "muito_popular",
     "espiritual": true,
     "participantes_ano": {
       "valor": "Dezenas a centenas de milhares por ano (a maioria de ônibus/carro); sem contagem oficial única",
@@ -1307,7 +1307,7 @@
     },
     "acesso_visitante": "aberto",
     "alerta_etico": null,
-    "video": null,
+    "video": "https://www.youtube.com/watch?v=xawDGMtI5PQ",
     "fontes": [
       "JNTO e Prefeitura de Tokushima — Ohenro (88 templos)",
       "88shikokuhenro.jp — guia oficial"

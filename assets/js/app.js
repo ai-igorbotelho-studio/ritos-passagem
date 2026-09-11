@@ -309,14 +309,20 @@
   function renderFeatured(ritos) {
     var track = document.getElementById("featured-track");
     if (!track) return;
-    /* destaques: muito populares com vídeo, um por cluster quando possível, no máx. 10 */
+    /* destaques: muito populares com vídeo, no máx. 14.
+       Peregrinações recém-adicionadas em evidência primeiro, depois um por
+       cluster (variedade) e, por fim, preenche o restante. */
     var pick = [], seen = {};
-    ritos.filter(function (r) { return r.status === "muito_popular" && r.video; }).forEach(function (r) {
+    var EVID = { "kailash-kora": 1, "arbaeen": 1, "adams-peak-sri-pada": 1, "shikoku-ohenro": 1 };
+    ritos.forEach(function (r) {
+      if (EVID[r.id] && r.video) { pick.push(r); seen[r.clusters[0]] = 1; }
+    });
+    ritos.filter(function (r) { return r.status === "muito_popular" && r.video && pick.indexOf(r) === -1; }).forEach(function (r) {
       var k = r.clusters[0];
       if (!seen[k]) { seen[k] = 1; pick.push(r); }
     });
     ritos.filter(function (r) { return r.status === "muito_popular" && r.video && pick.indexOf(r) === -1; })
-      .forEach(function (r) { if (pick.length < 10) pick.push(r); });
+      .forEach(function (r) { if (pick.length < 14) pick.push(r); });
     track.innerHTML = pick.map(function (r) {
       var cl = clusterBySlug(r.clusters[0]);
       var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
