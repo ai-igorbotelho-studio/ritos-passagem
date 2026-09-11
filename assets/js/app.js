@@ -5,6 +5,9 @@
 (function () {
   "use strict";
 
+  /* ---- modo embutido (preview single-file / Artifact): dados inline + rotas por hash ---- */
+  var EMBED = !!(window.__RITOS__);
+
   /* ---- base path (funciona em /, /clusters/x/, /biblioteca/, /sobre/) ---- */
   var BASE = (function () {
     var s = document.currentScript || (function () {
@@ -13,6 +16,12 @@
     })();
     return (s && s.src) ? s.src.replace(/assets\/js\/app\.js.*$/, "") : "";
   })();
+
+  /* ---- geradores de link (multipage por padrão; hash em modo embutido) ---- */
+  function hrefHome() { return EMBED ? "#/" : BASE; }
+  function hrefCluster(slug, id) { return EMBED ? ("#/cluster/" + slug + (id ? "/" + id : "")) : (BASE + "clusters/" + slug + "/" + (id ? "#" + id : "")); }
+  function hrefBiblioteca() { return EMBED ? "#/biblioteca" : (BASE + "biblioteca/"); }
+  function hrefSobre(h) { return EMBED ? "#/sobre" : (BASE + "sobre/" + (h || "")); }
 
   /* ---- projeção Equal Earth (mesmas constantes de tools/gerar_mapa.py) ---- */
   var A1 = 1.340264, A2 = -0.081106, A3 = 0.000893, A4 = 0.003796, SQRT3 = Math.sqrt(3);
@@ -122,6 +131,7 @@
 
   /* ---- fetch do dataset ---- */
   function loadRitos() {
+    if (EMBED) return Promise.resolve(window.__RITOS__);
     return fetch(BASE + "data/ritos.json", { cache: "no-cache" }).then(function (r) {
       if (!r.ok) throw new Error("HTTP " + r.status);
       return r.json();
@@ -140,6 +150,7 @@
       svg.removeAttribute("width"); svg.removeAttribute("height");
       paintPins(svg, ritos, filterSlug);
     };
+    if (EMBED && window.__MAPSVG__) { doInject(window.__MAPSVG__); return; }
     if (_mapCache) { doInject(_mapCache); return; }
     fetch(BASE + "assets/map/equal-earth.svg", { cache: "force-cache" })
       .then(function (r) { return r.text(); })
@@ -173,7 +184,7 @@
       var t = document.createElementNS(NS, "title");
       t.textContent = label;
       c.appendChild(t);
-      var href = BASE + "clusters/" + r.clusters[0] + "/#" + r.id;
+      var href = hrefCluster(r.clusters[0], r.id);
       function go() { window.location.href = href; }
       c.addEventListener("click", go);
       c.addEventListener("keydown", function (e) { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); } });
@@ -207,7 +218,7 @@
       grid.innerHTML = CLUSTERS.map(function (c) {
         var membros = ritos.filter(function (r) { return r.clusters.indexOf(c.slug) !== -1; });
         var ex = membros.slice(0, 3).map(function (r) { return r.nome.split(" (")[0]; }).join(" · ");
-        return '<a class="ccard reveal" href="' + BASE + 'clusters/' + c.slug + '/">' +
+        return '<a class="ccard reveal" href="' + hrefCluster(c.slug) + '">' +
           '<span class="ccard__k">Cluster</span>' +
           '<h3>' + esc(c.nome) + '</h3>' +
           '<p>' + esc(c.frase) + '</p>' +
@@ -277,7 +288,7 @@
           (r.espiritual ? '<span class="pill pill--moss"><span class="ic">✦</span>espiritual</span>' : "") +
           '</div>' +
           '<div class="meta"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span> · ' + esc(r.participantes_ano.valor) + '</div>' +
-          '<a class="more" href="' + BASE + 'clusters/' + r.clusters[0] + '/#' + r.id + '">Ver em ' + esc(cl ? cl.nome : "cluster") + ' →</a>' +
+          '<a class="more" href="' + hrefCluster(r.clusters[0], r.id) + '">Ver em ' + esc(cl ? cl.nome : "cluster") + ' →</a>' +
           '</article>';
       }).join("");
     }
@@ -332,8 +343,8 @@
     var next = CLUSTERS[(idx + 1) % CLUSTERS.length];
     var nav = document.getElementById("cluster-nav");
     if (nav) nav.innerHTML =
-      '<a href="' + BASE + 'clusters/' + prev.slug + '/">← ' + esc(prev.nome) + '</a>' +
-      '<a href="' + BASE + 'clusters/' + next.slug + '/">' + esc(next.nome) + ' →</a>';
+      '<a href="' + hrefCluster(prev.slug) + '">← ' + esc(prev.nome) + '</a>' +
+      '<a href="' + hrefCluster(next.slug) + '">' + esc(next.nome) + ' →</a>';
 
     /* âncora #id: rolar e destacar linha */
     if (location.hash) {
@@ -407,8 +418,8 @@
   function initBiblioteca() {
     var host = document.getElementById("lib-root");
     if (!host) return;
-    fetch(BASE + "data/biblioteca.json", { cache: "no-cache" })
-      .then(function (r) { return r.json(); })
+    var src = EMBED ? Promise.resolve(window.__BIBLIO__) : fetch(BASE + "data/biblioteca.json", { cache: "no-cache" }).then(function (r) { return r.json(); });
+    src
       .then(function (groups) {
         host.innerHTML = groups.map(function (g) {
           return '<section class="lib-group">' +
@@ -455,7 +466,7 @@
   }
 
   /* ---- boot ---- */
-  document.addEventListener("DOMContentLoaded", function () {
+  function bootPage() {
     var page = document.body.getAttribute("data-page");
     if (page === "biblioteca") { initBiblioteca(); return; }
     if (page === "sobre") { return; }
@@ -466,5 +477,12 @@
       var err = document.getElementById("data-error");
       if (err) { err.hidden = false; err.textContent = "Não foi possível carregar os dados dos ritos (" + e.message + "). Sirva o site por HTTP (ex.: python3 -m http.server)."; }
     });
-  });
+  }
+
+  if (EMBED) {
+    /* modo embutido: o roteador (preview single-file) controla a renderização */
+    window.RMR = { initHome: initHome, initCluster: initCluster, initBiblioteca: initBiblioteca, loadRitos: loadRitos, revealStagger: revealStagger };
+  } else {
+    document.addEventListener("DOMContentLoaded", bootPage);
+  }
 })();
