@@ -742,6 +742,39 @@
     "muda": "Passa a ser casado(a)"
   },
   {
+    "id": "celebracao-da-espera",
+    "nome": "Celebração da espera",
+    "povo_ou_tradicao": "Prática contemporânea",
+    "pais": "Brasil",
+    "regiao": "Prática contemporânea (global)",
+    "lat": -15.79,
+    "lon": -47.88,
+    "clusters": [
+      "casais"
+    ],
+    "quem_participa": "O casal que espera, com família e amigos próximos.",
+    "descricao": "Parceiros que decidiram ter um filho — ou que descobriram que um bebê está a caminho — reúnem quem amam para celebrar a vida que chega e reconhecer que uma nova fase começa ali. Toma formas contemporâneas e variadas: o chá de bebê, o chá revelação, o círculo de bênção (blessingway) ou apenas um brinde íntimo do casal. Menos uma tradição antiga do que um rito que cada casal desenha à sua maneira.",
+    "motivo": "Marcar, ainda na gestação, a passagem do casal a mãe e pai e o começo de uma família.",
+    "epoca": "Em geral no terceiro trimestre da gestação",
+    "memoravel": "Celebra-se uma vida que ainda não se vê, mas que já reorganiza tudo: o antes e o depois se encontram numa barriga.",
+    "turismo_entorno": "Celebração íntima e doméstica — sem destino turístico específico.",
+    "status": "conhecido",
+    "espiritual": false,
+    "participantes_ano": {
+      "valor": "Sem contagem global confiável; chás de bebê e círculos de bênção são difundidos em muitos países",
+      "confianca": "estimativa",
+      "fonte": "Prática difusa — sem fonte única"
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Prática contemporânea difundida (chá de bebê, chá revelação, blessingway/círculo de bênção) — sem fonte acadêmica única"
+    ],
+    "sentimento": "Espera & recomeço",
+    "muda": "Torna-se família"
+  },
+  {
     "id": "annaprashan",
     "nome": "Annaprashan / Mukhe Bhaat",
     "povo_ou_tradicao": "Hinduísmo (Bengala e outras)",
