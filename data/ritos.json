@@ -1180,6 +1180,142 @@
     "muda": "Sai purificado(a) / renovado(a)"
   },
   {
+    "id": "kailash-kora",
+    "nome": "Kailash Kora (Parikrama)",
+    "povo_ou_tradicao": "Hinduísmo, Budismo, Jainismo e Bön",
+    "pais": "China (Tibete)",
+    "regiao": "Tibete ocidental (Ngari)",
+    "lat": 31.067,
+    "lon": 81.312,
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
+    "quem_participa": "Peregrinos das quatro religiões e viajantes, muitas vezes em grupo, com guias e iaques.",
+    "descricao": "Uma volta a pé de 52 km em torno do monte Kailash — a montanha que hindus, budistas, jainistas e seguidores do Bön têm por sagrada e jamais escalam. O ponto mais alto, o passo Dolma La, fica a cerca de 5.630 m, onde o ar tem quase metade do oxigênio do nível do mar. Hindus e budistas caminham no sentido horário; seguidores do Bön, ao contrário. Diz-se que uma única volta limpa os erros de uma vida.",
+    "motivo": "Circundar a montanha sagrada, purificar-se e honrar o divino que ali habita.",
+    "epoca": "Maio a setembro; pico na Saga Dawa (mai–jun)",
+    "memoravel": "Não se sobe a montanha mais sagrada do mundo: dá-se a volta nela, a 5.600 m, no sentido que a sua fé mandar.",
+    "turismo_entorno": "Lago Manasarovar, Darchen, planalto de Ngari; combina com Lhasa.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "Milhares por ano (mais em anos de pico); sem contagem oficial única",
+      "confianca": "estimativa",
+      "fonte": "Operadores de trekking do Tibete e reportagens"
+    },
+    "acesso_visitante": "aberto_com_guia",
+    "alerta_etico": "Altitude extrema (passo a ~5.630 m): risco sério de mal de montanha. Estrangeiros dependem de permissões e guias no Tibete; a montanha é sagrada e não se escala.",
+    "video": null,
+    "fontes": [
+      "Tibet Travel / Great Tibet Tour — guias do Kailash Kora e do passo Dolma La",
+      "Relatos de peregrinação (hindu, budista, jainista e Bön)"
+    ],
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
+    "id": "arbaeen",
+    "nome": "Arbaeen",
+    "povo_ou_tradicao": "Islã xiita",
+    "pais": "Iraque",
+    "regiao": "Najaf → Karbala",
+    "lat": 32.616,
+    "lon": 44.024,
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
+    "quem_participa": "Milhões de peregrinos xiitas, famílias e voluntários que alimentam e abrigam quem caminha.",
+    "descricao": "No 40º dia de luto pelo martírio do Imam Husayn (neto do Profeta Muhammad, morto em Karbala em 680), dezenas de milhões caminham cerca de 80 km de Najaf a Karbala. Ao longo da estrada, voluntários montam barracas (mawkib) que oferecem comida, água e descanso de graça. É tido como o maior encontro anual da humanidade.",
+    "motivo": "Honrar o Imam Husayn e reafirmar a fé, caminhando juntos até o seu santuário.",
+    "epoca": "40 dias após Ashura (calendário islâmico; muda a cada ano)",
+    "memoravel": "Mais de 20 milhões de pessoas na mesma estrada, alimentadas de graça por estranhos: talvez a maior caminhada do mundo.",
+    "turismo_entorno": "Santuários de Najaf e Karbala; Bagdá.",
+    "status": "muito_popular",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "~20 milhões+ (contagens oficiais recentes ~21,4 mi)",
+      "confianca": "parcial",
+      "fonte": "Autoridades iraquianas e imprensa (Al Jazeera, NPR)"
+    },
+    "acesso_visitante": "aberto_com_guia",
+    "alerta_etico": "Contexto de segurança sensível no Iraque; verifique orientações oficiais de viagem. É um luto religioso — participe com respeito, não como espetáculo.",
+    "video": null,
+    "fontes": [
+      "Al Jazeera, NPR e Religion Media Centre — cobertura do Arbaeen",
+      "The Conversation — significado do Arbaeen"
+    ],
+    "sentimento": "Luto & ancestralidade",
+    "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
+    "id": "adams-peak-sri-pada",
+    "nome": "Sri Pada (Pico de Adão)",
+    "povo_ou_tradicao": "Budismo, Hinduísmo, Islã e Cristianismo",
+    "pais": "Sri Lanka",
+    "regiao": "Terras altas centrais",
+    "lat": 6.809,
+    "lon": 80.499,
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
+    "quem_participa": "Peregrinos das quatro religiões, famílias e viajantes, subindo à noite em fila.",
+    "descricao": "Uma montanha, uma pegada no cume e quatro religiões que a reivindicam: budistas a veem como do Buda; hindus, de Shiva; muçulmanos, de Adão; cristãos, de São Tomé. Na temporada (dezembro a maio), milhares sobem à noite mais de 5.000 degraus iluminados para ver o nascer do sol, entre casas de chá e uma corrente de luzes subindo a serra.",
+    "motivo": "Honrar a pegada sagrada e alcançar o cume ao amanhecer.",
+    "epoca": "Dezembro a maio (da lua cheia de Unduvap à de Vesak)",
+    "memoravel": "Uma pegada no topo que quatro religiões chamam de sua, alcançada de madrugada por 5.000 degraus de luz.",
+    "turismo_entorno": "Nuwara Eliya, plantações de chá de Hatton, Ella.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "Milhares por noite na temporada; sem contagem oficial única",
+      "confianca": "estimativa",
+      "fonte": "Sri Lanka Tourism e guias de peregrinação"
+    },
+    "acesso_visitante": "aberto",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "Sri Lanka Tourism — Sri Pada e a temporada de peregrinação",
+      "Guias de peregrinação de Adam's Peak"
+    ],
+    "sentimento": "Pertencimento & comunidade",
+    "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
+    "id": "shikoku-ohenro",
+    "nome": "Ohenro — 88 templos de Shikoku",
+    "povo_ou_tradicao": "Budismo Shingon",
+    "pais": "Japão",
+    "regiao": "Ilha de Shikoku",
+    "lat": 34.162,
+    "lon": 134.507,
+    "clusters": [
+      "coletivos-e-peregrinacoes"
+    ],
+    "quem_participa": "Peregrinos (henro), a pé, de bicicleta ou de ônibus, com o apoio (o-settai) dos moradores.",
+    "descricao": "Um circuito de cerca de 1.200 km por 88 templos ligados a Kōbō Daishi (Kūkai, 774–835), que a tradição diz ter fundado a rota há mais de mil anos. A pé, leva cerca de seis semanas. Os henro vestem branco marcado com 'dōgyō ninin' — 'dois viajando juntos', o segundo sendo o espírito de Kōbō Daishi — e recebem dos moradores comida e abrigo (o-settai).",
+    "motivo": "Peregrinar com Kōbō Daishi, purificar-se e cumprir o circuito dos 88 templos.",
+    "epoca": "Ao longo do ano (primavera e outono mais amenos)",
+    "memoravel": "Seis semanas e 1.200 km a pé por 88 templos, vestido de branco: 'dois viajando juntos' — você e o espírito do mestre.",
+    "turismo_entorno": "Tokushima, Kōchi, Ehime, Kagawa; os redemoinhos de Naruto.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "Dezenas a centenas de milhares por ano (a maioria de ônibus/carro); sem contagem oficial única",
+      "confianca": "estimativa",
+      "fonte": "Órgãos de turismo de Shikoku"
+    },
+    "acesso_visitante": "aberto",
+    "alerta_etico": null,
+    "video": null,
+    "fontes": [
+      "JNTO e Prefeitura de Tokushima — Ohenro (88 templos)",
+      "88shikokuhenro.jp — guia oficial"
+    ],
+    "sentimento": "Gratidão & renovação",
+    "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
     "id": "mongolia-naadam",
     "nome": "Naadam",
     "povo_ou_tradicao": "Mongólia (xamânico/budista)",
