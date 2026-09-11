@@ -6,6 +6,7 @@
   "avos-e-netos": "Avós e netos",
   "coletivos-e-peregrinacoes": "Coletivos e peregrinações",
   "natureza-animais-e-plantas": "Natureza, animais e plantas",
+  "expansao-de-consciencia": "Expansão de consciência",
   "transversal": "Transversal"
  },
  "itens": [
@@ -1152,6 +1153,83 @@
    "cluster": "natureza-animais-e-plantas",
    "porque": "O ano-novo da água reconhecido pela UNESCO.",
    "link": null
+  },
+  {
+   "id": "cur-peyote-conservation-and-the-native-american-church-expansao-",
+   "tipo": "Artigo acadêmico",
+   "titulo": "Peyote, Conservation, and the Native American Church",
+   "autor": "Society of Ethnobiology",
+   "ano": "atual",
+   "idioma": "EN",
+   "cluster": "expansao-de-consciencia",
+   "porque": "Base para a crise de conservação do peyote e o papel da NAC.",
+   "link": "https://ethnobiology.org/peyote-conservation-and-native-american-church"
+  },
+  {
+   "id": "cur-peyote-threatened-by-the-psychedelic-renaissance-expansao-de",
+   "tipo": "Reportagem",
+   "titulo": "Peyote threatened by the psychedelic renaissance",
+   "autor": "ICT / KUER",
+   "ano": "2024",
+   "idioma": "EN",
+   "cluster": "expansao-de-consciencia",
+   "porque": "Como o boom psicodélico pressiona uma planta sagrada.",
+   "link": null
+  },
+  {
+   "id": "cur-indigenous-peyote-conservation-initiative-ipci-expansao-de-c",
+   "tipo": "Dataset",
+   "titulo": "Indigenous Peyote Conservation Initiative (IPCI)",
+   "autor": "National Council of Native American Churches",
+   "ano": "atual",
+   "idioma": "EN",
+   "cluster": "expansao-de-consciencia",
+   "porque": "Preservação de peyote em Hebbronville, Texas (2017).",
+   "link": null
+  },
+  {
+   "id": "cur-mining-and-poaching-threaten-the-wix-rika-peyote-pilgrimage-",
+   "tipo": "Reportagem",
+   "titulo": "Mining and poaching threaten the Wixárika peyote pilgrimage to Wirikuta",
+   "autor": "Mexico News Daily / Intercontinental Cry",
+   "ano": "vários",
+   "idioma": "EN/ES",
+   "cluster": "expansao-de-consciencia",
+   "porque": "A ameaça de mineração ao deserto sagrado de Wirikuta.",
+   "link": null
+  },
+  {
+   "id": "cur-velada-mazatec-ritual-expansao-de-consciencia",
+   "tipo": "Enciclopédia",
+   "titulo": "Velada (Mazatec ritual)",
+   "autor": "Wikipedia",
+   "ano": "atual",
+   "idioma": "EN",
+   "cluster": "expansao-de-consciencia",
+   "porque": "A vigília de cura mazateca e o caso María Sabina / Wasson (1957).",
+   "link": "https://en.wikipedia.org/wiki/Velada_(Mazatec_ritual)"
+  },
+  {
+   "id": "cur-fatalities-after-taking-ibogaine-sudden-cardiac-death-expans",
+   "tipo": "Artigo acadêmico",
+   "titulo": "Fatalities after taking ibogaine (sudden cardiac death)",
+   "autor": "PubMed / NEJM (Long-QT)",
+   "ano": "vários",
+   "idioma": "EN",
+   "cluster": "expansao-de-consciencia",
+   "porque": "Base do alerta de saúde da iboga/ibogaína (Bwiti).",
+   "link": "https://pubmed.ncbi.nlm.nih.gov/16698188/"
+  },
+  {
+   "id": "cur-relat-rios-de-sa-de-e-pol-tica-sobre-ayahuasca-expansao-de-c",
+   "tipo": "Artigo acadêmico",
+   "titulo": "Relatórios de saúde e política sobre ayahuasca",
+   "autor": "ICEERS",
+   "ano": "atual",
+   "idioma": "EN/ES",
+   "cluster": "expansao-de-consciencia",
+   "porque": "Saúde, contraindicações e política de enteógenos.",
+   "link": "https://www.iceers.org/"
   }
  ]
 }

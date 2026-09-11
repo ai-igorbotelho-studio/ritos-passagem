@@ -9,7 +9,7 @@ STATUS = {"muito_popular", "conhecido", "exotico"}
 ACESSO = {"aberto", "aberto_com_guia", "restrito", "fechado"}
 CONF = {"confirmado", "parcial", "estimativa"}
 CLUSTERS = {"pais-e-filhos", "maes-e-filhas", "casais", "avos-e-netos",
-            "coletivos-e-peregrinacoes", "natureza-animais-e-plantas"}
+            "coletivos-e-peregrinacoes", "natureza-animais-e-plantas", "expansao-de-consciencia"}
 REQ = ["id", "nome", "povo_ou_tradicao", "pais", "lat", "lon", "clusters",
        "descricao", "epoca", "memoravel", "status", "espiritual",
        "participantes_ano", "acesso_visitante"]

@@ -114,6 +114,19 @@
       ],
       memoravel: "Nestes ritos, quem conduz a passagem é o mundo não humano: um boi, uma águia, o rio, a rã, a lanterna, o inhame que amadurece. O irreproduzível está no acoplamento entre o tempo humano e o tempo da natureza — só se salta quando o inhame está pronto, só se solta a lanterna na lua cheia certa, só se agarra o touro no Pongal da colheita. É uma passagem que não se pode adiantar nem adiar sem perder o sentido, porque depende de um calendário que não é o nosso. Aqui o ser humano não é o centro: é um participante que pede licença.",
       quote: { t: "“O rito de passagem não separa o homem da natureza; ao contrário, inscreve-o no ciclo que a governa.”", a: "Leitura contemporânea de van Gennep" } },
+
+    { slug: "expansao-de-consciencia", nome: "Expansão de consciência", cor: "#6e4658",
+      frase: "Jornadas com plantas de poder e enteógenos — cura, visão e o sagrado.",
+      curiosidades: [
+        "Para os Wixárika, o peyote (hikuri) não é uma droga: é uma divindade que se 'caça' no deserto de Wirikuta, a centenas de quilômetros de casa.",
+        "A velada mazateca era usada para curar e encontrar pessoas desaparecidas — até um artigo na revista Life (1957) trazer o turismo que feriu María Sabina e sua comunidade.",
+        "Na Native American Church, o peyote é sacramento legal apenas para membros de nações reconhecidas — e hoje vive uma crise de conservação.",
+        "A iniciação Bwiti, no Gabão, usa doses altas de iboga para 'ver os ancestrais' — com risco cardíaco real e mortes documentadas.",
+        "O cacto San Pedro (wachuma) aparece em relevos de Chavín de Huántar, no Peru, há cerca de 3.000 anos.",
+        "No Brasil, o uso religioso da ayahuasca (Santo Daime, UDV) é regulamentado por lei."
+      ],
+      memoravel: "Aqui o limiar é atravessado por dentro: uma planta ou fungo — peyote, ayahuasca, iboga, cogumelo, San Pedro — abre, por uma noite, uma percepção que não se repete igual. O irreproduzível está no encontro entre a substância, o corpo de quem toma, os cantos de quem conduz e o tempo da vigília: a mesma dose, noutro contexto, é outra coisa. São tradições de cura e visão de povos originários, não recreação — e por isso carregam os cuidados mais sérios desta base: soberania indígena e consentimento (FPIC), contraindicações e riscos de saúde, conservação de plantas ameaçadas e o alerta contra o neo-extrativismo espiritual, que transforma o sagrado de um povo em produto de turismo.",
+      quote: { t: "“A liminaridade… é um tempo e um lugar de retirada dos modos habituais de ação social — pode ser vista como um período de exame dos valores centrais da comunidade.”", a: "Victor Turner, O Processo Ritual (1969)" } },
   ];
 
   /* fotos por cluster (Unsplash CDN — trocáveis) + tom pastel do card */
@@ -124,10 +137,12 @@
     "casais": "https://images.unsplash.com/photo-1518495973542-4542c06a5843" + UP,
     "avos-e-netos": "https://images.unsplash.com/photo-1441974231531-c6227db76b6e" + UP,
     "coletivos-e-peregrinacoes": "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d" + UP,
-    "natureza-animais-e-plantas": "https://images.unsplash.com/photo-1426604966848-d7adac402bff" + UP
+    "natureza-animais-e-plantas": "https://images.unsplash.com/photo-1426604966848-d7adac402bff" + UP,
+    "expansao-de-consciencia": "https://images.unsplash.com/photo-1502082553048-f009c37129b9" + UP
   };
   var CTINT = { "pais-e-filhos": "sage", "maes-e-filhas": "rose", "casais": "sand",
-    "avos-e-netos": "sage", "coletivos-e-peregrinacoes": "rose", "natureza-animais-e-plantas": "sand" };
+    "avos-e-netos": "sage", "coletivos-e-peregrinacoes": "rose", "natureza-animais-e-plantas": "sand",
+    "expansao-de-consciencia": "rose" };
 
   var STATUS_LABEL = { muito_popular: "Muito popular", conhecido: "Conhecido", exotico: "Exótico" };
   var STATUS_CLASS = { muito_popular: "status-mp", conhecido: "status-c", exotico: "status-e" };
@@ -230,7 +245,7 @@
     /* estatísticas medidas a partir do JSON */
     var paises = {}, continentes = {};
     var CONT = {
-      "Etiópia": "África", "Nigéria": "África", "África do Sul": "África", "Quênia": "África", "Gana": "África", "Marrocos": "África", "Madagascar": "África",
+      "Etiópia": "África", "Nigéria": "África", "África do Sul": "África", "Quênia": "África", "Gana": "África", "Marrocos": "África", "Madagascar": "África", "Gabão": "África",
       "Brasil": "América do Sul", "Peru": "América do Sul",
       "Estados Unidos": "América do Norte", "México": "América do Norte",
       "Israel": "Ásia", "Índia": "Ásia", "Mianmar": "Ásia", "China": "Ásia", "Tailândia": "Ásia", "Japão": "Ásia", "Coreia do Sul": "Ásia", "Arábia Saudita": "Ásia", "Malásia": "Ásia", "Mongólia": "Ásia",

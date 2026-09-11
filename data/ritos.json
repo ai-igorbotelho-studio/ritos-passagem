@@ -1257,7 +1257,8 @@
     "lat": -9.97,
     "lon": -67.81,
     "clusters": [
-      "natureza-animais-e-plantas"
+      "natureza-animais-e-plantas",
+      "expansao-de-consciencia"
     ],
     "quem_participa": "Lideranças e cantores (ícaros/saiti) e participantes na vigília.",
     "descricao": "Vigília noturna com cantos e purga, mediada por planta (ayahuasca) ou pela secreção da rã kambô. Tradição de cura e visão.",
@@ -1416,5 +1417,213 @@
     "video_fonte": "AFP",
     "sentimento": "Pertencimento & comunidade",
     "muda": "É reconhecido(a) pela comunidade"
+  },
+  {
+    "id": "wixarika-peyote-wirikuta",
+    "nome": "Peregrinação a Wirikuta (hikuri/peyote)",
+    "povo_ou_tradicao": "Wixárika (Huichol)",
+    "pais": "México",
+    "regiao": "Wirikuta, San Luis Potosí",
+    "lat": 23.5,
+    "lon": -100.9,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "Famílias wixárika e os mara'akate (guias espirituais).",
+    "descricao": "Cada ano, famílias viajam centenas de quilômetros até o deserto sagrado de Wirikuta para 'caçar' e consumir o hikuri (peyote), rezando pela vida.",
+    "motivo": "Reconectar-se com os ancestrais e o sagrado; 'encontrar a própria vida'.",
+    "epoca": "Estação seca (out–mar)",
+    "memoravel": "A caminhada de centenas de km ao deserto; o peyote tratado como divindade, não como droga.",
+    "turismo_entorno": "Real de Catorce, Wirikuta (San Luis Potosí). O rito é dos Wixárika — não é destino de 'retiro'.",
+    "status": "exotico",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "milhares de famílias wixárika/ano na peregrinação",
+      "confianca": "parcial",
+      "fonte": "Wixárika Research Center; Mexico News Daily"
+    },
+    "acesso_visitante": "fechado",
+    "alerta_etico": "Sítio sagrado (Wirikuta) ameaçado por mineração e pela extração de peyote por turistas; o peyote está em crise de conservação. A peregrinação é dos Wixárika — consumir peyote fora desse contexto é apropriação e ilegal em muitos países.",
+    "video": null,
+    "fontes": [
+      "Wixárika Research Center — wixarika.org",
+      "UNESCO ICH — candidatura de salvaguarda urgente (2013)",
+      "Mexico News Daily; Intercontinental Cry — mineração em Wirikuta"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Religa-se aos ancestrais"
+  },
+  {
+    "id": "nac-peyote",
+    "nome": "Cerimônia de peyote (Native American Church)",
+    "povo_ou_tradicao": "Native American Church",
+    "pais": "Estados Unidos",
+    "regiao": "Grandes Planícies / Sudoeste",
+    "lat": 35.5,
+    "lon": -98.0,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "Membros da NAC, o road man (condutor) e a família.",
+    "descricao": "Vigília de uma noite inteira num tipi ao redor do fogo em meia-lua, com tambor d'água, cantos e o peyote como sacramento.",
+    "motivo": "Cura, oração e comunhão.",
+    "epoca": "Ao longo do ano",
+    "memoravel": "A noite inteira até o amanhecer; o tambor d'água e o fogo em meia-lua.",
+    "turismo_entorno": "Rito fechado; não acessível a visitantes.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "~400 mil praticantes em mais de 50 nações (ordem de grandeza)",
+      "confianca": "parcial",
+      "fonte": "Society of Ethnobiology; Harvard HDS"
+    },
+    "acesso_visitante": "fechado",
+    "alerta_etico": "Sacramento legal apenas para membros de nações reconhecidas nos EUA — fechado a não indígenas. O peyote vive crise de conservação por sobre-exploração; evitar qualquer uso recreativo ou turístico.",
+    "video": null,
+    "fontes": [
+      "Society of Ethnobiology — Peyote, Conservation, and the NAC",
+      "Indigenous Peyote Conservation Initiative (IPCI)",
+      "Harvard Divinity School — NAC and the Sacrament of Peyote"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Recebe visão e cura"
+  },
+  {
+    "id": "bwiti-iboga",
+    "nome": "Iniciação Bwiti (iboga)",
+    "povo_ou_tradicao": "Bwiti (Fang, Mitsogo, Babongo)",
+    "pais": "Gabão",
+    "regiao": "África Central",
+    "lat": 0.4,
+    "lon": 10.5,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "O iniciado, o nganga (condutor) e a comunidade Bwiti.",
+    "descricao": "Iniciação de vários dias com raiz de iboga em alta dose, para 'ver os ancestrais' e renascer.",
+    "motivo": "Iniciação, cura e encontro com os ancestrais.",
+    "epoca": "Ao longo do ano",
+    "memoravel": "As doses altas que trazem visões de dias; o renascimento simbólico do iniciado.",
+    "turismo_entorno": "Libreville e interior do Gabão. Cresce o turismo de ibogaína — com risco.",
+    "status": "exotico",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; ordem de grandeza: milhares no Gabão + turismo de ibogaína",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "aberto_com_guia",
+    "alerta_etico": "Alerta de saúde grave: iboga/ibogaína tem cardiotoxicidade (prolonga o intervalo QT) e há mortes documentadas; contraindicações sérias. Há também neo-extrativismo e escassez da planta. Só com triagem médica rigorosa e contexto comunitário reconhecido.",
+    "video": null,
+    "fontes": [
+      "Ebando (Gabão) — iniciação Bwiti",
+      "PubMed — mortes associadas à ibogaína; NEJM — Long-QT",
+      "Slate (2016) — turismo de iboga no Gabão"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Religa-se aos ancestrais"
+  },
+  {
+    "id": "santo-daime-udv",
+    "nome": "Santo Daime / União do Vegetal (ayahuasca)",
+    "povo_ou_tradicao": "Igrejas ayahuasqueiras brasileiras",
+    "pais": "Brasil",
+    "regiao": "Acre / Amazonas / nacional",
+    "lat": -7.9,
+    "lon": -66.6,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "Membros da igreja (fardados) e os mestres.",
+    "descricao": "Rituais com o chá (Daime / Vegetal / Hoasca): hinários cantados por horas e concentração.",
+    "motivo": "Comunhão espiritual, autoconhecimento e cura.",
+    "epoca": "Calendário litúrgico das igrejas",
+    "memoravel": "Os hinários cantados por horas; a 'miração'.",
+    "turismo_entorno": "Rio Branco (AC), Céu do Mapiá (AM). Preferir igrejas reconhecidas a retiros comerciais.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "dezenas de milhares de membros no Brasil e na diáspora",
+      "confianca": "parcial",
+      "fonte": null
+    },
+    "acesso_visitante": "aberto",
+    "alerta_etico": "Uso religioso da ayahuasca é regulamentado no Brasil (CONAD); há contraindicações de saúde (interação com antidepressivos ISRS/IMAO). Distinguir igrejas sérias de retiros comerciais sem cuidado clínico.",
+    "video": null,
+    "fontes": [
+      "CONAD/Brasil — regulamentação do uso religioso da ayahuasca",
+      "Bibliografia acadêmica sobre Santo Daime e UDV"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Sai purificado(a) / renovado(a)"
+  },
+  {
+    "id": "mazatec-velada-cogumelos",
+    "nome": "Velada mazateca (cogumelos)",
+    "povo_ou_tradicao": "Mazatecos",
+    "pais": "México",
+    "regiao": "Sierra Mazateca, Oaxaca (Huautla)",
+    "lat": 18.13,
+    "lon": -96.84,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "A curandeira(o) e a pessoa a ser curada.",
+    "descricao": "Vigília noturna de cura com 'os santos niños' (cogumelos de psilocibina), à luz de vela e com cantos.",
+    "motivo": "Cura e adivinhação (tradicionalmente, também para encontrar pessoas desaparecidas).",
+    "epoca": "Ao longo do ano (época de chuvas para os cogumelos)",
+    "memoravel": "Os cantos da curandeira; María Sabina tornou a velada mundialmente conhecida — e sofreu com isso.",
+    "turismo_entorno": "Huautla de Jiménez, Oaxaca. Comunidade sensível ao turismo psicodélico.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; tradição local em Huautla",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "restrito",
+    "alerta_etico": "Caso emblemático de dano à cultura de origem: a exposição por R. G. Wasson (revista Life, 1957) trouxe turismo que feriu María Sabina e a comunidade. É cura ritual, não recreação — respeitar a comunidade e recusar turismo predatório.",
+    "video": null,
+    "fontes": [
+      "Wikipedia — Velada (Mazatec ritual)",
+      "R. G. Wasson, 'Seeking the Magic Mushroom', Life (1957)",
+      "JIED/LSE — history of psilocybin trade in the Sierra Mazateca"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Recebe visão e cura"
+  },
+  {
+    "id": "andes-san-pedro-wachuma",
+    "nome": "Wachuma / San Pedro (cacto)",
+    "povo_ou_tradicao": "Tradições andinas (herança Chavín)",
+    "pais": "Peru",
+    "regiao": "Andes / costa norte",
+    "lat": -9.59,
+    "lon": -77.18,
+    "clusters": [
+      "expansao-de-consciencia"
+    ],
+    "quem_participa": "O maestro curandeiro e os participantes.",
+    "descricao": "Mesada noturna de cura com o cacto San Pedro (huachuma), para limpeza e visão.",
+    "motivo": "Cura, limpeza e visão.",
+    "epoca": "Ao longo do ano",
+    "memoravel": "A 'mesa' ritual de cura; o San Pedro aparece em relevos de Chavín de Huántar há cerca de 3.000 anos.",
+    "turismo_entorno": "Chavín de Huántar (Áncash), norte do Peru. Forte turismo de cura.",
+    "status": "conhecido",
+    "espiritual": true,
+    "participantes_ano": {
+      "valor": "sem estatística pública; forte turismo de cura no Peru",
+      "confianca": "estimativa",
+      "fonte": null
+    },
+    "acesso_visitante": "aberto_com_guia",
+    "alerta_etico": "Alerta de saúde e de neo-extrativismo espiritual; buscar maestros reconhecidos pela própria comunidade e triagem de contraindicações.",
+    "video": null,
+    "fontes": [
+      "Registros arqueológicos de Chavín de Huántar (relevos com San Pedro)",
+      "Etnografia andina sobre a huachuma"
+    ],
+    "sentimento": "Cura & visão",
+    "muda": "Sai purificado(a) / renovado(a)"
   }
 ]

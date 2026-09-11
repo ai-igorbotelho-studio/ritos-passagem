@@ -14,6 +14,7 @@ CLUSTERS = [
     ("avos-e-netos", "Avós e netos", "Nascimento, nomeação e primeira comida — o que a geração mais velha oferece à mais nova."),
     ("coletivos-e-peregrinacoes", "Coletivos e peregrinações", "Multidão, cidade e fé — do Kumbh Mela ao Caminho de Santiago."),
     ("natureza-animais-e-plantas", "Natureza, animais e plantas", "Rituais mediados por bicho, planta, rio ou colheita — quando o mundo não humano conduz a passagem."),
+    ("expansao-de-consciencia", "Expansão de consciência", "Jornadas com plantas de poder e enteógenos — cura, visão e o sagrado, com os cuidados éticos mais rigorosos desta base."),
 ]
 
 # ---- ícones SVG (currentColor, sem emoji) ----
@@ -324,7 +325,7 @@ def cluster_body():
               <p class="eyebrow"><a href="../" style="color:var(--velvet);text-decoration:none">Rituais pelo mundo</a> · quem participa</p>
               <h1 data-cluster-nome style="font-size:clamp(2rem,4.6vw,3.6rem)"></h1>
               <p class="lede" id="cluster-frase"></p>
-              <p style="color:var(--stone);font-family:var(--font-ui);font-size:.9rem">A tabela abaixo é gerada a partir de <code>data/ritos.json</code>. Ordene por qualquer coluna. Cada número traz seu selo de confiança.</p>
+              <p style="color:var(--muted);font-family:var(--font-ui);font-size:.9rem">Toque em cada ritual para abrir os detalhes; filtre por status e acesso. Cada número traz seu selo de confiança.</p>
             </div>
             <div class="minimap"><div id="cluster-map" aria-label="Mini-mapa com os rituais deste cluster"></div></div>
           </div>

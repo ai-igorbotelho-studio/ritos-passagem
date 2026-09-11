@@ -21,6 +21,7 @@ CLUSTER_NOME = {
     "avos-e-netos": "Avós e netos",
     "coletivos-e-peregrinacoes": "Coletivos e peregrinações",
     "natureza-animais-e-plantas": "Natureza, animais e plantas",
+    "expansao-de-consciencia": "Expansão de consciência",
     "transversal": "Transversal",
 }
 
@@ -173,6 +174,22 @@ CURADOS = [
      "Estatística oficial usada na base.", None),
     ("Reportagem", "Songkran becomes UNESCO heritage", "cobertura internacional", "2023", "EN", "natureza-animais-e-plantas",
      "O ano-novo da água reconhecido pela UNESCO.", None),
+
+    # ---------- Expansão de consciência (com selo de fonte) ----------
+    ("Artigo acadêmico", "Peyote, Conservation, and the Native American Church", "Society of Ethnobiology", "atual", "EN", "expansao-de-consciencia",
+     "Base para a crise de conservação do peyote e o papel da NAC.", "https://ethnobiology.org/peyote-conservation-and-native-american-church"),
+    ("Reportagem", "Peyote threatened by the psychedelic renaissance", "ICT / KUER", "2024", "EN", "expansao-de-consciencia",
+     "Como o boom psicodélico pressiona uma planta sagrada.", None),
+    ("Dataset", "Indigenous Peyote Conservation Initiative (IPCI)", "National Council of Native American Churches", "atual", "EN", "expansao-de-consciencia",
+     "Preservação de peyote em Hebbronville, Texas (2017).", None),
+    ("Reportagem", "Mining and poaching threaten the Wixárika peyote pilgrimage to Wirikuta", "Mexico News Daily / Intercontinental Cry", "vários", "EN/ES", "expansao-de-consciencia",
+     "A ameaça de mineração ao deserto sagrado de Wirikuta.", None),
+    ("Enciclopédia", "Velada (Mazatec ritual)", "Wikipedia", "atual", "EN", "expansao-de-consciencia",
+     "A vigília de cura mazateca e o caso María Sabina / Wasson (1957).", "https://en.wikipedia.org/wiki/Velada_(Mazatec_ritual)"),
+    ("Artigo acadêmico", "Fatalities after taking ibogaine (sudden cardiac death)", "PubMed / NEJM (Long-QT)", "vários", "EN", "expansao-de-consciencia",
+     "Base do alerta de saúde da iboga/ibogaína (Bwiti).", "https://pubmed.ncbi.nlm.nih.gov/16698188/"),
+    ("Artigo acadêmico", "Relatórios de saúde e política sobre ayahuasca", "ICEERS", "atual", "EN/ES", "expansao-de-consciencia",
+     "Saúde, contraindicações e política de enteógenos.", "https://www.iceers.org/"),
 ]
 
 
