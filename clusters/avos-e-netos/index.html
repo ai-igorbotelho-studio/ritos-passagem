@@ -23,7 +23,7 @@
     <div class="sheet">
 
       <header class="site-head">
-        <a class="brand" href="../../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+        <a class="brand" href="../../"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V11a7 7 0 0 1 14 0v10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M12 21v-6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg></span>Ritos do Mundo Real</a>
         <div class="head-actions">
           <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar conversa</a>
           <button class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
@@ -34,30 +34,25 @@
 
       <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
         <div class="menu-top">
-          <a class="brand" href="../../"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
-          <button class="menu-close" id="menu-close" aria-label="Fechar menu">✕</button>
+          <a class="brand" href="../../"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V11a7 7 0 0 1 14 0v10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M12 21v-6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg></span>Ritos do Mundo Real</a>
+          <button class="menu-close" id="menu-close" aria-label="Fechar menu"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
         </div>
         <div class="menu-body">
-          <nav class="menu-nav" aria-label="Páginas">
-            <a href="../../">Início</a>
-            <a href="../../clusters/pais-e-filhos/">Rituais pelo mundo</a>
-            <a href="../../biblioteca/">Biblioteca</a>
-            <a href="../../sobre/">Sobre &amp; Método</a>
+          <nav class="megamenu" aria-label="Páginas e subpáginas">
+            <a class="mm-page" href="../../">Início</a>
+            <div class="mm-block">
+              <a class="mm-page" href="../../clusters/">Rituais pelo mundo</a>
+              <div class="mm-subs"><a href="../../clusters/pais-e-filhos/">Pais e filhos</a><a href="../../clusters/maes-e-filhas/">Mães e filhas</a><a href="../../clusters/casais/">Casais</a><a href="../../clusters/avos-e-netos/">Avós e netos</a><a href="../../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a><a href="../../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a></div>
+            </div>
+            <a class="mm-page" href="../../biblioteca/">Biblioteca</a>
+            <a class="mm-page" href="../../sobre/">Sobre &amp; Método</a>
           </nav>
-          <div class="menu-sub">
-            <h3>Visualizar cada cluster</h3>
-            <div class="rl">
-              <a href="../../clusters/pais-e-filhos/">Pais e filhos</a>
-              <a href="../../clusters/maes-e-filhas/">Mães e filhas</a>
-              <a href="../../clusters/casais/">Casais</a>
-              <a href="../../clusters/avos-e-netos/">Avós e netos</a>
-              <a href="../../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a>
-              <a href="../../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a>
-            </div>
-            <div class="menu-cta">
-              <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
-            </div>
-          </div>
+          <aside class="mm-aside">
+            <p class="eyebrow" style="color:var(--lime)">Comece por aqui</p>
+            <p style="color:var(--on-forest-dim)">Filtre rituais por quem participa, pelo sentimento que tratam e pelo que muda para quem passa — no instrumento de decisão.</p>
+            <a class="btn btn--lime" href="../../#instrumento">Instrumento de decisão</a>
+            <a class="btn btn--ghost" style="color:#fff" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa</a>
+          </aside>
         </div>
       </div>
 
@@ -65,7 +60,7 @@
         <section class="section wrap">
           <div class="cluster-head">
             <div>
-              <p class="eyebrow">Rituais pelo mundo · quem participa</p>
+              <p class="eyebrow"><a href="../" style="color:var(--velvet);text-decoration:none">Rituais pelo mundo</a> · quem participa</p>
               <h1 data-cluster-nome style="font-size:clamp(2rem,4.6vw,3.6rem)"></h1>
               <p class="lede" id="cluster-frase"></p>
               <p style="color:var(--stone);font-family:var(--font-ui);font-size:.9rem">A tabela abaixo é gerada a partir de <code>data/ritos.json</code>. Ordene por qualquer coluna. Cada número traz seu selo de confiança.</p>
@@ -121,7 +116,8 @@
       <footer class="site-foot">
         <div class="col"><b>Ritos do Mundo Real</b><small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small></div>
         <div class="cols">
-          <div class="col"><b>Navegar</b><a href="../../">Início</a><a href="../../clusters/pais-e-filhos/">Rituais pelo mundo</a><a href="../../biblioteca/">Biblioteca</a><a href="../../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Páginas</b><a href="../../">Início</a><a href="../../clusters/">Rituais pelo mundo</a><a href="../../biblioteca/">Biblioteca</a><a href="../../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Rituais pelo mundo</b><a href="../../clusters/pais-e-filhos/">Pais e filhos</a><a href="../../clusters/maes-e-filhas/">Mães e filhas</a><a href="../../clusters/casais/">Casais</a><a href="../../clusters/avos-e-netos/">Avós e netos</a><a href="../../clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a><a href="../../clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a></div>
           <div class="col"><b>Ética</b><a href="../../sobre/#etica">Rituais fechados &amp; FPIC</a><a href="../../sobre/#selos">Selos de confiança</a></div>
         </div>
       </footer>
@@ -138,9 +134,9 @@
               <h3 class="author__name">Igor Botelho</h3>
               <p class="author__loc">Waiheke Island, Auckland · Nova Zelândia</p>
               <div class="author__links">
-                <a href="mailto:igor@ferttil.com">✉ igor@ferttil.com</a>
-                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener">◎ www.igorbotelho.com</a>
-                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener">in linkedin.com/in/bernardesigor</a>
+                <a href="mailto:igor@ferttil.com"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.7" y="3.5" width="12.6" height="9" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.3 4.5 8 8.7l5.7-4.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> igor@ferttil.com</a>
+                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c3 2.4 3 10.2 0 12.6M8 1.7c-3 2.4-3 10.2 0 12.6" fill="none" stroke="currentColor" stroke-width="1.15"/></svg> www.igorbotelho.com</a>
+                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3.2h3.8V7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6 3.4 7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11.8 9.5V12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5.2a1 1 0 0 1 1-1h2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> linkedin.com/in/bernardesigor</a>
               </div>
             </div>
           </div>

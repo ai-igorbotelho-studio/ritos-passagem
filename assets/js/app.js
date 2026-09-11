@@ -133,14 +133,32 @@
   var STATUS_CLASS = { muito_popular: "status-mp", conhecido: "status-c", exotico: "status-e" };
   var ACESSO_LABEL = { aberto: "Aberto", aberto_com_guia: "Com guia", restrito: "Restrito (familiar)", fechado: "Fechado" };
   var CONF = {
-    confirmado: { ic: "✅", txt: "Confirmado", cls: "seal--conf" },
-    parcial: { ic: "⚠️", txt: "Parcial", cls: "seal--parcial" },
-    estimativa: { ic: "❓", txt: "Estimativa", cls: "seal--estimativa" }
+    confirmado: { ic: "", txt: "Confirmado", cls: "seal--conf" },
+    parcial: { ic: "", txt: "Parcial", cls: "seal--parcial" },
+    estimativa: { ic: "", txt: "Estimativa", cls: "seal--estimativa" }
   };
 
   function clusterBySlug(s) { for (var i = 0; i < CLUSTERS.length; i++) if (CLUSTERS[i].slug === s) return CLUSTERS[i]; return null; }
   function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
   function ytId(url) { if (!url) return null; var m = url.match(/[?&]v=([^&]+)/); return m ? m[1] : null; }
+
+  /* ---- ícones minimalistas (SVG inline, sem emoji) ---- */
+  var ICONS = {
+    check: '<path d="M3.4 8.7l3 3L12.8 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>',
+    alert: '<path d="M8 2.4l6.1 10.6H1.9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.3v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.5" r=".95" fill="currentColor"/>',
+    help: '<circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6.1 6.3a1.95 1.95 0 1 1 2.7 1.8c-.6.3-.95.75-.95 1.4v.25" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11.6" r=".9" fill="currentColor"/>',
+    spirit: '<path d="M8 1.4c.55 3.65 2.4 5.5 6.05 6.05C10.4 8 8.55 9.85 8 13.5 7.45 9.85 5.6 8 1.95 7.45 5.6 6.9 7.45 5.05 8 1.4z" fill="currentColor"/>',
+    play: '<path d="M5 3.4l8 4.6-8 4.6z" fill="currentColor"/>',
+    dot: '<circle cx="8" cy="8" r="4" fill="currentColor"/>',
+    mail: '<rect x="1.7" y="3.5" width="12.6" height="9" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.3 4.5 8 8.7l5.7-4.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>',
+    globe: '<circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c3 2.4 3 10.2 0 12.6M8 1.7c-3 2.4-3 10.2 0 12.6" fill="none" stroke="currentColor" stroke-width="1.15"/>',
+    link: '<path d="M9 3.2h3.8V7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6 3.4 7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11.8 9.5V12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5.2a1 1 0 0 1 1-1h2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>'
+  };
+  function icon(name, cls) { return '<svg class="ic ' + (cls || "") + '" viewBox="0 0 16 16" aria-hidden="true" focusable="false">' + (ICONS[name] || "") + '</svg>'; }
+  /* injeta os SVGs nos selos de confiança */
+  CONF.confirmado.ic = icon("check");
+  CONF.parcial.ic = icon("alert");
+  CONF.estimativa.ic = icon("help");
 
   /* ---- fetch do dataset ---- */
   function loadRitos() {
@@ -225,36 +243,38 @@
     setCount("stat-paises", Object.keys(paises).length);
     setCount("stat-continentes", Object.keys(continentes).length);
 
-    /* grade "Rituais pelo mundo" (com foto) */
-    var grid = document.getElementById("cluster-grid");
-    if (grid) {
-      grid.innerHTML = CLUSTERS.map(function (c) {
-        var membros = ritos.filter(function (r) { return r.clusters.indexOf(c.slug) !== -1; });
-        var ex = membros.slice(0, 3).map(function (r) { return r.nome.split(" (")[0]; }).join(" · ");
-        return '<a class="ccard reveal" data-tint="' + (CTINT[c.slug] || "sage") + '" href="' + hrefCluster(c.slug) + '">' +
-          '<div class="pframe pframe--duo"><img src="' + CFOTO[c.slug] + '" alt="" loading="lazy">' +
-          '<div class="ccard__label"><span class="ccard__k">Rituais pelo mundo</span><h3>' + esc(c.nome) + '</h3></div>' +
-          '</div>' +
-          '<div class="ccard__body">' +
-          '<p>' + esc(c.frase) + '</p>' +
-          '<span class="ccard__ex">' + esc(ex) + '</span>' +
-          '<div class="ccard__foot">' +
-          '<span class="pill" style="background:' + hexa(c.cor, .12) + ';border-color:' + hexa(c.cor, .32) + ';color:' + c.cor + '">' + membros.length + ' rituais</span>' +
-          '<span class="ccard__more">Ver <span aria-hidden="true">→</span></span>' +
-          '</div></div></a>';
-      }).join("");
-    }
-
-    /* carrossel de destaques */
+    renderClusterGrid(ritos);
     renderFeatured(ritos);
-
-    /* banner do mapa (Equal Earth) */
     loadMap(document.getElementById("map-banner"), ritos, null);
-
-    /* instrumento de decisão */
     initFilter(ritos);
+    revealStagger();
+  }
 
-    /* animação de entrada (stagger) */
+  /* grade de clusters (com foto) — usada na home e no hub "Rituais pelo mundo" */
+  function renderClusterGrid(ritos) {
+    var grid = document.getElementById("cluster-grid");
+    if (!grid) return;
+    grid.innerHTML = CLUSTERS.map(function (c) {
+      var membros = ritos.filter(function (r) { return r.clusters.indexOf(c.slug) !== -1; });
+      var ex = membros.slice(0, 3).map(function (r) { return r.nome.split(" (")[0]; }).join(" · ");
+      return '<a class="ccard reveal" data-tint="' + (CTINT[c.slug] || "sage") + '" href="' + hrefCluster(c.slug) + '">' +
+        '<div class="pframe pframe--duo"><img src="' + CFOTO[c.slug] + '" alt="" loading="lazy">' +
+        '<div class="ccard__label"><span class="ccard__k">Rituais pelo mundo</span><h3>' + esc(c.nome) + '</h3></div>' +
+        '</div>' +
+        '<div class="ccard__body">' +
+        '<p>' + esc(c.frase) + '</p>' +
+        '<span class="ccard__ex">' + esc(ex) + '</span>' +
+        '<div class="ccard__foot">' +
+        '<span class="pill" style="background:' + hexa(c.cor, .12) + ';border-color:' + hexa(c.cor, .32) + ';color:' + c.cor + '">' + membros.length + ' rituais</span>' +
+        '<span class="ccard__more">Ver <span aria-hidden="true">→</span></span>' +
+        '</div></div></a>';
+    }).join("");
+  }
+
+  /* hub "Rituais pelo mundo" (/clusters/) */
+  function initRituais(ritos) {
+    renderClusterGrid(ritos);
+    loadMap(document.getElementById("map-banner"), ritos, null);
     revealStagger();
   }
 
@@ -339,7 +359,7 @@
           '<div class="tags">' +
           '<span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span>' +
           '<span class="pill">' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</span>' +
-          (r.espiritual ? '<span class="pill pill--moss"><span class="ic">✦</span>espiritual</span>' : "") +
+          (r.espiritual ? '<span class="pill pill--moss">'+icon("spirit")+'espiritual</span>' : "") +
           '</div>' +
           '<div class="meta">' + esc(r.sentimento) + ' · <em>' + esc(r.muda) + '</em></div>' +
           '<div class="meta"><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span> · ' + esc(r.participantes_ano.valor) + '</div>' +
@@ -451,14 +471,14 @@
       });
       tbody.innerHTML = rows.map(function (r) {
         var conf = CONF[r.participantes_ano.confianca] || CONF.estimativa;
-        var vid = r.video ? '<a class="vlink" href="' + esc(r.video) + '" target="_blank" rel="noopener">▶ vídeo<span class="sr-only"> (abre no YouTube)</span></a>' : '<span class="no-video">—</span>';
+        var vid = r.video ? '<a class="vlink" href="' + esc(r.video) + '" target="_blank" rel="noopener">'+icon("play")+' vídeo<span class="sr-only"> (abre no YouTube)</span></a>' : '<span class="no-video">—</span>';
         return '<tr id="' + esc(r.id) + '">' +
           '<td><span class="rito-nome">' + esc(r.nome) + '</span><br><span class="rito-povo">' + esc(r.povo_ou_tradicao) + '</span>' +
           (r.alerta_etico ? '<span class="alerta-inline">⚠ ' + esc(r.alerta_etico) + '</span>' : '') + '</td>' +
           '<td>' + esc(r.pais) + (r.regiao ? '<br><span class="rito-povo">' + esc(r.regiao) + '</span>' : '') + '</td>' +
           '<td>' + esc(r.epoca) + '</td>' +
           '<td><span class="pill badge-status ' + STATUS_CLASS[r.status] + '">' + STATUS_LABEL[r.status] + '</span></td>' +
-          '<td class="center">' + (r.espiritual ? '<span class="pill pill--moss"><span class="ic">✦</span>sim</span>' : '<span class="no-video">não</span>') + '</td>' +
+          '<td class="center">' + (r.espiritual ? '<span class="pill pill--moss">'+icon("spirit")+'sim</span>' : '<span class="no-video">não</span>') + '</td>' +
           '<td><span class="seal ' + conf.cls + '"><span class="ic">' + conf.ic + '</span>' + conf.txt + '</span><br><span class="rito-povo">' + esc(r.participantes_ano.valor) + '</span></td>' +
           '<td>' + esc(ACESSO_LABEL[r.acesso_visitante]) + '</td>' +
           '<td class="center">' + vid + '</td>' +
@@ -674,6 +694,7 @@
     if (page === "sobre") { return; }
     loadRitos().then(function (ritos) {
       if (page === "home") initHome(ritos);
+      else if (page === "rituais") initRituais(ritos);
       else if (page === "cluster") initCluster(ritos, document.body.getAttribute("data-slug"));
     }).catch(function (e) {
       var err = document.getElementById("data-error");
@@ -683,7 +704,7 @@
 
   if (EMBED) {
     /* modo embutido: o roteador (preview single-file) controla a renderização */
-    window.RMR = { initHome: initHome, initCluster: initCluster, initBiblioteca: initBiblioteca, loadRitos: loadRitos, revealStagger: revealStagger, initUI: initUI };
+    window.RMR = { initHome: initHome, initRituais: initRituais, initCluster: initCluster, initBiblioteca: initBiblioteca, loadRitos: loadRitos, revealStagger: revealStagger, initUI: initUI };
   } else {
     document.addEventListener("DOMContentLoaded", function () { initUI(); bootPage(); });
   }

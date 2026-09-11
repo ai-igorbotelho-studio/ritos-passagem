@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ritos do Mundo Real — rituais de passagem do mundo, com selo de confiança</title>
-  <meta name="description" content="Uma base consultável, visual e honesta de rituais de passagem do mundo — organizada por quem participa, com selos de confiança sobre cada dado e cuidado ético em cada indicação.">
+  <meta name="description" content="Uma base consultável, visual e honesta de rituais de passagem do mundo — organizada por quem participa, com selos de confiança e cuidado ético.">
   <link rel="canonical" href="https://ritos.exemplo/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Ritos do Mundo Real">
-  <meta property="og:description" content="Rituais de passagem do mundo, organizados por quem participa — com selos de confiança e cuidado ético.">
+  <meta property="og:title" content="Ritos do Mundo Real — rituais de passagem do mundo, com selo de confiança">
+  <meta property="og:description" content="Uma base consultável, visual e honesta de rituais de passagem do mundo — organizada por quem participa, com selos de confiança e cuidado ético.">
   <meta property="og:image" content="https://ritos.exemplo/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -22,9 +22,8 @@
   <div class="frame">
     <div class="sheet">
 
-      <!-- HEADER -->
       <header class="site-head">
-        <a class="brand" href="./"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
+        <a class="brand" href=""><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V11a7 7 0 0 1 14 0v10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M12 21v-6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg></span>Ritos do Mundo Real</a>
         <div class="head-actions">
           <a class="btn btn--lime" href="#rituais">Explorar rituais</a>
           <button class="menu-btn" id="menu-toggle" aria-expanded="false" aria-controls="menu-overlay">
@@ -33,38 +32,31 @@
         </div>
       </header>
 
-      <!-- MENU OVERLAY (compartilhado) -->
       <div class="menu-overlay" id="menu-overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
         <div class="menu-top">
-          <a class="brand" href="./"><span class="mark" aria-hidden="true">✳</span>Ritos do Mundo Real</a>
-          <button class="menu-close" id="menu-close" aria-label="Fechar menu">✕</button>
+          <a class="brand" href=""><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 21V11a7 7 0 0 1 14 0v10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/><path d="M12 21v-6.4" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round"/></svg></span>Ritos do Mundo Real</a>
+          <button class="menu-close" id="menu-close" aria-label="Fechar menu"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 4l8 8M12 4l-8 8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
         </div>
         <div class="menu-body">
-          <nav class="menu-nav" aria-label="Páginas">
-            <a href="./">Início</a>
-            <a href="clusters/pais-e-filhos/">Rituais pelo mundo</a>
-            <a href="biblioteca/">Biblioteca</a>
-            <a href="sobre/">Sobre &amp; Método</a>
+          <nav class="megamenu" aria-label="Páginas e subpáginas">
+            <a class="mm-page" href="">Início</a>
+            <div class="mm-block">
+              <a class="mm-page" href="clusters/">Rituais pelo mundo</a>
+              <div class="mm-subs"><a href="clusters/pais-e-filhos/">Pais e filhos</a><a href="clusters/maes-e-filhas/">Mães e filhas</a><a href="clusters/casais/">Casais</a><a href="clusters/avos-e-netos/">Avós e netos</a><a href="clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a><a href="clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a></div>
+            </div>
+            <a class="mm-page" href="biblioteca/">Biblioteca</a>
+            <a class="mm-page" href="sobre/">Sobre &amp; Método</a>
           </nav>
-          <div class="menu-sub">
-            <h3>Visualizar cada cluster</h3>
-            <div class="rl">
-              <a href="clusters/pais-e-filhos/">Pais e filhos</a>
-              <a href="clusters/maes-e-filhas/">Mães e filhas</a>
-              <a href="clusters/casais/">Casais</a>
-              <a href="clusters/avos-e-netos/">Avós e netos</a>
-              <a href="clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a>
-              <a href="clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a>
-            </div>
-            <div class="menu-cta">
-              <a class="btn btn--lime" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa →</a>
-            </div>
-          </div>
+          <aside class="mm-aside">
+            <p class="eyebrow" style="color:var(--lime)">Comece por aqui</p>
+            <p style="color:var(--on-forest-dim)">Filtre rituais por quem participa, pelo sentimento que tratam e pelo que muda para quem passa — no instrumento de decisão.</p>
+            <a class="btn btn--lime" href="#instrumento">Instrumento de decisão</a>
+            <a class="btn btn--ghost" style="color:#fff" href="https://calendly.com/ferttil/meet" target="_blank" rel="noopener">Agendar uma conversa</a>
+          </aside>
         </div>
       </div>
 
       <main id="conteudo">
-        <!-- HERO -->
         <section class="hero">
           <div>
             <p class="eyebrow">Rituais de passagem · mundo real</p>
@@ -83,14 +75,13 @@
             <span class="pill pill--lime hero__badge">Eco · exótico · contemporâneo</span>
             <div class="hero__float">
               <div class="k">Todo dado com selo</div>
-              <div class="v">✅ confirmado · ⚠️ parcial · ❓ estimativa</div>
+              <div class="v"><span class="seal seal--conf"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.4 8.7l3 3L12.8 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg> confirmado</span> · <span class="seal seal--parcial"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l6.1 10.6H1.9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.3v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.5" r=".95" fill="currentColor"/></svg> parcial</span> · <span class="seal seal--estimativa"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6.1 6.3a1.95 1.95 0 1 1 2.7 1.8c-.6.3-.95.75-.95 1.4v.25" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11.6" r=".9" fill="currentColor"/></svg> estimativa</span></div>
             </div>
           </div>
         </section>
 
         <p id="data-error" class="wrap" role="alert" hidden style="color:var(--velvet);padding-top:1rem"></p>
 
-        <!-- NÚMEROS -->
         <section class="section wrap" aria-label="Panorama">
           <div class="stats">
             <div class="stat reveal"><b id="stat-ritos">—</b><span>rituais catalogados</span></div>
@@ -98,12 +89,11 @@
             <div class="stat reveal"><b id="stat-paises">—</b><span>países</span></div>
             <div class="stat stat--velvet reveal"><b id="stat-continentes">—</b><span>continentes</span></div>
             <div class="stats__note">
-              <span class="pill pill--moss"><span class="ic">✅</span> Todo dado numérico traz um selo de confiança — nunca apresentamos estimativa como fato.</span>
+              <span class="pill pill--moss"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.4 8.7l3 3L12.8 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg> Todo dado numérico traz um selo de confiança — nunca apresentamos estimativa como fato.</span>
             </div>
           </div>
         </section>
 
-        <!-- BANNER DE TRANSIÇÃO (foto do usuário: assets/img/transicao.jpg) -->
         <section class="section--tight wrap">
           <div class="banner banner--transicao reveal" data-parallax>
             <div class="parallax-layer" style="background-image:url('assets/img/transicao.jpg')" aria-hidden="true"></div>
@@ -115,7 +105,6 @@
           </div>
         </section>
 
-        <!-- RITUAIS PELO MUNDO -->
         <section class="section wrap" id="rituais" aria-labelledby="rituais-h">
           <p class="eyebrow">Navegue por quem participa</p>
           <h2 id="rituais-h" class="h-sec">Rituais pelo mundo</h2>
@@ -123,24 +112,19 @@
           <div class="cluster-grid" id="cluster-grid"></div>
         </section>
 
-        <!-- CARROSSEL DE DESTAQUES -->
         <section class="section wrap" aria-labelledby="dest-h">
           <div class="carousel" data-carousel>
             <div class="carousel__head">
-              <div>
-                <p class="eyebrow">Destaques</p>
-                <h2 id="dest-h" class="h-sec">Experiências memoráveis</h2>
-              </div>
+              <div><p class="eyebrow">Destaques</p><h2 id="dest-h" class="h-sec">Experiências memoráveis</h2></div>
               <div class="carousel__nav">
-                <button class="cbtn" data-car-prev aria-label="Anterior">←</button>
-                <button class="cbtn" data-car-next aria-label="Próximo">→</button>
+                <button class="cbtn" data-car-prev aria-label="Anterior"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M10 3l-5 5 5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+                <button class="cbtn" data-car-next aria-label="Próximo"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M6 3l5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
               </div>
             </div>
             <div class="carousel__track" id="featured-track" tabindex="0" aria-label="Rituais em destaque"></div>
           </div>
         </section>
 
-        <!-- BANNER NATUREZA (foto do usuário: assets/img/natureza.jpg) -->
         <section class="section--tight wrap">
           <div class="banner banner--natureza reveal" data-parallax>
             <div class="parallax-layer" style="background-image:url('assets/img/natureza.jpg')" aria-hidden="true"></div>
@@ -152,7 +136,6 @@
           </div>
         </section>
 
-        <!-- BANNER DO MAPA (Equal Earth) -->
         <section class="section wrap" aria-labelledby="mapa-h">
           <div class="mapbanner reveal">
             <div class="map-holder" id="map-banner" aria-label="Mapa-múndi com os rituais plotados por cluster"></div>
@@ -161,7 +144,7 @@
               <h2 id="mapa-h">Sobre o mapa</h2>
               <p>A projeção é a <strong style="color:#fff">Equal Earth</strong> (Šavrič, Patterson &amp; Jenny, 2018), de áreas iguais: cada país aparece no tamanho que realmente tem, ao contrário de Mercator, que infla o Norte. O contorno usa dados de domínio público; os pinos são calculados a partir da latitude e longitude de cada rito.</p>
               <div class="map-legend">
-                <span class="pill"><span class="ic">●</span> cor por cluster</span>
+                <span class="pill"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="4" fill="currentColor"/></svg> cor por cluster</span>
                 <span class="pill">clique num pino para abrir o rito</span>
               </div>
               <p style="margin-top:1rem"><a class="btn btn--lime" href="sobre/#mapa">Ler a nota de validação →</a></p>
@@ -169,7 +152,6 @@
           </div>
         </section>
 
-        <!-- INSTRUMENTO DE DECISÃO -->
         <section class="section wrap" id="instrumento" aria-labelledby="filtro-h">
           <div class="tool">
             <p class="eyebrow">Instrumento de decisão</p>
@@ -191,56 +173,29 @@
           </div>
         </section>
 
-        <!-- FAQ (acordeão) -->
         <section class="section wrap" aria-labelledby="acc-h">
           <p class="eyebrow">Perguntas frequentes</p>
           <h2 id="acc-h" class="h-sec">O essencial, em poucas linhas</h2>
           <div class="accordion" style="margin-top:1.4rem" data-accordion>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>O que são ritos?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>São cerimônias que marcam a passagem de uma fase da vida para outra — nascer, virar adulto, casar, reencontrar os mortos. O antropólogo Arnold van Gennep (1909) mostrou que quase todas seguem três tempos: <strong>separação</strong> do que se era, uma <strong>margem</strong> (o limiar) e a <strong>reagregação</strong> num novo lugar social. São o corpo, o tempo e a comunidade que tornam cada rito irreproduzível.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>Por que “do Mundo Real”?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>Sem telas, sem prompts, sem wi-fi, você vai ver que o tempo e a qualidade no Planeta Terra são reenergizantes. Estes rituais só acontecem uma vez, num corpo que não ensaia e diante de pessoas reais — o oposto do que se reproduz num feed.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>Como sei que os dados são confiáveis?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>Todo número traz um selo: ✅ <strong>confirmado</strong> (fonte oficial), ⚠️ <strong>parcial</strong> (ordem de grandeza a partir de fontes secundárias) e ❓ <strong>estimativa</strong> (sem dado público). A cor nunca aparece sozinha; vem sempre com texto. Nunca apresentamos estimativa como fato.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>Posso assistir a qualquer ritual?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>Não. Alguns são <strong>fechados</strong> (Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite, o Hajj em Meca): listamos como conhecimento, sem indexar operadores nem vídeos comerciais, em respeito ao consentimento livre, prévio e informado. O campo “acesso” diz de cada um: aberto, com guia, restrito ou fechado.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>Como escolho uma experiência para viver?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>Use o <a href="#instrumento">Instrumento de decisão</a>: filtre por quem participa, pelo sentimento que o rito trata, pelo que muda para quem passa, pela época, popularidade e acesso. Cada resultado traz o selo de confiança e, quando houver, o alerta ético.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>Isto é uma agência de viagens?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>Não. É um projeto independente de pesquisa e curadoria. Quando o assunto é ir até lá, defendemos turismo com cuidado: operador comunitário, remuneração direta, sem encenação fora de época — e alertamos sobre turismo-espetáculo, bem-estar animal e overtourism, com fonte e sem tomar partido.</p></div></div>
-            </div>
-            <div class="acc-item">
-              <button class="acc-head" aria-expanded="false"><span>De onde vêm as fotos e os vídeos?</span><span class="ico" aria-hidden="true">+</span></button>
-              <div class="acc-body"><div class="acc-body-inner"><p>As fotos de atmosfera vêm de bancos livres (Unsplash/Pexels); os vídeos são links para documentários e registros no YouTube, priorizando fontes reputáveis. Não hospedamos imagens de terceiros dos rituais em si, e evitamos qualquer imagem de menores em contextos de nudez.</p></div></div>
-            </div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>O que são ritos?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>São cerimônias que marcam a passagem de uma fase da vida para outra — nascer, virar adulto, casar, reencontrar os mortos. O antropólogo Arnold van Gennep (1909) mostrou que quase todas seguem três tempos: <strong>separação</strong> do que se era, uma <strong>margem</strong> (o limiar) e a <strong>reagregação</strong> num novo lugar social. São o corpo, o tempo e a comunidade que tornam cada rito irreproduzível.</p></div></div></div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Por que “do Mundo Real”?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Sem telas, sem prompts, sem wi-fi, você vai ver que o tempo e a qualidade no Planeta Terra são reenergizantes. Estes rituais só acontecem uma vez, num corpo que não ensaia e diante de pessoas reais — o oposto do que se reproduz num feed.</p></div></div></div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Como sei que os dados são confiáveis?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Todo número traz um selo: <span class="seal seal--conf"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.4 8.7l3 3L12.8 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg> confirmado</span> (fonte oficial), <span class="seal seal--parcial"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l6.1 10.6H1.9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.3v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.5" r=".95" fill="currentColor"/></svg> parcial</span> (ordem de grandeza) e <span class="seal seal--estimativa"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6.1 6.3a1.95 1.95 0 1 1 2.7 1.8c-.6.3-.95.75-.95 1.4v.25" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11.6" r=".9" fill="currentColor"/></svg> estimativa</span> (sem dado público). A cor nunca aparece sozinha; vem sempre com texto. Nunca apresentamos estimativa como fato.</p></div></div></div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Posso assistir a qualquer ritual?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Não. Alguns são <strong>fechados</strong> (Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite, o Hajj em Meca): listamos como conhecimento, sem indexar operadores nem vídeos comerciais, em respeito ao consentimento livre, prévio e informado. O campo “acesso” diz de cada um: aberto, com guia, restrito ou fechado.</p></div></div></div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Como escolho uma experiência para viver?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Use o <a href="#instrumento">Instrumento de decisão</a>: filtre por quem participa, pelo sentimento que o rito trata, pelo que muda para quem passa, pela época, popularidade e acesso. Cada resultado traz o selo de confiança e, quando houver, o alerta ético.</p></div></div></div>
+            <div class="acc-item"><button class="acc-head" aria-expanded="false"><span>Isto é uma agência de viagens?</span><span class="ico" aria-hidden="true">+</span></button><div class="acc-body"><div class="acc-body-inner"><p>Não. É um projeto independente de pesquisa e curadoria. Quando o assunto é ir até lá, defendemos turismo com cuidado: operador comunitário, remuneração direta, sem encenação fora de época — e alertamos sobre turismo-espetáculo, bem-estar animal e overtourism, com fonte e sem tomar partido.</p></div></div></div>
           </div>
         </section>
       </main>
 
-      <!-- RODAPÉ -->
       <footer class="site-foot">
-        <div class="col">
-          <b>Ritos do Mundo Real</b>
-          <small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small>
-        </div>
+        <div class="col"><b>Ritos do Mundo Real</b><small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small></div>
         <div class="cols">
-          <div class="col"><b>Navegar</b><a href="clusters/pais-e-filhos/">Rituais pelo mundo</a><a href="biblioteca/">Biblioteca</a><a href="sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Páginas</b><a href="">Início</a><a href="clusters/">Rituais pelo mundo</a><a href="biblioteca/">Biblioteca</a><a href="sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Rituais pelo mundo</b><a href="clusters/pais-e-filhos/">Pais e filhos</a><a href="clusters/maes-e-filhas/">Mães e filhas</a><a href="clusters/casais/">Casais</a><a href="clusters/avos-e-netos/">Avós e netos</a><a href="clusters/coletivos-e-peregrinacoes/">Coletivos e peregrinações</a><a href="clusters/natureza-animais-e-plantas/">Natureza, animais e plantas</a></div>
           <div class="col"><b>Ética</b><a href="sobre/#etica">Rituais fechados &amp; FPIC</a><a href="sobre/#selos">Selos de confiança</a></div>
         </div>
       </footer>
 
-      <!-- BLOCO DO AUTOR (abaixo do rodapé) -->
       <section class="author" aria-label="Sobre esta ferramenta">
         <div class="author__band">
           <p class="eyebrow">Sobre esta ferramenta</p>
@@ -253,9 +208,9 @@
               <h3 class="author__name">Igor Botelho</h3>
               <p class="author__loc">Waiheke Island, Auckland · Nova Zelândia</p>
               <div class="author__links">
-                <a href="mailto:igor@ferttil.com">✉ igor@ferttil.com</a>
-                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener">◎ www.igorbotelho.com</a>
-                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener">in linkedin.com/in/bernardesigor</a>
+                <a href="mailto:igor@ferttil.com"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><rect x="1.7" y="3.5" width="12.6" height="9" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M2.3 4.5 8 8.7l5.7-4.2" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg> igor@ferttil.com</a>
+                <a href="https://www.igorbotelho.com" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.4"/><path d="M1.8 8h12.4M8 1.7c3 2.4 3 10.2 0 12.6M8 1.7c-3 2.4-3 10.2 0 12.6" fill="none" stroke="currentColor" stroke-width="1.15"/></svg> www.igorbotelho.com</a>
+                <a href="https://linkedin.com/in/bernardesigor" target="_blank" rel="noopener"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M9 3.2h3.8V7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.6 3.4 7.4 8.6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M11.8 9.5V12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V5.2a1 1 0 0 1 1-1h2.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg> linkedin.com/in/bernardesigor</a>
               </div>
             </div>
           </div>

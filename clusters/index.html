@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sobre & Método — Ritos do Mundo Real</title>
-  <meta name="description" content="Método, selos de confiança, ética (FPIC) e créditos do mapa Equal Earth.">
-  <link rel="canonical" href="https://ritos.exemplo/sobre/">
+  <title>Rituais pelo mundo — Ritos do Mundo Real</title>
+  <meta name="description" content="Os seis clusters de rituais de passagem, organizados por quem participa.">
+  <link rel="canonical" href="https://ritos.exemplo/clusters/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Sobre & Método — Ritos do Mundo Real">
-  <meta property="og:description" content="Método, selos de confiança, ética (FPIC) e créditos do mapa Equal Earth.">
+  <meta property="og:title" content="Rituais pelo mundo — Ritos do Mundo Real">
+  <meta property="og:description" content="Os seis clusters de rituais de passagem, organizados por quem participa.">
   <meta property="og:image" content="https://ritos.exemplo/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
@@ -17,7 +17,7 @@
   <link rel="preload" href="../assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../assets/css/site.css">
 </head>
-<body data-page="sobre">
+<body data-page="rituais">
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <div class="frame">
     <div class="sheet">
@@ -58,50 +58,24 @@
 
       <main id="conteudo">
         <section class="section wrap">
-          <p class="eyebrow">Sobre &amp; método</p>
-          <h1 class="h-sec">Honestidade sobre os dados vem antes de tudo</h1>
-          <p class="lede">Este projeto organiza rituais de passagem e rituais coletivos do mundo numa base consultável, visual e honesta — para ajudar a decidir qual experiência vale viver, quando, e com que cuidado ético.</p>
+          <p class="eyebrow">Páginas · Rituais pelo mundo</p>
+          <h1 class="h-sec">Rituais pelo mundo</h1>
+          <p class="lede">Seis clusters, um mesmo limiar. Escolha por quem atravessa a passagem junto — cada cluster reúne rituais de todos os continentes, com tabela filtrável, curiosidades, turismo no entorno e o que os torna memoráveis.</p>
         </section>
-
-        <section class="section--tight wrap" id="selos">
-          <p class="eyebrow">Selos de confiança</p>
-          <h2 class="h-sec">Nunca apresentamos estimativa como fato</h2>
-          <p class="lede" style="margin-bottom:1.4rem">Todo número de “participantes/ano” carrega um selo. A cor nunca aparece sozinha — vem sempre com texto.</p>
-          <div class="about-grid">
-            <div class="about-card"><div class="seal-key"><span class="seal seal--conf"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M3.4 8.7l3 3L12.8 4.7" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg> Confirmado</span><p>Fonte oficial ou estatística. É o único selo que tratamos como fato.</p></div></div>
-            <div class="about-card"><div class="seal-key"><span class="seal seal--parcial"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2.4l6.1 10.6H1.9z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M8 6.3v3.2" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="8" cy="11.5" r=".95" fill="currentColor"/></svg> Parcial</span><p>Ordem de grandeza plausível a partir de fontes secundárias.</p></div></div>
-            <div class="about-card"><div class="seal-key"><span class="seal seal--estimativa"><svg class="ic" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.3" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M6.1 6.3a1.95 1.95 0 1 1 2.7 1.8c-.6.3-.95.75-.95 1.4v.25" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="11.6" r=".9" fill="currentColor"/></svg> Estimativa</span><p>Sem dado público. Mostramos como “ordem de grandeza”, jamais como certeza.</p></div></div>
+        <section class="section--tight wrap" id="rituais">
+          <div class="cluster-grid" id="cluster-grid"></div>
+          <p id="data-error" role="alert" hidden style="color:var(--velvet)"></p>
+        </section>
+        <section class="section wrap" aria-labelledby="mapa-h">
+          <div class="mapbanner reveal">
+            <div class="map-holder" id="map-banner" aria-label="Mapa-múndi com todos os rituais"></div>
+            <div>
+              <p class="eyebrow">O mundo em áreas iguais</p>
+              <h2 id="mapa-h">Todos no mapa</h2>
+              <p>Cada pino é um ritual, com a cor do seu cluster. Clique para abrir. A projeção Equal Earth mostra cada país no tamanho real.</p>
+              <p style="margin-top:1rem"><a class="btn btn--lime" href="../sobre/#mapa">Sobre o mapa →</a></p>
+            </div>
           </div>
-        </section>
-
-        <section class="section wrap prose" id="etica">
-          <p class="eyebrow">Ética e sustentabilidade</p>
-          <h2 class="h-sec">Cinco regras editoriais</h2>
-          <div class="entorno" style="margin-top:1rem">
-            <div class="item"><h4>1. Rituais fechados (FPIC)</h4><p class="meta">Sun Dance, Vision Quest, Ulwaluko, Festa da Moça Nova sem convite e o Hajj em Meca são listados como conhecimento, marcados como acesso fechado. Não indexamos vídeos comerciais nem operadores.</p></div>
-            <div class="item"><h4>2. Turismo-espetáculo</h4><p class="meta">No Omo, na tucandeira “para turista” e na ayahuasca comercial, mostramos o alerta e sugerimos operador comunitário, remuneração direta e nada de encenação fora de época.</p></div>
-            <div class="item"><h4>3. Bem-estar animal</h4><p class="meta">Jallikattu e a corrida de cavalos com jóqueis-crianças do Naadam entram com a controvérsia registrada e com fonte — sem tomar partido.</p></div>
-            <div class="item"><h4>4. Overtourism</h4><p class="meta">Para Kumbh Mela, Caminho de Santiago e Yi Peng indicamos os meses e trechos de menor pressão.</p></div>
-            <div class="item"><h4>5. Imagens e menores</h4><p class="meta">Nunca reproduzimos imagens de menores em rituais de nudez. Links apenas para fontes editoriais e institucionais.</p></div>
-          </div>
-        </section>
-
-        <section class="section wrap prose" id="mapa">
-          <p class="eyebrow">Créditos do mapa</p>
-          <h2 class="h-sec">Sobre o mapa</h2>
-          <p>A projeção é a <strong>Equal Earth</strong>, publicada em 2018 pelos cartógrafos Bojan Šavrič, Tom Patterson e Bernhard Jenny. É uma projeção de <strong>áreas iguais</strong>: cada país aparece no tamanho que realmente tem, ao contrário de Mercator, que infla o Norte. O contorno de países usa dados de domínio público (Natural Earth); os pinos são posicionados calculando a projeção Equal Earth a partir da latitude e longitude de cada rito.</p>
-          <blockquote class="quote">Nota de validação: a afirmação de que a projeção teria sido “lançada pela ONU” <strong>não se confirma</strong> — ela foi criada por três cartógrafos (Esri, US National Park Service e Monash University). O defensável é dizer que é “usada em mapas da ONU”.<cite>Validação de dados do projeto</cite></blockquote>
-        </section>
-
-        <section class="section--tight wrap prose">
-          <p class="eyebrow">Como foi feito</p>
-          <h2 class="h-sec">Método e stack</h2>
-          <ul>
-            <li>Site estático em HTML + CSS + JavaScript vanilla, <strong>sem framework e sem build</strong>. Um único <code>data/ritos.json</code> alimenta todas as páginas.</li>
-            <li>Fontes self-hosted (OFL): <strong>Gloock</strong> (títulos), <strong>Instrument Sans</strong> (interface) e <strong>Mulish</strong> (corpo).</li>
-            <li>Mapa gerado por script Python a partir de contornos de domínio público, projetado em Equal Earth; os pinos usam a mesma fórmula em JavaScript.</li>
-            <li>Deploy em Cloudflare Pages a partir do GitHub, sem Node em produção.</li>
-          </ul>
         </section>
       </main>
 
