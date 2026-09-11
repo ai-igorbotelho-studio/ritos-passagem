@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ritos.exemplo/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/pais-e-filhos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/maes-e-filhas/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/casais/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/avos-e-netos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/coletivos-e-peregrinacoes/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/clusters/natureza-animais-e-plantas/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ritos.exemplo/biblioteca/</loc><changefreq>monthly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://ritos.exemplo/sobre/</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+</urlset>

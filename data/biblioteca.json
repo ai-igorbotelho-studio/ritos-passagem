@@ -1,0 +1,52 @@
+[
+  {
+    "grupo": "Transversal — teoria dos ritos de passagem",
+    "nota": "A base teórica que atravessa todos os clusters: separação, limiar e reagregação.",
+    "itens": [
+      { "tipo": "Livro", "titulo": "Os Ritos de Passagem", "autor": "Arnold van Gennep", "ano": "1909", "idioma": "trad. PT/EN/FR", "porque": "Origem do conceito: os três estágios (separação, margem, agregação) de toda passagem.", "link": null },
+      { "tipo": "Livro", "titulo": "O Processo Ritual: estrutura e antiestrutura", "autor": "Victor Turner", "ano": "1969", "idioma": "trad. PT/EN", "porque": "Liminaridade e communitas — por que a multidão e a margem produzem transformação.", "link": null },
+      { "tipo": "Dataset", "titulo": "Listas do Patrimônio Cultural Imaterial (ICH)", "autor": "UNESCO", "ano": "atual", "idioma": "EN/FR/ES", "porque": "Fonte oficial para Eunoto (2018), Naadam (2010), Día de Muertos (2008), Songkran (2023), Kumbh Mela (2017).", "link": "https://ich.unesco.org/" }
+    ]
+  },
+  {
+    "grupo": "Pais e filhos",
+    "itens": [
+      { "tipo": "Vídeo", "titulo": "Rites of Manhood: Crocodile Scars", "autor": "National Geographic", "ano": "2011", "idioma": "EN", "porque": "Registro editorial da escarificação do crocodilo no Rio Sepik.", "link": null },
+      { "tipo": "Reportagem", "titulo": "A month with three initiates during the Xhosa circumcision ritual", "autor": "Africa Geographic", "ano": "reportagem", "idioma": "EN", "porque": "Cobertura respeitosa do Ulwaluko, um rito fechado.", "link": null },
+      { "tipo": "Artigo acadêmico", "titulo": "Comunidade Sateré-Mawé Y'Apyrehyt: ritual e saúde na periferia urbana de Manaus", "autor": "SciELO", "ano": "artigo", "idioma": "PT", "porque": "Contexto do ritual da tucandeira em aldeias próximas a Manaus.", "link": null },
+      { "tipo": "Documentário", "titulo": "Inxeba / The Wound", "autor": "John Trengove (ficção)", "ano": "2017", "idioma": "Xhosa/EN", "porque": "Ficção premiada e controversa sobre o Ulwaluko — ver com contexto crítico.", "link": null }
+    ]
+  },
+  {
+    "grupo": "Mães e filhas",
+    "itens": [
+      { "tipo": "Reportagem", "titulo": "Through the 4-day Sunrise Dance, Apache girls transition into womanhood", "autor": "NPR", "ano": "2025", "idioma": "EN", "porque": "Cobertura recente e cuidadosa da Sunrise Ceremony apache.", "link": null },
+      { "tipo": "Documentário", "titulo": "The Sunrise Dance", "autor": "DER (Documentary Educational Resources)", "ano": "documentário", "idioma": "EN", "porque": "Registro etnográfico do rito apache.", "link": null },
+      { "tipo": "Artigo acadêmico", "titulo": "Estudos sobre a Festa da Moça Nova (Ticuna)", "autor": "E. Matarezio (USP/CEstA)", "ano": "2020", "idioma": "PT", "porque": "Base acadêmica sobre o Worecü; divulgação via Agência FAPESP.", "link": null }
+    ]
+  },
+  {
+    "grupo": "Casais e avós",
+    "itens": [
+      { "tipo": "Reportagem", "titulo": "Guia da cerimônia do chá no casamento chinês", "autor": "The Woks of Life", "ano": "reportagem", "idioma": "EN", "porque": "Descrição passo a passo do gesto de servir chá aos sogros.", "link": null },
+      { "tipo": "Vídeo", "titulo": "Turning of the bones (Famadihana)", "autor": "CNN Inside Africa", "ano": "2016", "idioma": "EN", "porque": "Registro televisivo da 'volta dos ossos' em Madagascar.", "link": null },
+      { "tipo": "Reportagem", "titulo": "Madagascar's 'turning of the bones'", "autor": "France 24", "ano": "2023", "idioma": "EN/FR", "porque": "Cobertura recente e o debate sobre o declínio da prática.", "link": null }
+    ]
+  },
+  {
+    "grupo": "Coletivos e peregrinações",
+    "itens": [
+      { "tipo": "Dataset", "titulo": "Estatísticas anuais das Compostelas", "autor": "Oficina de Acogida al Peregrino", "ano": "atual", "idioma": "ES/EN", "porque": "Fonte oficial do número de peregrinos que chegam a Santiago.", "link": "https://oficinadelperegrino.com/en/statistics/" },
+      { "tipo": "Livro", "titulo": "Kumbh Mela: Mapping the Ephemeral Megacity", "autor": "Rahul Mehrotra & Felipe Vera (Harvard)", "ano": "2015", "idioma": "EN", "porque": "Estudo urbano da maior reunião humana do planeta.", "link": null },
+      { "tipo": "Dataset", "titulo": "Estatísticas do Hajj", "autor": "GASTAT — Arábia Saudita", "ano": "atual", "idioma": "AR/EN", "porque": "Contagem oficial de peregrinos por ano.", "link": "https://www.stats.gov.sa/en" }
+    ]
+  },
+  {
+    "grupo": "Natureza, animais e plantas",
+    "itens": [
+      { "tipo": "Dataset", "titulo": "Dossiê do Naadam no ICH", "autor": "UNESCO", "ano": "2010", "idioma": "EN", "porque": "Documentação oficial do festival mongol e seus três jogos.", "link": "https://ich.unesco.org/" },
+      { "tipo": "Reportagem", "titulo": "Golden Eagle Festival, Bayan-Ölgii", "autor": "BBC / The Guardian", "ano": "reportagens", "idioma": "EN", "porque": "Cobertura do festival da águia dourada dos cazaques do Altai.", "link": null },
+      { "tipo": "Artigo acadêmico", "titulo": "Relatórios de saúde e política sobre ayahuasca", "autor": "ICEERS", "ano": "atual", "idioma": "EN/ES", "porque": "Base para o alerta de saúde e o debate sobre comercialização.", "link": "https://www.iceers.org/" }
+    ]
+  }
+]

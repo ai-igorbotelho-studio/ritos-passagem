@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ritos do Mundo Real — ritos de passagem do mundo, com selo de confiança</title>
+  <meta name="description" content="Uma base consultável, visual e honesta de ritos de passagem e rituais coletivos do mundo — organizada por quem participa, com selos de confiança sobre cada dado e cuidado ético em cada indicação.">
+  <link rel="canonical" href="https://ritos.exemplo/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ritos do Mundo Real">
+  <meta property="og:description" content="Ritos de passagem do mundo, organizados por quem participa — com selos de confiança e cuidado ético.">
+  <meta property="og:image" content="https://ritos.exemplo/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="frame">
+    <div class="sheet">
+
+      <header class="site-head">
+        <a class="brand" href="./"><span class="dot" aria-hidden="true"></span>Ritos do Mundo Real</a>
+        <nav class="nav" aria-label="Principal">
+          <a href="./" aria-current="page">Início</a>
+          <a href="clusters/pais-e-filhos/">Clusters</a>
+          <a href="biblioteca/">Biblioteca</a>
+          <a href="sobre/">Sobre &amp; Método</a>
+        </nav>
+      </header>
+
+      <main id="conteudo">
+        <!-- HERO -->
+        <section class="hero">
+          <div class="hero__inner">
+            <div>
+              <p class="eyebrow" style="color:var(--on-ink-dim)">Ritos de passagem · mundo real</p>
+              <h1 class="hero__title">É tempo de viver o mundo real, como ele é, com <em>pessoas reais</em>.</h1>
+              <p class="hero__sub">Em rituais de passagem memoráveis, e experiências irreproduzíveis. Uma base consultável, visual e honesta — organizada por quem participa.</p>
+              <p class="hero__note"><strong>Sobre o mapa.</strong> A projeção é a <em>Equal Earth</em> (Šavrič, Patterson &amp; Jenny, 2018), de áreas iguais: cada país aparece no tamanho que realmente tem. Contorno de domínio público. <a href="sobre/#mapa">Ler mais →</a></p>
+            </div>
+            <div class="hero__map">
+              <div id="hero-map" class="ee-map-holder" aria-label="Mapa-múndi com os ritos plotados por cluster"></div>
+              <div class="map-legend" id="map-legend" aria-hidden="true"></div>
+            </div>
+          </div>
+        </section>
+
+        <p id="data-error" class="wrap" role="alert" hidden style="color:var(--clay);padding-top:1rem"></p>
+
+        <!-- NÚMEROS -->
+        <section class="section wrap" aria-label="Panorama">
+          <div class="stats">
+            <div class="stat reveal"><b id="stat-ritos">—</b><span>ritos catalogados</span></div>
+            <div class="stat reveal"><b id="stat-clusters">—</b><span>clusters de participação</span></div>
+            <div class="stat reveal"><b id="stat-paises">—</b><span>países</span></div>
+            <div class="stat reveal"><b id="stat-continentes">—</b><span>continentes</span></div>
+            <div class="stats__seal">
+              <span class="pill pill--moss"><span class="ic">✅</span> Todo dado numérico traz um selo de confiança — nunca apresentamos estimativa como fato.</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- CLUSTERS -->
+        <section class="section wrap" aria-labelledby="clusters-h">
+          <p class="eyebrow">Navegue por quem participa</p>
+          <h2 id="clusters-h" style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Seis clusters, um mesmo limiar</h2>
+          <p class="lede" style="margin-bottom:1.6rem">Em vez de listar por país ou religião, organizamos os ritos por quem os atravessa junto — pais e filhos, mães e filhas, casais, avós e netos, a multidão em peregrinação, ou a natureza que conduz a passagem.</p>
+          <div class="cluster-grid" id="cluster-grid"></div>
+        </section>
+
+        <!-- FILTRO / INSTRUMENTO DE DECISÃO -->
+        <section class="section wrap" aria-labelledby="filtro-h">
+          <div class="tool">
+            <p class="eyebrow" style="color:#fff">Instrumento de decisão</p>
+            <h2 id="filtro-h">Qual experiência vale viver, quando e com que cuidado?</h2>
+            <p class="lede">Filtre por quem participa, época do ano, popularidade e acesso a visitantes. Os resultados vêm direto da base — com selo de confiança e alerta ético quando houver.</p>
+            <div class="filters">
+              <div class="field"><label for="f-quem">Quem participa</label><select id="f-quem"><option value="">Todos</option></select></div>
+              <div class="field"><label for="f-mes">Época (mês)</label><select id="f-mes"><option value="">Qualquer mês</option></select></div>
+              <div class="field"><label for="f-status">Status</label><select id="f-status"><option value="">Todos</option><option value="muito_popular">Muito popular</option><option value="conhecido">Conhecido</option><option value="exotico">Exótico</option></select></div>
+              <div class="field"><label for="f-acesso">Acesso a visitante</label><select id="f-acesso"><option value="">Todos</option><option value="aberto">Aberto</option><option value="aberto_com_guia">Com guia</option><option value="restrito">Restrito (familiar)</option><option value="fechado">Fechado</option></select></div>
+            </div>
+            <div class="tool__actions">
+              <button class="btn btn--ghost" id="f-clear" type="button">Limpar filtros</button>
+              <span class="tool__count" id="f-count"></span>
+            </div>
+            <div class="results" id="f-results" aria-live="polite"></div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-foot">
+        <div class="col">
+          <b>Ritos do Mundo Real</b>
+          <small>Pesquisa + visualização + instrumento de decisão.<br>Dados com selo de confiança · PT-BR.</small>
+        </div>
+        <div class="cols">
+          <div class="col">
+            <b>Navegar</b>
+            <a href="clusters/pais-e-filhos/">Clusters</a>
+            <a href="biblioteca/">Biblioteca</a>
+            <a href="sobre/">Sobre &amp; Método</a>
+          </div>
+          <div class="col">
+            <b>Ética</b>
+            <a href="sobre/#etica">Ritos fechados &amp; FPIC</a>
+            <a href="sobre/#selos">Selos de confiança</a>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

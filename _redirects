@@ -1,0 +1,3 @@
+# Cloudflare Pages já serve URLs limpas (/clusters/x/ -> index.html).
+# Normaliza ausência de barra final para a versão canônica com barra.
+/clusters/:slug   /clusters/:slug/   301

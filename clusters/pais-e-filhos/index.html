@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pais e filhos — Ritos do Mundo Real</title>
+  <meta name="description" content="Ritos de pai, avô e filho — iniciação masculina, do salto do gado à leitura da Torá.">
+  <link rel="canonical" href="https://ritos.exemplo/clusters/pais-e-filhos/">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Pais e filhos — Ritos do Mundo Real">
+  <meta property="og:description" content="Ritos de pai, avô e filho — iniciação masculina, do salto do gado à leitura da Torá.">
+  <meta property="og:image" content="https://ritos.exemplo/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="../../assets/fonts/gloock-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../../assets/fonts/mulish-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../../assets/css/site.css">
+</head>
+<body data-page="cluster" data-slug="pais-e-filhos">
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="frame">
+    <div class="sheet">
+
+      <header class="site-head">
+        <a class="brand" href="../../"><span class="dot" aria-hidden="true"></span>Ritos do Mundo Real</a>
+        <nav class="nav" aria-label="Principal">
+          <a href="../../">Início</a>
+          <a href="../pais-e-filhos/" aria-current="page">Clusters</a>
+          <a href="../../biblioteca/">Biblioteca</a>
+          <a href="../../sobre/">Sobre &amp; Método</a>
+        </nav>
+      </header>
+
+      <main id="conteudo">
+        <section class="section wrap">
+          <div class="cluster-head">
+            <div>
+              <p class="eyebrow">Cluster · quem participa</p>
+              <h1 data-cluster-nome style="font-size:clamp(2rem,4.6vw,3.6rem)">Pais e filhos</h1>
+              <p class="lede" id="cluster-frase"></p>
+              <p class="hero__note" style="color:var(--stone)">A tabela abaixo é gerada a partir da base <code>data/ritos.json</code>. Ordene por qualquer coluna. Cada número traz seu selo de confiança.</p>
+            </div>
+            <div class="minimap"><div id="cluster-map" aria-label="Mini-mapa com os ritos deste cluster"></div></div>
+          </div>
+          <p id="data-error" role="alert" hidden style="color:var(--clay)"></p>
+        </section>
+
+        <section class="section--tight wrap" aria-label="Tabela de ritos do cluster">
+          <div class="table-wrap">
+            <table class="ritos">
+              <thead id="ritos-head">
+                <tr>
+                  <th scope="col"><button data-key="nome" type="button">Rito <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button data-key="local" type="button">Local <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button data-key="epoca" type="button">Época <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button data-key="status" type="button">Status <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col" class="center"><button data-key="espiritual" type="button">Espiritual <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col">Participantes/ano <span class="arrow" aria-hidden="true">·</span></th>
+                  <th scope="col"><button data-key="acesso" type="button">Acesso <span class="arrow" aria-hidden="true">↕</span></button></th>
+                  <th scope="col" class="center">Vídeo</th>
+                </tr>
+              </thead>
+              <tbody id="ritos-body"></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="section wrap prose" aria-labelledby="curio-h">
+          <p class="eyebrow">Curiosidades</p>
+          <h2 id="curio-h">Para guardar</h2>
+          <ul class="curio" id="curiosidades"></ul>
+        </section>
+
+        <section class="section wrap prose" aria-labelledby="entorno-h">
+          <p class="eyebrow">Turismo nos arredores</p>
+          <h2 id="entorno-h">O que ver perto — e com que cuidado</h2>
+          <div class="entorno" id="entorno"></div>
+        </section>
+
+        <section class="section wrap prose" aria-labelledby="mem-h">
+          <p class="eyebrow">Por que é memorável</p>
+          <h2 id="mem-h">O irreproduzível</h2>
+          <div id="memoravel"></div>
+        </section>
+
+        <section class="section--tight wrap">
+          <nav class="cluster-nav" id="cluster-nav" aria-label="Outros clusters"></nav>
+        </section>
+      </main>
+
+      <footer class="site-foot">
+        <div class="col"><b>Ritos do Mundo Real</b><small>Dados com selo de confiança · PT-BR.</small></div>
+        <div class="cols">
+          <div class="col"><b>Navegar</b><a href="../../">Início</a><a href="../../biblioteca/">Biblioteca</a><a href="../../sobre/">Sobre &amp; Método</a></div>
+          <div class="col"><b>Ética</b><a href="../../sobre/#etica">Ritos fechados &amp; FPIC</a><a href="../../sobre/#selos">Selos de confiança</a></div>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
